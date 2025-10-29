@@ -1,0 +1,141 @@
+﻿code, description
+"270111,""Coal: anthracite, whether or not pulverised, but not agglomerated"""
+"270112,""Coal: bituminous, whether or not pulverised, but not agglomerated"""
+"270119,""Coal: (other than anthracite and bituminous), whether or not pulverised but not agglomerated"""
+"270120,""Briquettes, ovoids and similar solid fuels: manufactured from coal"""
+"270210,""Lignite: whether or not pulverised, but not agglomerated, excluding jet"""
+"270220,""Lignite: agglomerated, excluding jet"""
+"270300,""Peat: (including peat litter), whether or not agglomerated"""
+"270400,""Coke and semi-coke: of coal, lignite or peat, whether or not agglomerated: retort carbon"""
+"270500,""Gases: coal, water, producer and similar gases (excluding petroleum and other gaseous hydrocarbons)"""
+"270900,""Oils: petroleum oils and oils obtained from bituminous minerals, crude"""
+"271000,""Petroleum oils and oils from bituminous minerals, not crude: preparations n.e.c. containing by weight 70% or more of petroleum oils or oils from bituminous minerals: these being the basic constituents of the preparations: waste oils"""
+"271111,""Petroleum gases and other gaseous hydrocarbons: liquefied, natural gas"""
+"271112,""Petroleum gases and other gaseous hydrocarbons: liquefied, propane"""
+"271113,""Petroleum gases and other gaseous hydrocarbons: liquefied, butanes"""
+"271114,""Petroleum gases and other gaseous hydrocarbons: liquefied, ethylene, propylene, butylene and butadiene"""
+"271119,""Petroleum gases and other gaseous hydrocarbons: liquefied, n.e.c. in heading no. 2711"""
+"271121,""Petroleum gases and other gaseous hydrocarbons: in gaseous state, natural gas"""
+"271129,""Petroleum gases and other gaseous hydrocarbons: in gaseous state, other than natural gas"""
+"271311,""Petroleum coke: (not calcined), obtained from bituminous minerals"""
+"271312,""Petroleum coke: calcined, obtained from bituminous minerals"""
+271320,Petroleum bitumen: obtained from bituminous minerals
+271390,Residues: of petroleum oils or of oils obtained from bituminous minerals
+271410,Bituminous or oil shale and tar sands
+"271490,""Bitumen and asphalt, natural: asphaltites and asphaltic rock"""
+"271500,""Bituminous mixtures based on natural asphalt, on natural bitumen, on petroleum bitumen, on mineral tar or on mineral tar pitch (e.g. bituminous mastics, cut-backs)"""
+271600,Electrical energy
+280410,Hydrogen
+"284410,""Uranium: natural uranium and its compounds, alloys, dispersions (including cermets), ceramic products and mixtures containing natural uranium or natural uranium compounds"""
+"284420,""Uranium: enriched in U235, plutonium, their compounds, alloys dispersions (including cermets), ceramic products and mixtures containing uranium enriched in U235, plutonium or compounds of these products"""
+"284430,""Uranium: depleted in U235, thorium, their compounds, alloys, dispersions (including cermets), ceramic products and mixtures containing uranium depleted in U235, thorium: compounds of these products"""
+"284441,""Radioactive elements: tritium and its compounds: alloys, dispersions (including cermets), ceramic products and mixtures containing tritium or its compounds"""
+"284442,""Radioactive elements: actinium-225, 227, californium-253, curium-240, 241, 242, 243, 244, einsteinium-253, 254, gadolinium-148, polonium-208, 209, 210, radium-223, uranium-230 or 232, compounds: alloys, dispersions, ceramic products and mixtures"""
+"284443,""Radioactive elements, isotopes and compounds: other alloys, dispersions (including cermets), ceramic products and mixtures containing these elements, isotopes or compounds"""
+"284444,""Radioactive elements, isotopes, compounds n.e.c. in heading no. 2844, alloys, dispersions (including cermets), ceramic products, mixtures containing the elements, isotopes, compounds: radioactive residues"""
+284450,Spent (irradiated) fuel elements (cartridges) of nuclear reactors
+284510,Heavy water (deuterium oxide)
+284520,Boron enriched in boron-10 and its compounds
+284530,Lithium enriched in lithium-6 and its compounds
+284540,Helium-3
+"730411,""Iron or steel (excluding cast iron): seamless, line pipe of a kind used for oil or gas pipelines, of stainless steel"""
+"730419,""Iron or steel (excluding cast iron or stainless steel): seamless, line pipe of a kind used for oil or gas pipelines"""
+"730422,""Steel, stainless: seamless, drill pipe, of a kind used in drilling for oil or gas"""
+"730423,""Iron or steel (excluding cast iron or stainless steel): seamless, drill pipe, of a kind used in drilling for oil or gas"""
+"730424,""Steel, stainless: seamless, casing and tubing, of a kind used in drilling for oil or gas"""
+"730429,""Iron or steel (excluding cast iron or stainless steel): seamless, casing and tubing, of a kind used in drilling for oil or gas"""
+"730511,""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), longitudinally submerged arc welded, having circular cross-sections, external diameter exceeds 406.4mm"""
+"730512,""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), longitudinally welded (not submerged arc welded), having circular cross-sections, external diameter exceeds 406.4mm"""
+"730519,""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), (not longitudinally welded), having circular cross-sections, external diameter exceeds 406.4mm"""
+"730520,""Iron or steel (excluding cast iron): casing of a kind used in drilling for oil or gas (not seamless), having circular cross-sections, external diameter exceeds 406.4mm"""
+"730531,""Iron or steel (excluding cast iron): tubes and pipes (other than line pipe or casing of a kind used for oil or gas pipelines), longitudinally welded, having circular cross-sections, external diameter exceeds 406.4mm, (not seamless)"""
+"730611,""Steel: stainless: line pipe of a kind used for oil or gas pipelines n.e.c. in chapter 73, welded, (not seamless)"""
+"730619,""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (other than of stainless steel or seamless), n.e.c. in chapter 73"""
+"730621,""Steel, stainless: casing and tubing of a kind used in drilling for oil and gas, n.e.c. in chapter 73, welded, (not seamless)"""
+"730629,""Iron or steel (excluding cast iron): casing and tubing of a kind used in drilling for oil and gas (other than stainless steel or seamless), n.e.c. in chapter 73"""
+"740200,""Copper: unrefined, copper anodes for electrolytic refining"""
+"740311,""Copper: refined, unwrought, cathodes and sections of cathodes"""
+761300,Aluminium: containers for compressed or liquefied gas
+"761410,""Aluminium: stranded wire, cables, plaited bands and the like, (not electrically insulated), with steel core"""
+"761490,""Aluminium: stranded wire, cables, plaited bands and the like, (not electrically insulated), other than steel core"""
+840110,Nuclear reactors
+"840120,""Machinery and apparatus: for isotopic separation, and parts thereof"""
+840130,Fuel elements (cartridges): non-irradiated
+840140,Nuclear reactors: parts thereof
+840211,Boilers: watertube boilers with a steam production exceeding 45t per hour
+840212,Boilers: watertube boilers with a steam production not exceeding 45t per hour
+"840219,""Boilers: vapour generating boilers, including hybrid boilers n.e.c. in heading no. 8402"""
+840220,Boilers: super-heated water boilers
+840290,Boilers: parts of steam or other vapour generating boilers
+840310,Boilers: central heating boilers (excluding those of heading no. 8402)
+840390,Boilers: parts of central heating boilers (excluding those of heading no. 8402)
+"840410,""Boilers: auxiliary plant, for use with boilers of heading no. 8402 or 8403 (e.g. economisers, super-heaters, soot removers, gas recoverers)"""
+"840420,""Boilers: condensers, for steam or other vapour power units"""
+"840490,""Boilers: parts of auxiliary plant, for use with boilers of heading no. 8402 and 8403 and parts of condensers for steam or other vapour power units"""
+"840510,""Generators: producer gas, water gas, acetylene gas and similar water process gas generators, with or without their purifiers"""
+"840590,""Generators: parts of producer gas, water gas, acetylene gas and similar water process gas generators, with or without their purifiers"""
+"840681,""Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output exceeding 40MW"""
+"840682,""Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output not exceeding 40MW"""
+840690,Turbines: parts of steam and other vapour turbines
+"841011,""Turbines: hydraulic turbines and water wheels, of a power not exceeding 1000kW"""
+"841012,""Turbines: hydraulic turbines and water wheels, of a power exceeding 1000kW but not exceeding 10000kW"""
+"841013,""Turbines: hydraulic turbines and water wheels, of a power exceeding 10000kW"""
+"841090,""Turbines: parts of hydraulic turbines and water wheels, including regulators"""
+"841181,""Turbines: gas-turbines (excluding turbo-jets and turbo-propellers), of a power not exceeding 5000kW"""
+"841182,""Turbines: gas-turbines (excluding turbo-jets and turbo-propellers), of a power exceeding 5000kW"""
+841199,Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers)
+"850131,""Electric motors and generators: DC, of an output not exceeding 750W"""
+"850132,""Electric motors and generators: DC, of an output exceeding 750W but not exceeding 75kW"""
+"850133,""Electric motors and generators: DC, of an output exceeding 75kW but not exceeding 375kW"""
+"850134,""Electric motors and generators: DC, of an output exceeding 375kW"""
+"850161,""Generators: AC generators, (alternators), other than photovoltaic generators, of an output not exceeding 75kVA"""
+"850162,""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 75kVA but not exceeding 375kVA"""
+"850163,""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 375kVA but not exceeding 750kVA"""
+"850164,""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 750kVA"""
+"850171,""Electric generators: photovoltaic DC generators, of an output not exceeding 50W"""
+"850172,""Electric generators: photovoltaic DC generators, of an output exceeding 50W"""
+"850180,""Electric generators: (excluding generating sets), photovoltaic AC generators (alternators)"""
+"850211,""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output not exceeding 75kVA"""
+"850212,""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output exceeding 75kVA but not exceeding 375kVA"""
+"850213,""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output exceeding 375kVA"""
+850220,Electric generating sets: with spark-ignition internal combustion piston engines
+"850231,""Electric generating sets: wind-powered, (excluding those with spark-ignition or compression-ignition internal combustion piston engines)"""
+"850239,""Electric generating sets: (excluding those with spark-ignition or compression-ignition internal combustion piston engines), other than wind powered"""
+850240,Electric rotary converters
+850300,Electric motors and generators: parts suitable for use solely or principally with the machines of heading no. 8501 or 8502
+"850421,""Electrical transformers: liquid dielectric, having a power handling capacity not exceeding 650kVA"""
+"850422,""Electrical transformers: liquid dielectric, having a power handling capacity exceeding 650kVA but not exceeding 10,000kVA"""
+"850423,""Electrical transformers: liquid dielectric, having a power handling capacity exceeding 10,000kVA"""
+"850431,""Electrical transformers: n.e.c. in item no. 8504.2, having a power handling capacity not exceeding 1kVA"""
+"850432,""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 1kVA but not exceeding 16kVA"""
+"850433,""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 16kVA but not exceeding 500kVA"""
+"850434,""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 500kVA"""
+850440,Electrical static converters
+850450,Electrical inductors: n.e.c. in heading no. 8504
+"850490,""Electrical transformers, static converters and inductors: parts thereof"""
+"853510,""Electrical apparatus: fuses, for a voltage exceeding 1000 volts"""
+"853521,""Electrical apparatus: automatic circuit breakers, for a voltage exceeding 1000 volts but less than 72.5kV"""
+"853529,""Electrical apparatus: automatic circuit breakers, for a voltage of 72.5kV or more"""
+"853530,""Electrical apparatus: isolating and make-and-break switches, for a voltage exceeding 1000 volts"""
+"853540,""Electrical apparatus: lightning arresters, voltage limiters and surge suppressors (for a voltage exceeding 1000 volts)"""
+"853590,""Electrical apparatus: n.e.c. in heading no. 8535, for switching or protecting electrical circuits, for a voltage exceeding 1000 volts"""
+"853610,""Electrical apparatus: fuses, for a voltage not exceeding 1000 volts"""
+"853620,""Electrical apparatus: automatic circuit breakers, for a voltage not exceeding 1000 volts"""
+"853630,""Electrical apparatus: for protecting electrical circuits, n.e.c. in heading no. 8536, for a voltage not exceeding 1000 volts"""
+"853649,""Electrical apparatus: relays, for a voltage exceeding 60 volts"""
+"853650,""Electrical apparatus: switches n.e.c. in heading no. 8536, for a voltage not exceeding 1000 volts"""
+"853690,""Electrical apparatus: n.e.c. in heading no. 8536, for switching or protecting electrical circuits, for a voltage not exceeding 1000 volts"""
+"853720,""Boards, panels, consoles, desks and other bases: for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage exceeding 1000 volts"""
+"854143,""Electrical apparatus: photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels"""
+"854149,""Electrical apparatus: photosensitive semiconductor devices, diodes other than light emitting diodes and photovoltaic cells whether or not assembled in modules or made up into panels"""
+"854151,""Electrical apparatus: photosensitive semiconductor devices, semiconductor-based transducers"""
+854159,Electrical apparatus: photosensitive semiconductor devices n.e.c. in heading no. 8541
+"854442,""Insulated electric conductors: for a voltage not exceeding 1000 volts, fitted with connectors"""
+"854449,""Insulated electric conductors: for a voltage not exceeding 1000 volts, not fitted with connectors"""
+854460,Insulated electric conductors: for a voltage exceeding 1000 volts
+854610,Electrical insulators: of glass
+854620,Electrical insulators: of ceramics
+854690,Electrical insulators: other than of glass and ceramics
+"854710,""Insulating fittings: of ceramics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
+"854720,""Insulating fittings: of plastics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
+"854790,""Insulating fittings: (other than of ceramics or plastics), for electrical machines, appliances and equipment, excluding insulators of heading no. 8546"""
