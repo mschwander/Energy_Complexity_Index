@@ -367,6 +367,18 @@ code,description
 854710,"""Insulating fittings: of ceramics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
 854720,"""Insulating fittings: of plastics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
 854790,"""Insulating fittings: (other than of ceramics or plastics), for electrical machines, appliances and equipment, excluding insulators of heading no. 8546"""
+854800,Electrical parts of machinery or apparatus: not specified or elsewhere included in this chapter
+854911,Waste and scrap of lead-acid accumulators: spent lead-acid accumulators
+854912,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, containing lead, cadmium or mercury, other than lead-acid accumulators"""
+854913,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, sorted by chemical type and not containing lead, cadmium or mercury"""
+854914,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, unsorted and not containing lead, cadmium or mercury"""
+854919,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, n.e.c. in item no 8549.1"""
+854921,"""Electrical and electronic waste and scrap: of a kind used principally for the recovery of precious metal, containing primary cells and batteries, electric accumulators, mercury-switches, glass from cathode ray tubes or other activated glass, or electrical"""
+854929,Waste and scrap: of a kind used principally for the recovery of precious metal n.e.c. in item no 8549.21
+854931,"""Electrical and electronic waste and scrap: electrical and electronic assemblies and printed circuit boards, other than those used principally for the recovery of precious metal, containing primary cells and batteries, electric accumulators, mercury-switch"""
+854939,"""Waste and scrap: electrical and electronic assemblies and printed circuit boards, other than those used principally for the recovery of precious metal n.e.c. in item no 8549.31"""
+854991,Waste and scrap: n.e.c. in heading no 8549
+854999,Waste and scrap: n.e.c. in item no 8549.91
 870123,"""Tractors: road tractors for semi-trailers, with both spark-ignition internal combustion piston engine and electric motors for propulsion"""
 870124,"""Tractors: road tractors for semi-trailers, with only electric motors for propulsion"""
 870230,"""Vehicles: public transport type (carries 10 or more persons, including driver), with both compression-ignition internal combustion piston engine (diesel or semi-diesel) and electric motor for propulsion, new or used"""
