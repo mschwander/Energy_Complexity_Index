@@ -1,9 +1,11 @@
 import pandas as pd
 
-energy_codes = pd.read_csv("Data/Surefire_product_codes_HS22.csv")
+#energy_codes = pd.read_csv("Data/Surefire_product_codes_HS22.csv")
+energy_codes = pd.read_csv("Data/Surefire_product_codes_HS22_yellow.csv")
 
-print("Columns:", energy_codes.columns.tolist())
-print(energy_codes.head())
+
+#print("Columns:", energy_codes.columns.tolist())
+#print(energy_codes.head())
 
 energy_code_list = energy_codes["code"].astype(str).tolist()
 
@@ -13,6 +15,6 @@ baci["k"] = baci["k"].astype(str)
 
 baci_energy = baci[baci["k"].isin(energy_code_list)]
 
-baci_energy.to_csv("Data/baci_energy_subset.csv", index=False)
+baci_energy.to_csv("Data/baci_energy_subset_yellow.csv", index=False)
 
 print("Filtered dataset saved with", len(baci_energy), "rows.")

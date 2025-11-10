@@ -3,7 +3,7 @@ import pandas as pd
 # Path to your Excel file
 excel_path = r"C:\Users\marvi\OneDrive\Semester Thesis\Surefire_product_codes_HS22.xlsx"
 
-all_sheets = 0
+all_sheets = 1
 
 if all_sheets == 1:
     # Get all sheet names
@@ -48,7 +48,7 @@ if "code, description" in baci.columns:
     baci = baci.drop(columns=["code, description"])
 
 # Save into your Data folder
-baci.to_csv("Data/Surefire_product_codes_HS22.csv", index=False)
+baci.to_csv("Data/Surefire_product_codes_HS22_yellow.csv", index=False)
 
 print("Combined CSV saved with", len(baci), "rows.")
 print("Columns:", baci.columns.tolist())

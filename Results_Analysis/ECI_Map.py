@@ -2,9 +2,10 @@ import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import numpy as np
 
-
-eci_df = pd.read_csv("Results/eci_results_Energy.csv")
+#eci_df = pd.read_csv("Results/eci_results_Energy.csv")
+eci_df = pd.read_csv("Results/eci_results_Energy_yellow.csv")
 #eci_df = pd.read_csv("Results/eci_results_BACI.csv")
 
 eci_country = eci_df[["i", "t", "eci"]].drop_duplicates()
@@ -35,7 +36,6 @@ fix_map = {
     "CYN": "CYN",   # Northern Cyprus (non‑ISO, can drop)
     "SOL": "SOL",   # Somaliland (non‑ISO, can drop)
     "SAH": "ESH",   # Western Sahara
-    
 }
 
 # Apply fix to shapefile codes
@@ -49,9 +49,9 @@ lookup = pd.read_csv("Data/country_codes_V202501.csv")  # your mapping file
 
 eci_country = eci_country.merge(lookup, on="country_code")
 
-save_path = os.path.join("Results", "eci_country_results_Energy.csv")
+save_path = os.path.join("Results", "eci_country_results_Energy_yellow.csv")
 eci_country.to_csv(save_path, index=False)
-print(f"eci_country_results_Energy saved to {save_path}")
+print(f"eci_country_results_Energy_yellow saved to {save_path}")
 
 #print(eci_country.head())
 
@@ -74,14 +74,18 @@ world_eci.plot(
         "orientation": "horizontal",   # put the colorbar below the map
         "shrink": 0.6                  # adjust size
     },
-    vmin=-1.5,   # set min of color scale
-    vmax=2.5     # set max of color scale
+    vmin=-1.8,   # set min of color scale
+    vmax=2.8     # set max of color scale
 )
+
+# --- Control the colorbar ticks ---
+# Get the colorbar from the current figure
+cbar = ax.get_figure().get_axes()[-1]  # the last axis is the colorbar
+cbar.set_xticks(np.arange(-1.5, 3.0, 0.5))  # steps: -1.5, -1.0, -0.5, ..., 2.5
 
 ax.set_title("Economic Complexity Index by Country, 2023")
 
-
 plt.tight_layout()
-plt.savefig("Results/ECI_Map_Energy.png", dpi=300)
-print("Saved ECI map to Results/ECI_Map_Energy.png")
+plt.savefig("Results/ECI_Map_Energy_yellow.png", dpi=300)
+print("Saved ECI map to Results/ECI_Map_Energy_yellow.png")
 plt.close(fig)

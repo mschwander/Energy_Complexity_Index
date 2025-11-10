@@ -1,0 +1,634 @@
+code,description
+250200,Iron pyrites: unroasted
+250410,"""Graphite: natural, in powder or in flakes"""
+250490,"""Graphite: natural, in other forms, excluding powder or flakes"""
+260111,Iron ores and concentrates: non-agglomerated
+260112,Iron ores and concentrates: agglomerated (excluding roasted iron pyrites)
+260120,Iron pyrites: roasted
+260200,"""Manganese ores and concentrates, including ferruginous manganese ores and concentrates with a manganese content of 20% or more, calculated on the dry weight"""
+260300,Copper ores and concentrates
+260400,Nickel ores and concentrates
+260500,Cobalt ores and concentrates
+260600,Aluminium ores and concentrates
+260700,Lead ores and concentrates
+260800,Zinc ores and concentrates
+260900,Tin ores and concentrates
+261000,Chromium ores and concentrates
+261210,Uranium ores and concentrates
+261310,Molybdenum ores and concentrates: roasted
+261390,Molybdenum ores and concentrates: other than roasted
+261400,Titanium ores and concentrates
+261510,Zirconium ores and concentrates
+261590,"""Niobium, tantalum, vanadium ores and concentrates"""
+261610,Silver ores and concentrates
+261690,Precious metal ores and concentrates: (excluding silver)
+270111,"""Coal: anthracite, whether or not pulverised, but not agglomerated"""
+270112,"""Coal: bituminous, whether or not pulverised, but not agglomerated"""
+270119,"""Coal: (other than anthracite and bituminous), whether or not pulverised but not agglomerated"""
+270120,"""Briquettes, ovoids and similar solid fuels: manufactured from coal"""
+270210,"""Lignite: whether or not pulverised, but not agglomerated, excluding jet"""
+270220,"""Lignite: agglomerated, excluding jet"""
+270300,"""Peat: (including peat litter), whether or not agglomerated"""
+270400,"""Coke and semi-coke: of coal, lignite or peat, whether or not agglomerated: retort carbon"""
+270500,"""Gases: coal, water, producer and similar gases (excluding petroleum and other gaseous hydrocarbons)"""
+270900,"""Oils: petroleum oils and oils obtained from bituminous minerals, crude"""
+271000,"""Petroleum oils and oils from bituminous minerals, not crude: preparations n.e.c. containing by weight 70% or more of petroleum oils or oils from bituminous minerals: these being the basic constituents of the preparations: waste oils"""
+271111,"""Petroleum gases and other gaseous hydrocarbons: liquefied, natural gas"""
+271112,"""Petroleum gases and other gaseous hydrocarbons: liquefied, propane"""
+271113,"""Petroleum gases and other gaseous hydrocarbons: liquefied, butanes"""
+271114,"""Petroleum gases and other gaseous hydrocarbons: liquefied, ethylene, propylene, butylene and butadiene"""
+271119,"""Petroleum gases and other gaseous hydrocarbons: liquefied, n.e.c. in heading no. 2711"""
+271121,"""Petroleum gases and other gaseous hydrocarbons: in gaseous state, natural gas"""
+271129,"""Petroleum gases and other gaseous hydrocarbons: in gaseous state, other than natural gas"""
+271311,"""Petroleum coke: (not calcined), obtained from bituminous minerals"""
+271312,"""Petroleum coke: calcined, obtained from bituminous minerals"""
+271320,Petroleum bitumen: obtained from bituminous minerals
+271390,Residues: of petroleum oils or of oils obtained from bituminous minerals
+271410,Bituminous or oil shale and tar sands
+271490,"""Bitumen and asphalt, natural: asphaltites and asphaltic rock"""
+271500,"""Bituminous mixtures based on natural asphalt, on natural bitumen, on petroleum bitumen, on mineral tar or on mineral tar pitch (e.g. bituminous mastics, cut-backs)"""
+271600,Electrical energy
+280410,Hydrogen
+280450,Boron: tellurium
+280461,Silicon: containing by weight not less than 99.99% of silicon
+280469,Silicon: containing by weight less than 99.99% of silicon
+280470,Phosphorus
+280490,Selenium
+280530,"""Earth-metals, rare: scandium and yttrium, whether or not intermixed or interalloyed"""
+281410,Ammonia: anhydrous
+281420,Ammonia: in aqueous solution
+281640,"""Oxides, hydroxides and peroxides, of strontium or barium"""
+281700,Zinc: oxide and peroxide
+281810,Aluminium oxide: artificial corundum
+281820,Aluminium oxide: other than artificial corundum
+281830,Aluminium hydroxide
+281910,Chromium trioxide
+281990,Chromium oxides and hydroxides: excluding chromium trioxide
+282010,Manganese dioxide
+282090,Manganese oxides: excluding manganese dioxide
+282110,Iron oxides and hydroxides
+282200,Cobalt oxides and hydroxides: commercial cobalt oxides
+282300,Titanium oxides
+282410,"""Lead: lead monoxide (litharge, massicot)"""
+282490,Lead oxides: n.e.c. in heading no. 2824
+282520,Lithium oxide and hydroxide
+282530,Vanadium oxides and hydroxides
+282540,Nickel oxides and hydroxides
+282550,Copper oxides and hydroxides
+282560,Germanium oxides and zirconium dioxide
+282570,Molybdenum oxides and hydroxides
+282612,Fluorides: of aluminium
+283691,Carbonates: lithium carbonate
+283692,Carbonates: strontium carbonate
+284310,Colloidal precious metals: whether or not chemically defined
+284321,Silver compounds: silver nitrates
+284329,Silver compounds: excluding silver nitrates
+284330,Gold compounds
+284410,"""Uranium: natural uranium and its compounds, alloys, dispersions (including cermets), ceramic products and mixtures containing natural uranium or natural uranium compounds"""
+284420,"""Uranium: enriched in U235, plutonium, their compounds, alloys dispersions (including cermets), ceramic products and mixtures containing uranium enriched in U235, plutonium or compounds of these products"""
+284430,"""Uranium: depleted in U235, thorium, their compounds, alloys, dispersions (including cermets), ceramic products and mixtures containing uranium depleted in U235, thorium: compounds of these products"""
+284441,"""Radioactive elements: tritium and its compounds: alloys, dispersions (including cermets), ceramic products and mixtures containing tritium or its compounds"""
+284442,"""Radioactive elements: actinium-225, 227, californium-253, curium-240, 241, 242, 243, 244, einsteinium-253, 254, gadolinium-148, polonium-208, 209, 210, radium-223, uranium-230 or 232, compounds: alloys, dispersions, ceramic products and mixtures"""
+284443,"""Radioactive elements, isotopes and compounds: other alloys, dispersions (including cermets), ceramic products and mixtures containing these elements, isotopes or compounds"""
+284444,"""Radioactive elements, isotopes, compounds n.e.c. in heading no. 2844, alloys, dispersions (including cermets), ceramic products, mixtures containing the elements, isotopes, compounds: radioactive residues"""
+284450,Spent (irradiated) fuel elements (cartridges) of nuclear reactors
+284510,Heavy water (deuterium oxide)
+284520,Boron enriched in boron-10 and its compounds
+284530,Lithium enriched in lithium-6 and its compounds
+284540,Helium-3
+284590,"""Isotopes other than those of heading no. 2844, 2845.20, 2845.30 or 2845.40: compounds, inorganic or organic, of such isotopes, whether or not chemically defined"""
+440111,"""Wood: for fuel, in logs, in billets, in twigs, in faggots or similar forms, whether or not agglomerated, coniferous"""
+440112,"""Wood: for fuel, in logs, in billets, in twigs, in faggots or similar forms, whether or not agglomerated, non-coniferous"""
+440121,"""Wood: for fuel, in chips or particles, coniferous, whether or not agglomerated"""
+440122,"""Wood: for fuel, in chips or particles, non-coniferous, whether or not agglomerated"""
+440131,"""Wood: for fuel, sawdust and wood waste and scrap, agglomerated in wood pellets"""
+440132,"""Wood: for fuel, sawdust and wood waste and scrap, agglomerated in wood briquettes"""
+440139,"""Wood: for fuel, sawdust and wood waste and scrap, agglomerated in logs or similar forms, other than wood pellets or wood briquettes"""
+440141,"""Wood: for fuel, sawdust and wood waste and scrap, not agglomerated: sawdust"""
+440149,"""Wood: for fuel, sawdust and wood waste and scrap, not agglomerated and not including sawdust"""
+710610,Metals: silver powder
+710691,"""Metals: silver, unwrought, (but not powder)"""
+710692,"""Metals: silver, semi-manufactured"""
+710700,Base metals clad with silver: not further worked than semi-manufactured
+710811,"""Metals: gold, non-monetary, powder"""
+710812,"""Metals: gold, non-monetary, unwrought (but not powder)"""
+710813,"""Metals: gold, semi-manufactured"""
+710820,"""Gold, monetary"""
+710900,"""Base metals or silver: clad with gold, not further worked than semi-manufactured"""
+711011,"""Metals: platinum, unwrought or in powder form"""
+711019,"""Metals: platinum, semi-manufactured"""
+711021,"""Metals: palladium, unwrought or in powder form"""
+711029,"""Metals: palladium, semi-manufactured"""
+711031,"""Metals: rhodium, unwrought or in powder form"""
+711039,"""Metals: rhodium, semi-manufactured"""
+711100,"""Base metals, silver or gold, clad with platinum: not further worked than semi-manufactured"""
+720110,"""Iron: non-alloy pig iron containing by weight 0.5% or less of phosphorus, in pigs, blocks or other primary forms"""
+720120,"""Iron: non-alloy pig iron containing by weight more than 0.5% of phosphorus, in pigs, blocks or other primary forms"""
+720150,"""Iron: alloy pig iron: spiegeleisen, in pigs, blocks or other primary forms"""
+720211,"""Ferro-alloys: ferro-manganese, containing by weight more than 2% of carbon"""
+720219,"""Ferro-alloys: ferro-manganese, containing by weight 2% or less of carbon"""
+720221,"""Ferro-alloys: ferro-silicon, containing by weight more than 55% of silicon"""
+720229,"""Ferro-alloys: ferro-silicon, containing by weight 55% or less of silicon"""
+720230,Ferro-alloys: ferro-silico-manganese
+720241,"""Ferro-alloys: ferro-chromium, containing by weight more than 4% of carbon"""
+720249,"""Ferro-alloys: ferro-chromium, containing by weight 4% or less of carbon"""
+720250,Ferro-alloys: ferro-silico-chromium
+720260,Ferro-alloys: ferro-nickel
+720270,Ferro-alloys: ferro-molybdenum
+720280,Ferro-alloys: ferro-tungsten and ferro-silico-tungsten
+720291,Ferro-alloys: ferro-titanium and ferro-silico-titanium
+720292,Ferro-alloys: ferro-vanadium
+720293,Ferro-alloys: ferro-niobium
+720299,Ferro-alloys: n.e.c. in heading no. 7202
+720310,"""Ferrous products: obtained by direct reduction of iron ore, in lumps, pellets or similar forms"""
+720390,"""Ferrous products: spongy ferrous products and iron having a minimum purity by weight of 99.94%, in lumps, pellets or similar forms"""
+720510,"""Iron or steel, pig iron, spiegeleisen: granules thereof"""
+720521,Alloy steel powders
+720529,"""Iron or steel, pig iron, spiegeleisen: powders (excluding alloy steel)"""
+720610,Iron or non-alloy steel: ingots (excluding iron of heading no. 7203)
+720690,Iron or non-alloy steel: primary forms (excluding ingots and iron of heading no. 7203)
+720711,"""Iron or non-alloy steel: semi-finished products of iron or non-alloy steel: containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness"""
+720712,"""Iron or non-alloy steel: semi-finished products of iron or non-alloy steel: containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section"""
+720719,"""Iron or non-alloy steel: semi-finished products of iron or non-alloy steel, containing by weight less than 0.25% of carbon, other than rectangular or square cross-section"""
+720720,"""Iron or non-alloy steel: semi-finished products of iron or non-alloy steel, containing by weight 0.25% or more of carbon"""
+721810,"""Steel, stainless: ingots and other primary forms"""
+721891,"""Steel, stainless: semi-finished products, of rectangular (other than square) cross-section"""
+721899,"""Steel, stainless: semi-finished products, other than of rectangular cross-section"""
+722410,"""Steel, alloy: ingots and other primary forms"""
+722490,"""Steel, alloy: semi-finished products"""
+722511,"""Steel, alloy: flat-rolled, width 600mm or more, of silicon-electrical steel, grain-oriented"""
+722519,"""Steel, alloy: flat-rolled, width 600mm or more, of silicon-electrical steel, (other than grain-oriented)"""
+722611,"""Steel, alloy: flat-rolled, width less than 600mm, of silicon-electrical steel, grain-oriented"""
+722619,"""Steel, alloy: flat-rolled, width less than 600mm, of silicon-electrical steel, other than grain-oriented"""
+730411,"""Iron or steel (excluding cast iron): seamless, line pipe of a kind used for oil or gas pipelines, of stainless steel"""
+730419,"""Iron or steel (excluding cast iron or stainless steel): seamless, line pipe of a kind used for oil or gas pipelines"""
+730422,"""Steel, stainless: seamless, drill pipe, of a kind used in drilling for oil or gas"""
+730423,"""Iron or steel (excluding cast iron or stainless steel): seamless, drill pipe, of a kind used in drilling for oil or gas"""
+730424,"""Steel, stainless: seamless, casing and tubing, of a kind used in drilling for oil or gas"""
+730429,"""Iron or steel (excluding cast iron or stainless steel): seamless, casing and tubing, of a kind used in drilling for oil or gas"""
+730511,"""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), longitudinally submerged arc welded, having circular cross-sections, external diameter exceeds 406.4mm"""
+730512,"""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), longitudinally welded (not submerged arc welded), having circular cross-sections, external diameter exceeds 406.4mm"""
+730519,"""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (not seamless), (not longitudinally welded), having circular cross-sections, external diameter exceeds 406.4mm"""
+730520,"""Iron or steel (excluding cast iron): casing of a kind used in drilling for oil or gas (not seamless), having circular cross-sections, external diameter exceeds 406.4mm"""
+730531,"""Iron or steel (excluding cast iron): tubes and pipes (other than line pipe or casing of a kind used for oil or gas pipelines), longitudinally welded, having circular cross-sections, external diameter exceeds 406.4mm, (not seamless)"""
+730611,"""Steel: stainless: line pipe of a kind used for oil or gas pipelines n.e.c. in chapter 73, welded, (not seamless)"""
+730619,"""Iron or steel (excluding cast iron): line pipe of a kind used for oil or gas pipelines (other than of stainless steel or seamless), n.e.c. in chapter 73"""
+730621,"""Steel, stainless: casing and tubing of a kind used in drilling for oil and gas, n.e.c. in chapter 73, welded, (not seamless)"""
+730629,"""Iron or steel (excluding cast iron): casing and tubing of a kind used in drilling for oil and gas (other than stainless steel or seamless), n.e.c. in chapter 73"""
+731100,"""Containers for compressed or liquefied gas, of iron or steel"""
+740200,"""Copper: unrefined, copper anodes for electrolytic refining"""
+740311,"""Copper: refined, unwrought, cathodes and sections of cathodes"""
+740312,"""Copper: refined, unwrought, wire-bars"""
+740313,"""Copper: refined, unwrought, billets"""
+740319,"""Copper: refined, unwrought, n.e.c. in item no. 7403.1"""
+740321,Copper: copper-zinc base alloys (brass) unwrought
+740322,Copper: copper-tin base alloys (bronze) unwrought
+740329,Copper: copper alloys n.e.c. in heading no. 7403 (other than master alloys of heading no. 7405)
+740500,Copper: master alloys of copper
+740610,Copper: powders of non-lamellar structure
+740620,"""Copper: powders of lamellar structure, flakes"""
+750110,Nickel: nickel mattes
+750120,Nickel: oxide sinters and other intermediate products of nickel metallurgy
+750210,"""Nickel: unwrought, not alloyed"""
+750220,"""Nickel: unwrought, alloys"""
+750300,Nickel: waste and scrap
+750400,Nickel: powders and flakes
+760110,"""Aluminium: unwrought, (not alloyed)"""
+760120,"""Aluminium: unwrought, alloys"""
+760310,Aluminium: powders of non-lamellar structure
+760320,"""Aluminium: powders of lamellar structure, flakes"""
+761300,Aluminium: containers for compressed or liquefied gas
+761410,"""Aluminium: stranded wire, cables, plaited bands and the like, (not electrically insulated), with steel core"""
+761490,"""Aluminium: stranded wire, cables, plaited bands and the like, (not electrically insulated), other than steel core"""
+780110,"""Lead: unwrought, refined"""
+780191,"""Lead: unwrought, unrefined, containing by weight antimony as the principal other element"""
+780199,"""Lead: unwrought, unrefined, not containing by weight antimony as the principal other element"""
+780420,Lead: powders and flakes
+790111,"""Zinc: unwrought, (not alloyed), containing by weight 99.99% or more of zinc"""
+790112,"""Zinc: unwrought, (not alloyed), containing by weight less than 99.99% of zinc"""
+790120,"""Zinc: unwrought, alloys"""
+790390,Zinc: powders and flakes
+800110,"""Tin: unwrought, not alloyed"""
+800120,"""Tin: unwrought, alloys"""
+810210,"""Molybdenum: articles thereof, including waste and scrap, powders"""
+810294,"""Molybdenum: unwrought, including bars and rods obtained simply by sintering"""
+810411,"""Magnesium: unwrought, containing at least 99.8% by weight of magnesium"""
+810419,"""Magnesium: unwrought, containing less than 99.8% by weight of magnesium"""
+810430,"""Magnesium: raspings, turnings and granules, graded according to size, powders"""
+810490,Magnesium: articles n.e.c. in heading no. 8104
+810520,"""Cobalt: mattes and other intermediate products of cobalt metallurgy, unwrought cobalt, powders"""
+810590,Cobalt: articles n.e.c. in heading no. 8105
+810820,"""Titanium: unwrought, powders"""
+810890,"""Titanium: other than unwrought, n.e.c. in heading no. 8108"""
+810921,"""Zirconium: unwrought, powders, containing less than 1 part hafnium to 500 parts zirconium by weight"""
+810929,"""Zirconium: unwrought, powders, containing not less than 1 part hafnium to 500 parts zirconium by weight"""
+810991,"""Zirconium: other than unwrought, n.e.c. in heading no. 8109, containing less than 1 part hafnium to 500 parts zirconium by weight"""
+810999,"""Zirconium: other than unwrought, n.e.c. in heading no. 8109, containing not less than 1 part hafnium to 500 parts zirconium by weight"""
+811100,"""Manganese: articles thereof, including waste and scrap"""
+811221,"""Chromium and articles thereof: unwrought chromium, powders"""
+811229,Chromium and articles thereof: wrought other than waste and scrap
+811269,Cadmium: other than waste and scrap
+811292,"""Gallium, germanium, indium, niobium (columbium) and vanadium: articles thereof, unwrought, including waste and scrap, powders"""
+811299,"""Gallium, germanium, indium, niobium (columbium) and vanadium: articles thereof, other than unwrought including waste and scrap and powders"""
+840110,Nuclear reactors
+840120,"""Machinery and apparatus: for isotopic separation, and parts thereof"""
+840130,Fuel elements (cartridges): non-irradiated
+840140,Nuclear reactors: parts thereof
+840211,Boilers: watertube boilers with a steam production exceeding 45t per hour
+840212,Boilers: watertube boilers with a steam production not exceeding 45t per hour
+840219,"""Boilers: vapour generating boilers, including hybrid boilers n.e.c. in heading no. 8402"""
+840220,Boilers: super-heated water boilers
+840290,Boilers: parts of steam or other vapour generating boilers
+840310,Boilers: central heating boilers (excluding those of heading no. 8402)
+840390,Boilers: parts of central heating boilers (excluding those of heading no. 8402)
+840410,"""Boilers: auxiliary plant, for use with boilers of heading no. 8402 or 8403 (e.g. economisers, super-heaters, soot removers, gas recoverers)"""
+840420,"""Boilers: condensers, for steam or other vapour power units"""
+840490,"""Boilers: parts of auxiliary plant, for use with boilers of heading no. 8402 and 8403 and parts of condensers for steam or other vapour power units"""
+840510,"""Generators: producer gas, water gas, acetylene gas and similar water process gas generators, with or without their purifiers"""
+840590,"""Generators: parts of producer gas, water gas, acetylene gas and similar water process gas generators, with or without their purifiers"""
+840681,"""Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output exceeding 40MW"""
+840682,"""Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output not exceeding 40MW"""
+840690,Turbines: parts of steam and other vapour turbines
+841011,"""Turbines: hydraulic turbines and water wheels, of a power not exceeding 1000kW"""
+841012,"""Turbines: hydraulic turbines and water wheels, of a power exceeding 1000kW but not exceeding 10000kW"""
+841013,"""Turbines: hydraulic turbines and water wheels, of a power exceeding 10000kW"""
+841090,"""Turbines: parts of hydraulic turbines and water wheels, including regulators"""
+841181,"""Turbines: gas-turbines (excluding turbo-jets and turbo-propellers), of a power not exceeding 5000kW"""
+841182,"""Turbines: gas-turbines (excluding turbo-jets and turbo-propellers), of a power exceeding 5000kW"""
+841199,Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers)
+841510,"""Air conditioning machines: comprising a motor-driven fan and elements for changing the temperature and humidity, of a kind designed to be fixed to a window, wall, ceiling or floor, self-contained or """"split-system"""""""
+841581,"""Air conditioning machines: containing a motor driven fan, other than window or wall types, incorporating a refrigerating unit and a valve for reversal of the cooling/heat cycle (reversible heat pumps)"""
+841582,"""Air conditioning machines: containing a motor driven fan, other than window or wall types, incorporating a refrigerating unit"""
+841583,"""Air conditioning machines: containing a motor driven fan, other than window or wall types, not incorporating a refrigerating unit"""
+841590,"""Air conditioning machines: with motor driven fan and elements for temperature control, parts thereof"""
+841861,Heat pumps: other than air conditioning machines of heading no. 8415
+841911,"""Heaters: instantaneous gas water heaters, for domestic or other purposes"""
+841912,"""Heaters: solar water heaters, non-electric"""
+841919,"""Heaters: instantaneous or storage water heaters, non-electric, (other than instantaneous gas or solar water heaters)"""
+841950,Heat exchange units: not used for domestic purposes
+850131,"""Electric motors and generators: DC, of an output not exceeding 750W"""
+850132,"""Electric motors and generators: DC, of an output exceeding 750W but not exceeding 75kW"""
+850133,"""Electric motors and generators: DC, of an output exceeding 75kW but not exceeding 375kW"""
+850134,"""Electric motors and generators: DC, of an output exceeding 375kW"""
+850161,"""Generators: AC generators, (alternators), other than photovoltaic generators, of an output not exceeding 75kVA"""
+850162,"""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 75kVA but not exceeding 375kVA"""
+850163,"""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 375kVA but not exceeding 750kVA"""
+850164,"""Electric generators: AC generators, (alternators), other than photovoltaic generators, of an output exceeding 750kVA"""
+850171,"""Electric generators: photovoltaic DC generators, of an output not exceeding 50W"""
+850172,"""Electric generators: photovoltaic DC generators, of an output exceeding 50W"""
+850180,"""Electric generators: (excluding generating sets), photovoltaic AC generators (alternators)"""
+850211,"""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output not exceeding 75kVA"""
+850212,"""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output exceeding 75kVA but not exceeding 375kVA"""
+850213,"""Electric generating sets: with compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of an output exceeding 375kVA"""
+850220,Electric generating sets: with spark-ignition internal combustion piston engines
+850231,"""Electric generating sets: wind-powered, (excluding those with spark-ignition or compression-ignition internal combustion piston engines)"""
+850239,"""Electric generating sets: (excluding those with spark-ignition or compression-ignition internal combustion piston engines), other than wind powered"""
+850240,Electric rotary converters
+850300,Electric motors and generators: parts suitable for use solely or principally with the machines of heading no. 8501 or 8502
+850421,"""Electrical transformers: liquid dielectric, having a power handling capacity not exceeding 650kVA"""
+850422,"""Electrical transformers: liquid dielectric, having a power handling capacity exceeding 650kVA but not exceeding 10,000kVA"""
+850423,"""Electrical transformers: liquid dielectric, having a power handling capacity exceeding 10,000kVA"""
+850431,"""Electrical transformers: n.e.c. in item no. 8504.2, having a power handling capacity not exceeding 1kVA"""
+850432,"""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 1kVA but not exceeding 16kVA"""
+850433,"""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 16kVA but not exceeding 500kVA"""
+850434,"""Transformers: n.e.c. in item no. 8504.2, having a power handling capacity exceeding 500kVA"""
+850440,Electrical static converters
+850450,Electrical inductors: n.e.c. in heading no. 8504
+850490,"""Electrical transformers, static converters and inductors: parts thereof"""
+850511,"""Magnets: permanent magnets and articles intended to become permanent magnets after magnetisation, of metal"""
+850519,"""Magnets: permanent magnets and articles intended to become permanent magnets after magnetisation, other than of metal"""
+850520,"""Magnets: electro-magnetic couplings, clutches and brakes"""
+850590,"""Magnets: electro-magnets, holding devices and parts n.e.c. in heading no. 8505"""
+850610,"""Cells and batteries: primary, manganese dioxide"""
+850630,"""Cells and batteries: primary, mercuric oxide"""
+850640,"""Cells and batteries: primary, silver oxide"""
+850650,"""Cells and batteries: primary, lithium"""
+850660,"""Cells and batteries: primary, air-zinc"""
+850680,"""Cells and batteries: primary, (other than manganese dioxide, mercuric oxide, silver oxide, lithium or air-zinc)"""
+850690,"""Cells and batteries: primary, parts thereof"""
+850720,"""Electric accumulators: lead-acid, (other than for starting piston engines), including separators, whether or not rectangular (including square)"""
+850730,"""Electric accumulators: nickel-cadmium, including separators, whether or not rectangular (including square)"""
+850750,"""Electric accumulators: nickel-metal hydride, including separators, whether or not rectangular (including square)"""
+850760,"""Electric accumulators: lithium-ion, including separators, whether or not rectangular (including square)"""
+850780,"""Electric accumulators: other than lead-acid, nickel-cadmium, nickel-metal hydride and lithium-ion, including separators, whether or not rectangular (including square)"""
+850790,Electric accumulators: parts n.e.c. in heading no. 8507
+851610,"""Heaters: electric, instantaneous or storage water and immersion heaters"""
+851621,Heating apparatus: electric storage heating radiators
+851629,Heating apparatus: electric soil heating apparatus and space heating apparatus (excluding storage heating radiators)
+853210,"""Electrical capacitors: fixed, designed for use in 50/60 Hz circuits and having a reactive power handling capacity of not less than 0.5 kvar (power capacitors)"""
+853221,"""Electrical capacitors: fixed, tantalum"""
+853222,"""Electrical capacitors: fixed, aluminium electrolytic"""
+853223,"""Electrical capacitors: fixed, ceramic dielectric, single layer"""
+853224,"""Electrical capacitors: fixed, ceramic dielectric, multilayer"""
+853225,"""Electrical capacitors: fixed, dielectric of paper or plastics"""
+853229,"""Electrical capacitors: fixed, n.e.c. in heading no. 8532"""
+853230,Electrical capacitors: variable or adjustable (pre-set) capacitors
+853290,Electrical capacitors: parts of the capacitors of heading no. 8532
+853310,"""Electrical resistors: fixed carbon resistors, composition or film types (including rheostats and potentiometers but excluding heating resistors)"""
+853321,"""Electrical resistors: fixed, for a power handling capacity not exceeding 20W (including rheostats and potentiometers but excluding heating resistors and carbon resistors)"""
+853329,"""Electrical resistors: fixed, for a power handling capacity exceeding 20W (including rheostats and potentiometers but excluding heating resistors and carbon resistors)"""
+853331,"""Electrical resistors: wirewound variable, including rheostats and potentiometers, for a power handling capacity not exceeding 20W (excluding heating)"""
+853339,"""Electrical resistors: wirewound variable, including rheostats and potentiometers, for a power handling capacity exceeding 20W (excluding heating)"""
+853340,"""Electrical resistors: variable, including rheostats and potentiometers (excluding heating)"""
+853390,Resistors: parts of the resistors of heading no. 8533
+853510,"""Electrical apparatus: fuses, for a voltage exceeding 1000 volts"""
+853521,"""Electrical apparatus: automatic circuit breakers, for a voltage exceeding 1000 volts but less than 72.5kV"""
+853529,"""Electrical apparatus: automatic circuit breakers, for a voltage of 72.5kV or more"""
+853530,"""Electrical apparatus: isolating and make-and-break switches, for a voltage exceeding 1000 volts"""
+853540,"""Electrical apparatus: lightning arresters, voltage limiters and surge suppressors (for a voltage exceeding 1000 volts)"""
+853590,"""Electrical apparatus: n.e.c. in heading no. 8535, for switching or protecting electrical circuits, for a voltage exceeding 1000 volts"""
+853610,"""Electrical apparatus: fuses, for a voltage not exceeding 1000 volts"""
+853620,"""Electrical apparatus: automatic circuit breakers, for a voltage not exceeding 1000 volts"""
+853630,"""Electrical apparatus: for protecting electrical circuits, n.e.c. in heading no. 8536, for a voltage not exceeding 1000 volts"""
+853641,"""Electrical apparatus: relays, (for a voltage not exceeding 60 volts)"""
+853649,"""Electrical apparatus: relays, for a voltage exceeding 60 volts"""
+853650,"""Electrical apparatus: switches n.e.c. in heading no. 8536, for a voltage not exceeding 1000 volts"""
+853690,"""Electrical apparatus: n.e.c. in heading no. 8536, for switching or protecting electrical circuits, for a voltage not exceeding 1000 volts"""
+853710,"""Boards, panels, consoles, desks and other bases: for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts"""
+853720,"""Boards, panels, consoles, desks and other bases: for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage exceeding 1000 volts"""
+853810,"""Electrical apparatus: parts (e.g. boards, panels, consoles, desks, cabinets, other bases), for goods of heading no. 8537, not equipped with their apparatus"""
+853890,"""Electrical apparatus: parts suitable for use solely or principally with the apparatus of heading no. 8535, 8536 or 8537"""
+854129,"""Electrical apparatus: transistors, (other than photosensitive), with a dissipation rate of 1W or more"""
+854130,"""Electrical apparatus: thyristors, diacs and triacs, other than photosensitive devices"""
+854143,"""Electrical apparatus: photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels"""
+854149,"""Electrical apparatus: photosensitive semiconductor devices, diodes other than light emitting diodes and photovoltaic cells whether or not assembled in modules or made up into panels"""
+854151,"""Electrical apparatus: photosensitive semiconductor devices, semiconductor-based transducers"""
+854159,Electrical apparatus: photosensitive semiconductor devices n.e.c. in heading no. 8541
+854190,"""Electrical apparatus: parts for diodes, transistors and similar semiconductor devices and photosensitive semiconductor devices"""
+854411,"""Insulated electric conductors: winding wire, of copper"""
+854419,"""Insulated electric conductors: winding wire, (of other than copper)"""
+854420,Insulated electric conductors: co-axial cable and other co-axial electric conductors
+854442,"""Insulated electric conductors: for a voltage not exceeding 1000 volts, fitted with connectors"""
+854449,"""Insulated electric conductors: for a voltage not exceeding 1000 volts, not fitted with connectors"""
+854460,Insulated electric conductors: for a voltage exceeding 1000 volts
+854610,Electrical insulators: of glass
+854620,Electrical insulators: of ceramics
+854690,Electrical insulators: other than of glass and ceramics
+854710,"""Insulating fittings: of ceramics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
+854720,"""Insulating fittings: of plastics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546"""
+854790,"""Insulating fittings: (other than of ceramics or plastics), for electrical machines, appliances and equipment, excluding insulators of heading no. 8546"""
+854800,Electrical parts of machinery or apparatus: not specified or elsewhere included in this chapter
+854911,Waste and scrap of lead-acid accumulators: spent lead-acid accumulators
+854912,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, containing lead, cadmium or mercury, other than lead-acid accumulators"""
+854913,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, sorted by chemical type and not containing lead, cadmium or mercury"""
+854914,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, spent or not, unsorted and not containing lead, cadmium or mercury"""
+854919,"""Waste and scrap: of primary cells, primary batteries and electric accumulators, n.e.c. in item no 8549.1"""
+854921,"""Electrical and electronic waste and scrap: of a kind used principally for the recovery of precious metal, containing primary cells and batteries, electric accumulators, mercury-switches, glass from cathode ray tubes or other activated glass, or electrical"""
+854929,Waste and scrap: of a kind used principally for the recovery of precious metal n.e.c. in item no 8549.21
+854931,"""Electrical and electronic waste and scrap: electrical and electronic assemblies and printed circuit boards, other than those used principally for the recovery of precious metal, containing primary cells and batteries, electric accumulators, mercury-switch"""
+854939,"""Waste and scrap: electrical and electronic assemblies and printed circuit boards, other than those used principally for the recovery of precious metal n.e.c. in item no 8549.31"""
+854991,Waste and scrap: n.e.c. in heading no 8549
+854999,Waste and scrap: n.e.c. in item no 8549.91
+870123,"""Tractors: road tractors for semi-trailers, with both spark-ignition internal combustion piston engine and electric motors for propulsion"""
+870124,"""Tractors: road tractors for semi-trailers, with only electric motors for propulsion"""
+870230,"""Vehicles: public transport type (carries 10 or more persons, including driver), with both compression-ignition internal combustion piston engine (diesel or semi-diesel) and electric motor for propulsion, new or used"""
+870240,"""Vehicles: public transport type (carries 10 or more persons, including driver), with only electric motor for propulsion, new or used"""
+870360,"""Vehicles: with both spark-ignition internal combustion piston engine and electric motor for propulsion, capable of being charged by plugging to external source of electric power"""
+870370,"""Vehicles: with both compression-ignition internal combustion piston engine (diesel or semi-diesel) and electric motor for propulsion, capable of being charged by plugging to external source of electric power"""
+870380,Vehicles: with only electric motor for propulsion
+870441,"""Vehicles: with both compression-ignition internal combustion piston engine (diesel/semi-diesel) and electric motor as motor for propulsion, unassembled as in section 14, (gvw not exceeding 5000kg), for the transport of goods, vans"""
+870442,"""Vehicles: with both compression-ignition internal combustion piston engine (diesel/semi-diesel) and electric motors for propulsion, of a g.v.w. exceeding 5,000kg but not exceeding 20,000kg"""
+870443,"""Vehicles: with both compression-ignition internal combustion piston engine (diesel/semi-diesel) and electric motors for propulsion, of a g.v.w. exceeding 20,000kg"""
+870451,"""Vehicles: with both spark-ignition internal combustion piston engine and electric motors for propulsion, of a g.v.w. not exceeding 5,000kg"""
+870452,"""Vehicles: with both spark-ignition internal combustion piston engine and electric motors for propulsion, of a g.v.w. exceeding 5,000kg"""
+870460,Vehicles: with only electric motor for propulsion
+871160,"""Motorcycles (including mopeds) and cycles: fitted with auxiliary motor, with electric motor for propulsion, with or without side-cars: side-cars"""
+902830,"""Meters: electricity supply or production meters, including calibrating meters thereof"""
+251910,Magnesium carbonate (magnesite): natural
+251990,"""Magnesia, fused or dead-burned (sintered): whether or not containing small quantities of other oxides added before sintering, other magnesium oxide, whether or not pure, (not natural magnesium carbonate)"""
+261100,Tungsten ores and concentrates
+280511,Alkali or alkali-earth metals: sodium
+280512,Alkali or alkali-earth metals: calcium
+280519,Alkali or alkali-earth metals: other than sodium and calcium
+281610,Hydroxide and peroxide of magnesium
+290341,Saturated fluorinated derivatives of acyclic hydrocarbons: trifluoromethane (HFC-23)
+290342,Saturated fluorinated derivatives of acyclic hydrocarbons: difluoromethane (HFC-32)
+290343,"""Saturated fluorinated derivatives of acyclic hydrocarbons: fluoromethane (HFC-41), 1,2-difluoroethane (HFC-152) and 1,1-difluoroethane (HFC-152a)"""
+290344,"""Saturated fluorinated derivatives of acyclic hydrocarbons: pentafluoroethane (HFC-125), 1,1,1-trifluoroethane (HFC-143a) and 1,1,2-trifluoroethane (HFC-143)"""
+290345,"""Saturated fluorinated derivatives of acyclic hydrocarbons: 1,1,1,2-tetrafluoroethane (HFC-134a) and 1,1,2,2-tetrafluoroethane (HFC-134)"""
+290346,"""Saturated fluorinated derivatives of acyclic hydrocarbons: 1,1,1,2,3,3,3-heptafluoropropane (HFC-227ea), 1,1,1,2,2,3-hexafluoropropane (HFC-236cb), 1,1,1,2,3,3-hexafluoropropane (HFC-236ea) and 1,1,1,3,3,3-hexafluoropropane (HFC-236fa)"""
+290347,"""Saturated fluorinated derivatives of acyclic hydrocarbons: 1,1,1,3,3-pentafluoropropane (HFC-245fa) and 1,1,2,2,3-pentafluoropropane (HFC-245ca)"""
+290348,"""Saturated fluorinated derivatives of acyclic hydrocarbons: 1,1,1,3,3-pentafluorobutane (HFC-365mfc) and 1,1,1,2,2,3,4,5,5,5-decafluoropentane (HFC-43-10mee)"""
+290349,Saturated fluorinated derivatives of acyclic hydrocarbons: n.e.c. in item no 2903.4
+290351,"""Unsaturated fluorinated derivatives of acyclic hydrocarbons: 2,3,3,3-tetrafluoropropene (HFO-1234yf), 1,3,3,3-tetrafluoropropene (HFO-1234ze) and (Z)-1,1,1,4,4,4-hexafluoro-2-butene (HFO-1336mzz)"""
+290359,Unsaturated fluorinated derivatives of acyclic hydrocarbons: n.e.c. in item no. 2903.5
+440210,"""Wood: charcoal of bamboo, whether or not agglomerated"""
+440220,"""Wood: charcoal of nut or shell, whether or not agglomerated"""
+440290,"""Wood: charcoal of wood other than bamboo, nut or shell, whether or not agglomerated"""
+711041,"""Metals: iridium, osmium, ruthenium, unwrought or in powder form"""
+711049,"""Metals: iridium, osmium, ruthenium, semi-manufactured"""
+720810,"""Iron or non-alloy steel: in coils, flat-rolled, of a width 600mm or more, hot-rolled, with patterns in relief"""
+720825,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, pickled, of a thickness of 4.75mm or more"""
+720826,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, pickled, of a thickness of 3mm or more but less than 4.75mm"""
+720827,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, pickled, of a thickness of less than 3mm"""
+720836,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness exceeding 10mm"""
+720837,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 4.75mm or more but not exceeding 10mm"""
+720838,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 3mm or more but less than 4.75mm"""
+720839,"""Iron or non-alloy steel: in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of less than 3mm"""
+720840,"""Iron or non-alloy steel: (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, with patterns in relief"""
+720851,"""Iron or non-alloy steel: (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness exceeding 10mm"""
+720852,"""Iron or non-alloy steel: (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness of 4.75mm or more but not exceeding 10mm"""
+720853,"""Iron or non-alloy steel: (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness of 3mm or more but less than 4.75mm"""
+720854,"""Iron or non-alloy steel: (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness of less than 3mm"""
+720890,"""Iron or non-alloy steel: flat-rolled, hot-rolled, of a width 600mm or more, n.e.c. in heading no. 7208"""
+720915,"""Iron or non-alloy steel: in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness of 3mm or more"""
+720916,"""Iron or non-alloy steel: in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness exceeding 1mm but less than 3mm"""
+720917,"""Iron or non-alloy steel: in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness of 0.5mm or more but not exceeding 1mm"""
+720918,"""Iron or non-alloy steel: in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness of less than 0.5mm"""
+720925,"""Iron or non-alloy steel: (not in coils), flat-rolled, width 600mm or more, cold-rolled, of a thickness of 3mm or more"""
+720926,"""Iron or non-alloy steel: (not in coils), flat-rolled, width 600mm or more, cold-rolled, of a thickness exceeding 1mm but less than 3mm"""
+720927,"""Iron or non-alloy steel: (not in coils), flat-rolled, width 600mm or more, cold-rolled, of a thickness of 0.5mm or more but not exceeding 1mm"""
+720928,"""Iron or non-alloy steel: (not in coils), flat-rolled, width 600mm or more, cold-rolled, of a thickness of less than 0.5mm"""
+720990,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, cold-rolled, n.e.c. in heading no. 7209"""
+721011,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with tin, thickness of 0.5mm or more"""
+721012,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with tin, thickness of less than 0.5mm"""
+721020,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with lead, including terne-plate"""
+721030,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, electrolytically plated or coated with zinc"""
+721041,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, corrugated, plated or coated with zinc (not electrolytically)"""
+721049,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, (not corrugated), plated or coated with zinc (not electrolytically)"""
+721050,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with chromium oxides or with chromium and chromium oxides"""
+721061,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with aluminium zinc-alloys"""
+721069,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with aluminium, other than plated or coated with aluminium zinc-alloys"""
+721070,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, painted, varnished or coated with plastics"""
+721090,"""Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with materials n.e.c. in heading no. 7210"""
+721113,"""Iron or non-alloy steel: flat-rolled, hot-rolled, rolled on four faces or in a closed box pass, of a width more than 150mm but less than 600mm, 4mm thick or more, not in coils, without patterns in relief"""
+721114,"""Iron or non-alloy steel: flat-rolled, hot-rolled, of a width less than 600mm, 4.75mm thick or more, excluding those of item no. 7211.13"""
+721119,"""Iron or non-alloy steel: flat-rolled, hot-rolled, of a width less than 600mm, less than 4.75mm thick, excluding those of item no. 7211.13"""
+721123,"""Iron or non-alloy steel: flat-rolled, cold-rolled, of a width less than 600mm, containing by weight less than 0.25% of carbon"""
+721129,"""Iron or non-alloy steel: flat-rolled, cold-rolled, of a width less than 600mm, containing by weight 0.25% or more of carbon"""
+721190,"""Iron or non-alloy steel: flat-rolled, n.e.c. in heading no. 7211, width less than 600mm"""
+721210,"""Iron or non-alloy steel: flat-rolled, width less than 600mm, plated or coated with tin"""
+721220,"""Iron or non-alloy steel: flat-rolled, of a width less than 600mm, electrolytically plated or coated with zinc"""
+721230,"""Iron or non-alloy steel: flat-rolled, width less than 600mm, plated or coated with zinc (not electrolytically)"""
+721240,"""Iron or non-alloy steel: flat-rolled, width less than 600mm, painted, varnished or coated with plastics"""
+721250,"""Iron or non-alloy steel: flat-rolled, width less than 600mm, plated or coated, (excluding tin, zinc or plastic)"""
+721260,"""Iron or non-alloy steel: flat-rolled, width less than 600mm, clad"""
+721310,"""Iron or non-alloy steel: bars and rods, hot-rolled, in irregularly wound coils, containing indentations, ribs, grooves or other deformations produced during the rolling process"""
+721320,"""Iron or non-alloy steel: bars and rods, hot-rolled, in irregularly wound coils, of free-cutting steel"""
+721391,"""Iron or non-alloy steel: bars and rods, hot-rolled, in irregularly wound coils, n.e.c. in heading no. 7213, of circular cross-section measuring less than 14mm in diameter"""
+721399,"""Iron or non-alloy steel: bars and rods, hot-rolled, in irregularly wound coils, n.e.c. in heading no. 7213, of circular cross-section measuring 14mm or more in diameter"""
+721410,"""Iron or non-alloy steel: bars and rods, forged, hot-rolled, hot-drawn or hot-extruded, but including those twisted after rolling"""
+721420,"""Iron or non-alloy steel: bars and rods, hot-rolled, hot-drawn or hot-extruded, containing indentations, ribs, grooves or other deformations produced during the rolling process or twisted after rolling"""
+721430,"""Iron or non-alloy steel: bars and rods, hot-rolled, hot-drawn or hot-extruded, including those twisted after rolling, of free-cutting steel"""
+721491,"""Iron or non-alloy steel: bars and rods, hot-rolled, hot-drawn or hot-extruded, n.e.c. in heading no. 7214, of rectangular (other than square) cross-section"""
+721499,"""Iron or non-alloy steel: bars and rods, hot-rolled, hot-drawn or hot-extruded, n.e.c. in heading no. 7214, other than of rectangular cross-section"""
+721510,"""Iron or non-alloy steel: bars and rods, of free-cutting steel, cold-formed or cold-finished, n.e.c. in chapter 72"""
+721550,"""Iron or non-alloy steel: bars and rods, n.e.c. in chapter 72, cold-formed or cold-finished, (not free-cutting)"""
+721590,"""Iron or non-alloy steel: bars and rods, n.e.c. in chapter 72, n.e.c. in heading no. 7215"""
+721610,"""Iron or non-alloy steel: U, I or H sections, hot-rolled, hot-drawn or extruded, of a height of less than 80mm"""
+721621,"""Iron or non-alloy steel: L sections, hot-rolled, hot-drawn or extruded, of a height of less than 80mm"""
+721622,"""Iron or non-alloy steel: T sections, hot-rolled, hot-drawn or extruded, of a height less than 80mm"""
+721631,"""Iron or non-alloy steel: U sections, hot-rolled, hot-drawn or extruded, of a height of 80mm or more"""
+721632,"""Iron or non-alloy steel: I sections, hot-rolled, hot-drawn or extruded, of a height of 80mm or more"""
+721633,"""Iron or non-alloy steel: H sections, hot-rolled, hot-drawn or extruded, of a height of 80mm or more"""
+721640,"""Iron or non-alloy steel: L or T sections, hot-rolled, hot-drawn or extruded, of a height of 80mm or more"""
+721650,"""Iron or non-alloy steel: angles, shapes and sections, n.e.c. in heading no. 7216, hot-rolled, hot-drawn or extruded"""
+721661,"""Iron or non-alloy steel: angles, shapes and sections, cold-formed or cold-finished, obtained from flat-rolled products"""
+721669,"""Iron or non-alloy steel: angles, shapes and sections, cold-formed or cold-finished, (not obtained from flat-rolled products)"""
+721691,"""Iron or non-alloy steel: angles, shapes and sections, n.e.c. in heading no. 7216, cold-formed or cold-finished, from flat-rolled products"""
+721699,"""Iron or non-alloy steel: angles, shapes and sections, n.e.c. in heading no. 7216"""
+721710,"""Iron or non-alloy steel: wire, (not plated or coated), whether or not polished"""
+721720,"""Iron or non-alloy steel: wire, plated or coated with zinc"""
+721730,"""Iron or non-alloy steel: wire, plated or coated with base metals (other than zinc)"""
+721790,"""Iron or non-alloy steel: wire, n.e.c. in heading no. 7217"""
+721911,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness exceeding 10mm"""
+721912,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness of 4.75mm or more but not exceeding 10mm"""
+721913,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness of 3mm or more but less than 4.75mm"""
+721914,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness of less than 3mm"""
+721921,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, (not in coils), of a thickness exceeding 10mm"""
+721922,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, (not in coils), of a thickness of 4.75mm or more but not exceeding 10mm"""
+721923,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, (not in coils), of a thickness of 3mm or more but less than 4.75mm"""
+721924,"""Steel, stainless: flat-rolled, width 600mm or more, hot-rolled, (not in coils), of a thickness of less than 3mm"""
+721931,"""Steel, stainless: flat-rolled, width 600mm or more, cold-rolled or cold-reduced, of a thickness of 4.75mm or more"""
+721932,"""Steel, stainless: flat-rolled, width 600mm or more, cold-rolled, of a thickness of 3mm or more but less than 4.75mm"""
+721933,"""Steel, stainless: flat-rolled, width 600mm or more, cold-rolled, of a thickness exceeding 1mm but less than 3mm"""
+721934,"""Steel, stainless: flat-rolled, width 600mm or more, cold-rolled, of a thickness of 0.5mm or more but not exceeding 1mm"""
+721935,"""Steel, stainless: flat-rolled, width 600mm or more, cold-rolled, of a thickness of less than 0.5mm"""
+721990,"""Steel, stainless: flat-rolled, width 600mm or more, n.e.c. in heading no. 7219"""
+722011,"""Steel, stainless: flat-rolled, width less than 600mm, hot-rolled, of a thickness of 4.75mm or more"""
+722012,"""Steel, stainless: flat-rolled, width less than 600mm, hot-rolled, of a thickness of less than 4.75mm"""
+722020,"""Steel, stainless: flat-rolled, width less than 600mm, cold-rolled"""
+722090,"""Steel, stainless: flat-rolled, width less than 600mm, n.e.c. in heading no 7220"""
+722100,"""Steel, stainless: bars and rods, hot-rolled, in irregularly wound coils"""
+722211,"""Steel, stainless: bars and rods, hot-rolled, hot-drawn or extruded, of circular cross-section"""
+722219,"""Steel, stainless: bars and rods, hot-rolled, hot-drawn or extruded, other than of circular cross-section"""
+722220,"""Steel, stainless: bars and rods, cold-formed or cold-finished"""
+722230,"""Steel, stainless: bars and rods, n.e.c. in heading no. 7222"""
+722240,"""Steel, stainless: angles, shapes and sections"""
+722300,"""Steel, stainless: wire"""
+722530,"""Steel, alloy: flat-rolled, width 600mm or more, hot-rolled, in coils"""
+722540,"""Steel, alloy: flat-rolled, width 600mm or more, hot-rolled, not in coils"""
+722550,"""Steel, alloy: flat-rolled, width 600mm or more, cold-rolled"""
+722591,"""Steel, alloy: flat-rolled, width 600mm or more, n.e.c. in heading no. 7225, electrolytically plated or coated with zinc"""
+722592,"""Steel, alloy: flat-rolled, width 600mm or more, n.e.c. in heading no. 7225, plated or coated with zinc (other than electrolytically)"""
+722599,"""Steel, alloy: flat-rolled, width 600mm or more, n.e.c. in heading no. 7225, (other than plated or coated with zinc)"""
+722620,"""Steel, alloy: flat-rolled, width less than 600mm, of high speed steel"""
+722691,"""Steel, alloy: flat-rolled, width less than 600mm, (excluding silicon-electrical or high speed steel), hot-rolled"""
+722692,"""Steel, alloy: flat-rolled, width less than 600mm, (excluding silicon-electrical or high speed steel), cold-rolled"""
+722699,"""Steel, alloy: flat-rolled, width less than 600mm, n.e.c. in item no. 7226.9"""
+722710,"""Steel, alloy: bars and rods, hot-rolled, in irregularly wound coils, of high speed steel"""
+722720,"""Steel, alloy: bars and rods, hot-rolled, in irregularly wound coils, of silico-manganese steel"""
+722790,"""Steel, alloy: bars and rods, hot-rolled, in irregularly wound coils, n.e.c. in heading no. 7227"""
+722810,"""Steel, alloy: bars and rods, of high speed steel"""
+722820,"""Steel, alloy: bars and rods, of silico-manganese steel"""
+722830,"""Steel, alloy: bars and rods, hot-rolled, hot-drawn or extruded"""
+722840,"""Steel, alloy: bars and rods, forged"""
+722850,"""Steel, alloy: bars and rods, cold-formed or cold-finished"""
+722860,"""Steel, alloy: bars and rods n.e.c. in heading no. 7228"""
+722870,"""Steel, alloy: angles, shapes and sections"""
+722880,"""Steel, alloy or non-alloy: hollow drill bars and rods"""
+722920,"""Steel, alloy: wire, of silico-manganese steel"""
+722990,"""Steel, alloy: wire, of materials other than silico-manganese steel"""
+730820,"""Iron or steel: structures and parts thereof, towers and lattice masts"""
+730900,"""Reservoirs, tanks, vats and similar containers: for any material (excluding compressed or liquefied gas), of iron or steel, capacity exceeding 300l, whether or not lined or heat insulated"""
+731010,"""Tanks, casks, drums, cans, boxes and similar containers, for any material (excluding compressed or liquefied gas), 50l or more capacity but not exceeding 300l"""
+731021,"""Cans: which are to be closed by soldering or crimping, for any material (excluding compressed or liquefied gas), less than 50l capacity, of iron or steel"""
+731029,"""Tanks, casks, drums, boxes and similar containers for any material (excluding compressed or liquefied gas) less than 50l capacity, n.e.c. in item no. 7310.2, of iron or steel"""
+732211,"""Radiators and parts thereof: for central heating, (not electrically heated), of cast iron"""
+732219,"""Radiators and parts thereof: for central heating, (not electrically heated), of iron or steel other than cast iron"""
+732290,"""Air heaters and hot air distributors, (not electrically heated), incorporating a motor-driven fan or blower and parts thereof, of iron or steel"""
+740710,"""Copper: bars, rods and profiles, of refined copper"""
+740721,"""Copper: bars, rods and profiles, of copper-zinc base alloys (brass)"""
+740729,"""Copper: bars, rods and profiles, of copper alloys (other than copper-zinc base alloys)"""
+740811,"""Copper: wire, of refined copper, of which the maximum cross-sectional dimension exceeds 6mm"""
+740819,"""Copper: wire, of refined copper, of which the maximum cross-sectional dimension is 6mm or less"""
+740821,"""Copper: wire, of copper-zinc base alloys (brass)"""
+740822,"""Copper: wire, of copper-nickel base alloys (cupro-nickel) or copper-nickel-zinc base alloys (nickel silver)"""
+740829,"""Copper: wire, of copper alloys (other than copper-zinc base alloys, copper-nickel base alloys or copper-nickel-zinc base alloys)"""
+750511,"""Nickel: bars, rods and profiles, not alloyed"""
+750512,"""Nickel: bars, rods and profiles, of nickel alloys"""
+750521,"""Nickel: wire, not alloyed"""
+750522,"""Nickel: wire, of nickel alloys"""
+760410,"""Aluminium: (not alloyed), bars, rods and profiles"""
+760421,"""Aluminium: alloys, hollow profiles"""
+760429,"""Aluminium: alloys, bars, rods and profiles, other than hollow"""
+760511,"""Aluminium: (not alloyed), wire, maximum cross-sectional dimension exceeds 7mm"""
+760519,"""Aluminium: (not alloyed), wire, maximum cross-sectional dimension is 7mm or less"""
+760521,"""Aluminium: alloys, wire, maximum cross-sectional dimension exceeding 7mm"""
+760529,"""Aluminium: alloys, wire, maximum cross-sectional dimension is 7mm or less"""
+761100,"""Aluminium: reservoirs, tanks, vats and similar containers, for material (not compressed or liquefied gas), of a capacity over 300l, whether or not lined, not fitted with mechanical/thermal equipment"""
+761210,"""Aluminium: collapsible tubular containers, for any material, (not compressed or liquefied gas), 300l capacity or less, whether or not lined, not fitted with mechanical/thermal equipment"""
+761290,"""Aluminium: casks, drums, cans, boxes and the like for any material (not compressed or liquefied gas), 300l capacity or less, whether or not lined or heat-insulated, no mechanical or thermal equipment"""
+790400,"""Zinc: bars, rods, profiles and wire"""
+790500,"""Zinc: plates, sheets, strip and foil"""
+810110,"""Tungsten (wolfram): articles thereof, including waste and scrap, powders"""
+810194,"""Tungsten (wolfram): unwrought, including bars and rods obtained simply by sintering"""
+810196,Tungsten (wolfram): wire
+810197,Tungsten (wolfram): waste and scrap
+810199,Tungsten (wolfram): articles n.e.c. in heading no. 8101
+810295,"""Molybdenum: bars and rods, other than those obtained simply by sintering, profiles, plates, sheets, strip and foil"""
+810296,Molybdenum: wire
+811212,"""Beryllium and articles thereof: unwrought beryllium, powders"""
+811219,Beryllium and articles thereof: wrought other than waste and scrap
+811241,"""Rhenium and articles thereof: unwrought, powders, waste and scrap"""
+811249,"""Rhenium and articles thereof: wrought, other than powders, waste and scrap"""
+841319,"""Pumps: for liquids, fitted or designed to be fitted with a measuring device, other than pumps for dispensing fuel or lubricants"""
+841350,"""Pumps: reciprocating positive displacement pumps, n.e.c. in heading no. 8413, for liquids"""
+841360,"""Pumps: rotary positive displacement pumps, n.e.c. in heading no. 8413, for liquids"""
+841370,"""Pumps: centrifugal, n.e.c. in heading no. 8413, for liquids"""
+841381,Pumps and liquid elevators: n.e.c. in heading no. 8413
+841610,"""Furnaces: furnace burners, for liquid fuel"""
+841620,"""Furnaces: furnace burners, for pulverized solid fuel or gas, including combination burners"""
+841630,"""Furnace accessories: mechanical stokers, mechanical grates, mechanical ash dischargers and similar appliances"""
+841690,"""Furnaces: parts of furnace burners, for liquid fuel, pulverized solid fuel or gas, mechanical stokers, grates, ash dischargers and the like"""
+841710,"""Furnaces and ovens: non-electric, for the roasting, melting or other heat-treatment of ores, pyrites or of metals, for industrial or laboratory use"""
+841960,"""Machinery: for liquefying air or gas, not used for domestic purposes"""
+848110,"""Valves: pressure reducing, for pipes, boiler shells, tanks, vats or the like"""
+848120,Valves: for oleohydraulic or pneumatic transmissions
+848130,"""Valves: check (nonreturn) valves, for pipes, boiler shells, tanks, vats or the like"""
+848140,"""Valves: safety or relief valves, for pipes, boiler shells, tanks, vats or the like"""
+848180,"""Taps, cocks, valves and similar appliances: for pipes, boiler shells, tanks, vats or the like, including thermostatically controlled valves"""
+848190,"""Taps, cocks, valves and similar appliances: parts thereof"""
+848210,Ball bearings
+848220,"""Bearings: tapered roller bearings, including cone and tapered roller assemblies"""
+848230,Bearings: spherical roller bearings
+848240,"""Bearings: needle roller bearings, including cage and needle roller assemblies"""
+848250,"""Bearings: cylindrical roller bearings, including cage and roller assemblies n.e.c. in heading no. 8482"""
+848280,"""Bearings: n.e.c. in heading no. 8482, including combined ball/roller"""
+848291,"""Bearings: parts, balls, needles and rollers"""
+848299,"""Bearings: parts, (other than balls, needles and rollers)"""
+848310,Transmission shafts (including cam shafts and crank shafts) and cranks
+848320,"""Bearing housings, incorporating ball or roller bearings"""
+848330,"""Bearing housings, not incorporating ball or roller bearings and plain shaft bearings"""
+848340,"""Gears and gearing: (not toothed wheels, chain sprockets and other transmission elements presented separately): ball or roller screws: gear boxes and other speed changers, including torque converters"""
+848350,"""Pulleys and flywheels, including pulley blocks"""
+848360,Clutches and shaft couplings (including universal joints)
+848610,Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor boules or wafers
+848620,Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor devices or of electronic integrated circuits
+848640,"""Machines and apparatus of a kind used solely or principally for the manufacture or repair of masks and reticles, assembling semiconductor devices or electronic integrated circuits, or for lifting, handling, loading or unloading items of heading 8486"""
+850110,Electric motors: of an output not exceeding 37.5W
+850120,Electric motors: universal AC/DC of an output exceeding 37.5W
+850140,"""Electric motors: AC motors, single-phase"""
+850151,"""Electric motors: AC motors, multi-phase, of an output not exceeding 750W"""
+850152,"""Electric motors: AC motors, multi-phase, of an output exceeding 750W but not exceeding 75kW"""
+850153,"""Electric motors: AC motors, multi-phase, of an output exceeding 75kW"""
+851419,"""Furnaces and ovens: electric, for industrial or laboratory use, resistance heated: other than hot isostatic presses, for the manufacture of semiconductor devices on semiconductor wafers"""
+854231,"""Electronic integrated circuits: processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits"""
+860110,Rail locomotives: powered from an external source of electricity
+860120,Rail locomotives: powered by electric accumulators
+860310,"""Railway or tramway coaches, vans and trucks: self-propelled, powered from an external source of electricity (excluding those of heading no. 8604)"""
+870129,"""Tractors: road tractors for semi-trailers, with other propulsion methods n.e.c. in item no 8701.2"""
+870911,"""Vehicles: electrical, self-propelled, (not fitted with lifting or handling equipment), of the type used for short distance transport of goods in factories, warehouses, dock areas or airports"""
+902810,"""Meters: gas, supply or production meters, including calibrating meters thereof"""
+902820,"""Meters: liquid supply or production meters, including calibrating meters thereof"""
+902890,"""Meters: parts and accessories of gas, liquid, electricity supply or production meters, including calibrating meters thereof"""
