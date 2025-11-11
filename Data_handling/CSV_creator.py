@@ -3,9 +3,9 @@ import pandas as pd
 # Path to your Excel file
 excel_path = r"C:\Users\marvi\OneDrive\Semester Thesis\Surefire_product_codes_HS22.xlsx"
 
-all_sheets = 1
+yellow = 0
 
-if all_sheets == 1:
+if yellow == 1:
     # Get all sheet names
     sheet_names = pd.ExcelFile(excel_path).sheet_names
 
@@ -25,7 +25,7 @@ if all_sheets == 1:
     # Concatenate everything into one DataFrame
     baci = pd.concat([df_first] + dfs_rest, ignore_index=True)
 else:
-    sheets_to_read = ["25", "26", "27", "28", "44", "71", "72", "73", "74", "75", "76", "78", "79", "80", "81", "84", "85", "87", "90"]
+    sheets_to_read = ["25", "26", "27", "28", "38", "44", "71", "72", "73", "74", "75", "76", "78", "79", "80", "81", "84", "85", "87", "90"]
     baci = pd.concat(
         [pd.read_excel(excel_path, sheet_name=sh, skiprows=1, header=None) for sh in sheets_to_read],
         ignore_index=True
@@ -48,7 +48,10 @@ if "code, description" in baci.columns:
     baci = baci.drop(columns=["code, description"])
 
 # Save into your Data folder
-baci.to_csv("Data/Surefire_product_codes_HS22_yellow.csv", index=False)
+if yellow == 1:
+    baci.to_csv("Data/Surefire_product_codes_HS22_yellow.csv", index=False)
+else:
+    baci.to_csv("Data/Surefire_product_codes_HS22.csv", index=False)
 
 print("Combined CSV saved with", len(baci), "rows.")
 print("Columns:", baci.columns.tolist())

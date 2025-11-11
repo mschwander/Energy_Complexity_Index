@@ -2,6 +2,7 @@ code,description
 250200,Iron pyrites: unroasted
 250410,"""Graphite: natural, in powder or in flakes"""
 250490,"""Graphite: natural, in other forms, excluding powder or flakes"""
+252800,"""Natural borates and concentrates thereof (whether or not calcined), but not including borates separated from natural brine: natural boric acid containing not more than 85 % of H3BO3 calculated on the dry weight"""
 260111,Iron ores and concentrates: non-agglomerated
 260112,Iron ores and concentrates: agglomerated (excluding roasted iron pyrites)
 260120,Iron pyrites: roasted
@@ -48,6 +49,7 @@ code,description
 271490,"""Bitumen and asphalt, natural: asphaltites and asphaltic rock"""
 271500,"""Bituminous mixtures based on natural asphalt, on natural bitumen, on petroleum bitumen, on mineral tar or on mineral tar pitch (e.g. bituminous mastics, cut-backs)"""
 271600,Electrical energy
+280130,Fluorine: bromine
 280410,Hydrogen
 280450,Boron: tellurium
 280461,Silicon: containing by weight not less than 99.99% of silicon
@@ -78,8 +80,12 @@ code,description
 282560,Germanium oxides and zirconium dioxide
 282570,Molybdenum oxides and hydroxides
 282612,Fluorides: of aluminium
+282690,"""Fluorides: fluorosilicates, fluoroaluminates and other complex fluorine salts, n.e.c. in heading no. 2826"""
 283691,Carbonates: lithium carbonate
 283692,Carbonates: strontium carbonate
+284011,"""Borates: disodium tetraborate (refined borax), anhydrous"""
+284019,"""Borates: disodium tetraborate (refined borax), other than anhydrous"""
+284020,Borates: n.e.c. in heading no. 2840
 284310,Colloidal precious metals: whether or not chemically defined
 284321,Silver compounds: silver nitrates
 284329,Silver compounds: excluding silver nitrates
@@ -97,6 +103,12 @@ code,description
 284530,Lithium enriched in lithium-6 and its compounds
 284540,Helium-3
 284590,"""Isotopes other than those of heading no. 2844, 2845.20, 2845.30 or 2845.40: compounds, inorganic or organic, of such isotopes, whether or not chemically defined"""
+284610,Cerium compounds
+380110,Graphite: artificial
+380120,Graphite: colloidal or semi-colloidal
+380130,Carbonaceous pastes: for electrodes and similar pastes for furnace linings
+380190,"""Graphite or other carbon based preparations: in the form of pastes, blocks, plates or other semi-manufactures"""
+382600,Biodiesel and mixtures thereof: not containing or containing less than 70% by weight of petroleum oils or oils obtained from bituminous minerals
 440111,"""Wood: for fuel, in logs, in billets, in twigs, in faggots or similar forms, whether or not agglomerated, coniferous"""
 440112,"""Wood: for fuel, in logs, in billets, in twigs, in faggots or similar forms, whether or not agglomerated, non-coniferous"""
 440121,"""Wood: for fuel, in chips or particles, coniferous, whether or not agglomerated"""
@@ -412,6 +424,25 @@ code,description
 290349,Saturated fluorinated derivatives of acyclic hydrocarbons: n.e.c. in item no 2903.4
 290351,"""Unsaturated fluorinated derivatives of acyclic hydrocarbons: 2,3,3,3-tetrafluoropropene (HFO-1234yf), 1,3,3,3-tetrafluoropropene (HFO-1234ze) and (Z)-1,1,1,4,4,4-hexafluoro-2-butene (HFO-1336mzz)"""
 290359,Unsaturated fluorinated derivatives of acyclic hydrocarbons: n.e.c. in item no. 2903.5
+382711,"""Mixtures containing halogenated derivatives of methane, ethane or propane, not elsewhere specified or included: containing chlorofluorocarbons (CFCs), whether or not containing hydrochlorofluorocarbons (HCFCs), perfluorocarbons (PFCs) or hydrofluorocarbon"""
+382712,"""Mixtures containing halogenated derivatives of methane, ethane or propane, not elsewhere specified or included: containing hydrobromofluorocarbons (HBFCs)"""
+382713,"""Mixtures containing halogenated derivatives of methane, ethane or propane, not elsewhere specified or included: containing carbon tetrachloride"""
+382714,"""Mixtures containing halogenated derivatives of methane, ethane or propane, not elsewhere specified or included: containing 1,1,1-trichloroethane (methyl chloroform)"""
+382720,"""Mixtures containing halogenated derivatives of methane, ethane or propane, not elsewhere specified or included: containing bromochlorodifluoromethane (Halon-1211), bromotrifluoromethane (Halon-1301) or dibromotetrafluoroethanes (Halon-2402)"""
+382731,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing hydrochlorofluorocarbons (HCFCs), perfluorocarbons (PFCs) or hydrofluorocarbons (HFCs) or not, but not containing chlorofluorocarbons (CFCs): containing substances of su"""
+382732,"""Mixtures containing halogenated methane, ethane, propane: containing hydrochlorofluorocarbons (HCFCs), perfluorocarbons (PFCs) or hydrofluorocarbons (HFCs) or not, not chlorofluorocarbons (CFCs): containing substances of subheadings 2903.71 to 2903.75"""
+382739,"""Mixtures containing halogenated methane, ethane, or propane: containing hydrochlorofluorocarbons (HCFCs), perfluorocarbons (PFCs) or hydrofluorocarbons (HFCs) or not, but not chlorofluorocarbons (CFCs): n.e.c. in subheading 3827.3"""
+382740,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing hydrochlorofluorocarbons (HCFCs), perfluorocarbons (PFCs) or hydrofluorocarbons (HFCs) or not, but not containing chlorofluorocarbons (CFCs): containing bromomethane (me"""
+382751,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing trifluoromethan (HFC-23) or perfluorocarbons (PFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): containing trifluoromethane (HFC-2"""
+382759,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing trifluoromethan (HFC-23) or perfluorocarbons (PFCs) not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures n.e.c. in subheading 38"""
+382761,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): containing 15% or more by mass of 1,1,1-trifluoroethan"""
+382762,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures, not included in the subheading above,"""
+382763,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures not included in the subheadings above,"""
+382764,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures, not included in the subheadings above,"""
+382765,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures, not included in the subheadings above,"""
+382768,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): other mixtures, not included in the subheadings above,"""
+382769,"""Mixtures containing halogenated derivatives of methane, ethane or propane: containing other hydrofluorocarbons (HFCs) but not containing chlorofluorocarbons (CFCs) or hydrochlorofluorocarbons (HCFCs): n.e.c. in items no. 3827.5 and 3827.6, not containing"""
+382790,"""Mixtures containing halogenated derivatives of methane, ethane or propane: n.e.c. in subheading no 3827"""
 440210,"""Wood: charcoal of bamboo, whether or not agglomerated"""
 440220,"""Wood: charcoal of nut or shell, whether or not agglomerated"""
 440290,"""Wood: charcoal of wood other than bamboo, nut or shell, whether or not agglomerated"""
