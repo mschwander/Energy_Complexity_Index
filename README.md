@@ -45,6 +45,7 @@ Generated outputs from the analysis, including country-level results and visuali
 - `eci_results_Energy_yellow.csv` – Whole results of ECI calculation of energy sector and yellow products
 - `eci_results_Energy.csv` – Whole results of ECI calcuation of energy sector
 
+
 ---
 
 - `.gitignore` – Ignores big files so as to not get error when pushing to github  
