@@ -7,10 +7,10 @@ import numpy as np
 yellow = 1
 
 if yellow:
-    eci_df = pd.read_csv("Results/eci_results_Energy_yellow.csv")
+    eci_df = pd.read_csv("04_Results/eci_results_Energy_yellow.csv")
 else:
-    eci_df = pd.read_csv("Results/eci_results_Energy.csv")
-    #eci_df = pd.read_csv("Results/eci_results_BACI.csv")
+    eci_df = pd.read_csv("04_Results/eci_results_Energy.csv")
+    #eci_df = pd.read_csv("04_Results/eci_results_BACI.csv")
 
 
 
@@ -56,11 +56,11 @@ lookup = pd.read_csv("Data/country_codes_V202501.csv")  # your mapping file
 eci_country = eci_country.merge(lookup, on="country_code")
 
 if yellow:
-    save_path = os.path.join("Results", "eci_country_results_Energy_yellow.csv")
+    save_path = os.path.join("04_Results", "eci_country_results_Energy_yellow.csv")
     eci_country.to_csv(save_path, index=False)
     print(f"eci_country_results_Energy_yellow saved to {save_path}")
 else:
-    save_path = os.path.join("Results", "eci_country_results_Energy.csv")
+    save_path = os.path.join("04_Results", "eci_country_results_Energy.csv")
     eci_country.to_csv(save_path, index=False)
     print(f"eci_country_results_Energy saved to {save_path}")
 
@@ -98,11 +98,11 @@ ax.set_title("Economic Complexity Index by Country, 2023")
 
 plt.tight_layout()
 if yellow:
-    plt.savefig("Results/ECI_Map_Energy_yellow.png", dpi=300)
+    plt.savefig("04_Results/ECI_Map_Energy_yellow.png", dpi=300)
     print("Saved ECI map to Results/ECI_Map_Energy_yellow.png")
     plt.close(fig)
 else:
-    plt.savefig("Results/ECI_Map_Energy.png", dpi=300)
+    plt.savefig("04_Results/ECI_Map_Energy.png", dpi=300)
     print("Saved ECI map to Results/ECI_Map_Energy.png")
     plt.close(fig)
 
