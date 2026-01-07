@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2017,JPN,1,Japan,3.70,0
+2017,DEU,2,Germany,3.35,0
+2017,FRA,3,France,2.78,2
+2017,USA,4,United States of America,2.66,-1
+2017,CHN,5,China,2.61,3
+2017,CZE,6,Czech Republic,2.58,-2
+2017,AUT,7,Austria,2.53,-1
+2017,KOR,8,South Korea,2.51,3
+2017,ITA,9,Italy,2.51,-2
+2017,HUN,10,Hungary,2.44,2
+2017,TWN,11,Taiwan,2.36,3
+2017,SVN,12,Slovenia,2.24,1
+2017,ROU,13,Romania,2.21,6
+2017,SWE,14,Sweden,2.11,-5
+2017,GBR,15,United Kingdom of Great Britain and Northern Ireland,2.09,-5
+2017,DNK,16,Denmark,2.09,0
+2017,CHE,17,Switzerland,2.08,-2
+2017,BEL,18,Belgium,2.00,0
+2017,POL,19,Poland,1.97,-2
+2017,SGP,20,Singapore,1.95,1
+2017,FIN,21,Finland,1.89,-1
+2017,SVK,22,Slovakia,1.72,3
+2017,NLD,23,Netherlands,1.58,1
+2017,MYS,24,Malaysia,1.51,13
+2017,THA,25,Thailand,1.50,3
+2017,EST,26,Estonia,1.47,-4
+2017,ISR,27,Israel,1.45,3
+2017,LTU,28,Lithuania,1.44,1
+2017,ESP,29,Spain,1.42,-3
+2017,MEX,30,Mexico,1.39,-7
+2017,HRV,31,Croatia,1.34,-4
+2017,PRT,32,Portugal,1.11,-1
+2017,BLR,33,Belarus,1.08,2
+2017,HKG,34,Hong Kong,1.05,-2
+2017,LVA,35,Latvia,1.03,4
+2017,TUN,36,Tunisia,1.03,-3
+2017,IND,37,India,0.93,-1
+2017,SRB,38,Serbia,0.87,0
+2017,BGR,39,Bulgaria,0.83,-5
+2017,TUR,40,Turkiye,0.71,0
+2017,CAN,41,Canada,0.68,0
+2017,PHL,42,Philippines,0.64,1
+2017,ARE,43,United Arab Emirates,0.57,7
+2017,IRL,44,Ireland,0.41,3
+2017,VNM,45,Vietnam,0.33,7
+2017,LBN,46,Lebanon,0.31,-2
+2017,CRI,47,Costa Rica,0.28,-2
+2017,CYP,48,Cyprus,0.28,9
+2017,IDN,49,Indonesia,0.27,9
+2017,UKR,50,Ukraine,0.26,-8
+2017,BIH,51,Bosnia and Herzegovina,0.23,-2
+2017,MDA,52,Moldova,0.22,8
+2017,PAN,53,Panama,0.21,-7
+2017,NOR,54,Norway,0.18,2
+2017,NZL,55,New Zealand,0.14,-7
+2017,GRC,56,Greece,0.11,-3
+2017,BHR,57,Bahrain,0.06,14
+2017,SLV,58,El Salvador,0.04,6
+2017,RUS,59,Russian Federation,0.01,10
+2017,ZAF,60,South Africa,-0.00,-9
+2017,BRA,61,Brazil,-0.01,-2
+2017,COL,62,Colombia,-0.06,3
+2017,DOM,63,Dominican Republic,-0.07,0
+2017,SWZ,64,Eswatini,-0.11,4
+2017,EGY,65,Egypt,-0.12,1
+2017,MUS,66,Mauritius,-0.18,-4
+2017,JOR,67,Jordan,-0.19,-12
+2017,SAU,68,Saudi Arabia,-0.21,4
+2017,KGZ,69,Kyrgyzstan,-0.25,45
+2017,ARM,70,Armenia,-0.26,-9
+2017,ARG,71,Argentina,-0.29,-17
+2017,MKD,72,North Macedonia,-0.31,-2
+2017,URY,73,Uruguay,-0.32,-6
+2017,GEO,74,Georgia,-0.32,4
+2017,JAM,75,Jamaica,-0.39,21
+2017,KHM,76,Cambodia,-0.41,41
+2017,MAR,77,Morocco,-0.43,13
+2017,BEN,78,Benin,-0.43,25
+2017,LKA,79,Sri Lanka,-0.46,-5
+2017,HND,80,Honduras,-0.48,-4
+2017,NPL,81,Nepal,-0.49,-8
+2017,TGO,82,Togo,-0.50,25
+2017,MLI,83,Mali,-0.50,10
+2017,HTI,84,Haiti,-0.53,-5
+2017,KEN,85,Kenya,-0.53,12
+2017,AFG,86,Afghanistan,-0.54,0
+2017,LBR,87,Liberia,-0.55,38
+2017,NER,88,Niger,-0.56,-4
+2017,TTO,89,Trinidad and Tobago,-0.56,24
+2017,AZE,90,Azerbaijan,-0.56,12
+2017,ECU,91,Ecuador,-0.57,-16
+2017,ALB,92,Albania,-0.57,13
+2017,KWT,93,Kuwait,-0.58,8
+2017,BWA,94,Botswana,-0.59,-12
+2017,PRY,95,Paraguay,-0.60,-14
+2017,DZA,96,Algeria,-0.60,-5
+2017,BGD,97,Bangladesh,-0.61,-17
+2017,TCD,98,Chad,-0.61,-4
+2017,GNQ,99,Equatorial Guinea,-0.62,0
+2017,AGO,100,Angola,-0.62,0
+2017,IRQ,101,Iraq,-0.63,-3
+2017,TKM,102,Turkmenistan,-0.63,-14
+2017,NIC,103,Nicaragua,-0.64,-20
+2017,GTM,104,Guatemala,-0.66,-17
+2017,UZB,105,Uzbekistan,-0.66,-28
+2017,QAT,106,Qatar,-0.68,-2
+2017,CUB,107,Cuba,-0.69,15
+2017,GIN,108,Guinea,-0.71,16
+2017,CMR,109,Cameroon,-0.74,6
+2017,LBY,110,Libya,-0.75,-4
+2017,YEM,111,Yemen,-0.76,-26
+2017,CIV,112,Côte d'Ivoire,-0.77,16
+2017,OMN,113,Oman,-0.78,16
+2017,MWI,114,Malawi,-0.79,4
+2017,VEN,115,Venezuela,-0.80,8
+2017,BFA,116,Burkina Faso,-0.81,0
+2017,COG,117,Republic of the Congo,-0.87,22
+2017,PAK,118,Pakistan,-0.88,-9
+2017,GAB,119,Gabon,-0.89,7
+2017,SEN,120,Senegal,-0.89,-31
+2017,SDN,121,Sudan,-0.90,-11
+2017,IRN,122,Iran,-0.93,12
+2017,MRT,123,Mauritania,-0.93,-2
+2017,ETH,124,Ethiopia,-0.93,-32
+2017,NAM,125,Namibia,-0.97,-17
+2017,CHL,126,Chile,-0.98,-14
+2017,UGA,127,Uganda,-1.01,-32
+2017,PNG,128,Papua New Guinea,-1.02,-17
+2017,TJK,129,Tajikistan,-1.03,-2
+2017,NGA,130,Nigeria,-1.05,1
+2017,MMR,131,Myanmar,-1.09,13
+2017,GHA,132,Ghana,-1.10,-2
+2017,RWA,133,Rwanda,-1.11,-13
+2017,MDG,134,Madagascar,-1.14,-2
+2017,ZMB,135,Zambia,-1.18,-2
+2017,LAO,136,Laos,-1.19,6
+2017,PER,137,Peru,-1.23,-18
+2017,BOL,138,Bolivia,-1.24,-1
+2017,AUS,139,Australia,-1.29,1
+2017,MNG,140,Mongolia,-1.32,-5
+2017,ZWE,141,Zimbabwe,-1.37,-5
+2017,TZA,142,Tanzania,-1.40,-4
+2017,MOZ,143,Mozambique,-1.45,-2
+2017,COD,144,Democratic Republic of the Congo,-1.61,-1
+2017,KAZ,145,Kazakhstan,-1.73,0

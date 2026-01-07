@@ -1,2 +1,10 @@
-04_Results/eci_results_BACI.csv
-01_Data/WPP2024_Demographic_Indicators_Medium.csv
+01_Data/BACI/
+
+# Ignore ANY folder that starts with "04_Results_"
+04_Results_*/
+
+#04_Results_00_05_all_Filters/
+#04_Results_02_07_all_Filters/
+#04_Results_96_23_all_Filters/
+#04_Results_260105/
+06_Results_Checkups/

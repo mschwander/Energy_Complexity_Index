@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2012,JPN,1,Japan,3.63,N/A
+2012,DEU,2,Germany,3.44,N/A
+2012,USA,3,United States of America,2.96,N/A
+2012,CZE,4,Czech Republic,2.85,N/A
+2012,FRA,5,France,2.81,N/A
+2012,AUT,6,Austria,2.63,N/A
+2012,ITA,7,Italy,2.61,N/A
+2012,CHN,8,China,2.53,N/A
+2012,SWE,9,Sweden,2.52,N/A
+2012,GBR,10,United Kingdom of Great Britain and Northern Ireland,2.40,N/A
+2012,KOR,11,South Korea,2.37,N/A
+2012,HUN,12,Hungary,2.36,N/A
+2012,SVN,13,Slovenia,2.29,N/A
+2012,TWN,14,Taiwan,2.19,N/A
+2012,CHE,15,Switzerland,2.15,N/A
+2012,DNK,16,Denmark,2.09,N/A
+2012,POL,17,Poland,2.02,N/A
+2012,BEL,18,Belgium,2.02,N/A
+2012,ROU,19,Romania,1.91,N/A
+2012,FIN,20,Finland,1.89,N/A
+2012,SGP,21,Singapore,1.77,N/A
+2012,EST,22,Estonia,1.65,N/A
+2012,MEX,23,Mexico,1.63,N/A
+2012,NLD,24,Netherlands,1.57,N/A
+2012,SVK,25,Slovakia,1.57,N/A
+2012,ESP,26,Spain,1.52,N/A
+2012,HRV,27,Croatia,1.42,N/A
+2012,THA,28,Thailand,1.36,N/A
+2012,LTU,29,Lithuania,1.35,N/A
+2012,ISR,30,Israel,1.35,N/A
+2012,PRT,31,Portugal,1.33,N/A
+2012,HKG,32,Hong Kong,1.27,N/A
+2012,TUN,33,Tunisia,1.02,N/A
+2012,BGR,34,Bulgaria,0.96,N/A
+2012,BLR,35,Belarus,0.94,N/A
+2012,IND,36,India,0.93,N/A
+2012,MYS,37,Malaysia,0.91,N/A
+2012,SRB,38,Serbia,0.89,N/A
+2012,LVA,39,Latvia,0.86,N/A
+2012,TUR,40,Turkiye,0.80,N/A
+2012,CAN,41,Canada,0.75,N/A
+2012,UKR,42,Ukraine,0.73,N/A
+2012,PHL,43,Philippines,0.61,N/A
+2012,LBN,44,Lebanon,0.53,N/A
+2012,CRI,45,Costa Rica,0.48,N/A
+2012,PAN,46,Panama,0.41,N/A
+2012,IRL,47,Ireland,0.40,N/A
+2012,NZL,48,New Zealand,0.38,N/A
+2012,BIH,49,Bosnia and Herzegovina,0.36,N/A
+2012,ARE,50,United Arab Emirates,0.29,N/A
+2012,ZAF,51,South Africa,0.26,N/A
+2012,VNM,52,Vietnam,0.26,N/A
+2012,GRC,53,Greece,0.25,N/A
+2012,ARG,54,Argentina,0.25,N/A
+2012,JOR,55,Jordan,0.24,N/A
+2012,NOR,56,Norway,0.22,N/A
+2012,CYP,57,Cyprus,0.21,N/A
+2012,IDN,58,Indonesia,0.20,N/A
+2012,BRA,59,Brazil,0.19,N/A
+2012,MDA,60,Moldova,0.18,N/A
+2012,ARM,61,Armenia,0.11,N/A
+2012,MUS,62,Mauritius,0.03,N/A
+2012,DOM,63,Dominican Republic,0.02,N/A
+2012,SLV,64,El Salvador,0.00,N/A
+2012,COL,65,Colombia,-0.05,N/A
+2012,EGY,66,Egypt,-0.05,N/A
+2012,URY,67,Uruguay,-0.08,N/A
+2012,SWZ,68,Eswatini,-0.16,N/A
+2012,RUS,69,Russian Federation,-0.20,N/A
+2012,MKD,70,North Macedonia,-0.20,N/A
+2012,BHR,71,Bahrain,-0.26,N/A
+2012,SAU,72,Saudi Arabia,-0.28,N/A
+2012,NPL,73,Nepal,-0.32,N/A
+2012,LKA,74,Sri Lanka,-0.42,N/A
+2012,ECU,75,Ecuador,-0.44,N/A
+2012,HND,76,Honduras,-0.47,N/A
+2012,UZB,77,Uzbekistan,-0.48,N/A
+2012,GEO,78,Georgia,-0.50,N/A
+2012,HTI,79,Haiti,-0.50,N/A
+2012,BGD,80,Bangladesh,-0.50,N/A
+2012,PRY,81,Paraguay,-0.51,N/A
+2012,BWA,82,Botswana,-0.51,N/A
+2012,NIC,83,Nicaragua,-0.52,N/A
+2012,NER,84,Niger,-0.52,N/A
+2012,YEM,85,Yemen,-0.53,N/A
+2012,AFG,86,Afghanistan,-0.53,N/A
+2012,GTM,87,Guatemala,-0.54,N/A
+2012,TKM,88,Turkmenistan,-0.56,N/A
+2012,SEN,89,Senegal,-0.56,N/A
+2012,MAR,90,Morocco,-0.56,N/A
+2012,DZA,91,Algeria,-0.56,N/A
+2012,ETH,92,Ethiopia,-0.56,N/A
+2012,MLI,93,Mali,-0.56,N/A
+2012,TCD,94,Chad,-0.57,N/A
+2012,UGA,95,Uganda,-0.57,N/A
+2012,JAM,96,Jamaica,-0.57,N/A
+2012,KEN,97,Kenya,-0.58,N/A
+2012,IRQ,98,Iraq,-0.58,N/A
+2012,GNQ,99,Equatorial Guinea,-0.58,N/A
+2012,AGO,100,Angola,-0.61,N/A
+2012,KWT,101,Kuwait,-0.63,N/A
+2012,AZE,102,Azerbaijan,-0.64,N/A
+2012,BEN,103,Benin,-0.65,N/A
+2012,QAT,104,Qatar,-0.67,N/A
+2012,ALB,105,Albania,-0.67,N/A
+2012,LBY,106,Libya,-0.68,N/A
+2012,TGO,107,Togo,-0.68,N/A
+2012,NAM,108,Namibia,-0.70,N/A
+2012,PAK,109,Pakistan,-0.71,N/A
+2012,SDN,110,Sudan,-0.71,N/A
+2012,PNG,111,Papua New Guinea,-0.71,N/A
+2012,CHL,112,Chile,-0.72,N/A
+2012,TTO,113,Trinidad and Tobago,-0.76,N/A
+2012,KGZ,114,Kyrgyzstan,-0.77,N/A
+2012,CMR,115,Cameroon,-0.81,N/A
+2012,BFA,116,Burkina Faso,-0.83,N/A
+2012,KHM,117,Cambodia,-0.84,N/A
+2012,MWI,118,Malawi,-0.85,N/A
+2012,PER,119,Peru,-0.85,N/A
+2012,RWA,120,Rwanda,-0.85,N/A
+2012,MRT,121,Mauritania,-0.86,N/A
+2012,CUB,122,Cuba,-0.87,N/A
+2012,VEN,123,Venezuela,-0.87,N/A
+2012,GIN,124,Guinea,-0.88,N/A
+2012,LBR,125,Liberia,-0.89,N/A
+2012,GAB,126,Gabon,-0.91,N/A
+2012,TJK,127,Tajikistan,-0.92,N/A
+2012,CIV,128,Côte d'Ivoire,-0.92,N/A
+2012,OMN,129,Oman,-0.97,N/A
+2012,GHA,130,Ghana,-1.03,N/A
+2012,NGA,131,Nigeria,-1.03,N/A
+2012,MDG,132,Madagascar,-1.05,N/A
+2012,ZMB,133,Zambia,-1.10,N/A
+2012,IRN,134,Iran,-1.12,N/A
+2012,MNG,135,Mongolia,-1.12,N/A
+2012,ZWE,136,Zimbabwe,-1.13,N/A
+2012,BOL,137,Bolivia,-1.17,N/A
+2012,TZA,138,Tanzania,-1.21,N/A
+2012,COG,139,Republic of the Congo,-1.22,N/A
+2012,AUS,140,Australia,-1.24,N/A
+2012,MOZ,141,Mozambique,-1.26,N/A
+2012,LAO,142,Laos,-1.30,N/A
+2012,COD,143,Democratic Republic of the Congo,-1.38,N/A
+2012,MMR,144,Myanmar,-1.47,N/A
+2012,KAZ,145,Kazakhstan,-1.48,N/A

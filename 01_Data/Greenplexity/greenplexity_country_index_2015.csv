@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2015,JPN,1,Japan,3.67,N/A
+2015,DEU,2,Germany,3.35,N/A
+2015,FRA,3,France,2.84,N/A
+2015,USA,4,United States of America,2.79,N/A
+2015,CZE,5,Czech Republic,2.76,N/A
+2015,AUT,6,Austria,2.59,N/A
+2015,KOR,7,South Korea,2.58,N/A
+2015,HUN,8,Hungary,2.56,N/A
+2015,TWN,9,Taiwan,2.51,N/A
+2015,CHN,10,China,2.51,N/A
+2015,ITA,11,Italy,2.48,N/A
+2015,SWE,12,Sweden,2.33,N/A
+2015,GBR,13,United Kingdom of Great Britain and Northern Ireland,2.30,N/A
+2015,SVN,14,Slovenia,2.29,N/A
+2015,CHE,15,Switzerland,2.09,N/A
+2015,DNK,16,Denmark,2.05,N/A
+2015,SGP,17,Singapore,2.01,N/A
+2015,POL,18,Poland,1.97,N/A
+2015,BEL,19,Belgium,1.97,N/A
+2015,FIN,20,Finland,1.96,N/A
+2015,ROU,21,Romania,1.95,N/A
+2015,MEX,22,Mexico,1.63,N/A
+2015,NLD,23,Netherlands,1.62,N/A
+2015,EST,24,Estonia,1.55,N/A
+2015,SVK,25,Slovakia,1.54,N/A
+2015,THA,26,Thailand,1.52,N/A
+2015,MYS,27,Malaysia,1.42,N/A
+2015,ESP,28,Spain,1.39,N/A
+2015,ISR,29,Israel,1.39,N/A
+2015,LTU,30,Lithuania,1.31,N/A
+2015,HRV,31,Croatia,1.31,N/A
+2015,HKG,32,Hong Kong,1.28,N/A
+2015,TUN,33,Tunisia,1.03,N/A
+2015,PRT,34,Portugal,1.02,N/A
+2015,IND,35,India,1.01,N/A
+2015,LVA,36,Latvia,0.99,N/A
+2015,SRB,37,Serbia,0.85,N/A
+2015,TUR,38,Turkiye,0.82,N/A
+2015,BGR,39,Bulgaria,0.80,N/A
+2015,BLR,40,Belarus,0.79,N/A
+2015,PHL,41,Philippines,0.66,N/A
+2015,NOR,42,Norway,0.52,N/A
+2015,CAN,43,Canada,0.50,N/A
+2015,IRL,44,Ireland,0.49,N/A
+2015,LBN,45,Lebanon,0.43,N/A
+2015,CRI,46,Costa Rica,0.38,N/A
+2015,IDN,47,Indonesia,0.36,N/A
+2015,ARE,48,United Arab Emirates,0.36,N/A
+2015,PAN,49,Panama,0.33,N/A
+2015,MDA,50,Moldova,0.28,N/A
+2015,GRC,51,Greece,0.27,N/A
+2015,NZL,52,New Zealand,0.26,N/A
+2015,BIH,53,Bosnia and Herzegovina,0.21,N/A
+2015,CYP,54,Cyprus,0.19,N/A
+2015,UKR,55,Ukraine,0.15,N/A
+2015,BHR,56,Bahrain,0.10,N/A
+2015,SWZ,57,Eswatini,0.07,N/A
+2015,BRA,58,Brazil,0.06,N/A
+2015,VNM,59,Vietnam,0.02,N/A
+2015,DOM,60,Dominican Republic,0.01,N/A
+2015,COL,61,Colombia,-0.02,N/A
+2015,EGY,62,Egypt,-0.04,N/A
+2015,SLV,63,El Salvador,-0.06,N/A
+2015,ARG,64,Argentina,-0.07,N/A
+2015,JOR,65,Jordan,-0.11,N/A
+2015,ZAF,66,South Africa,-0.11,N/A
+2015,MUS,67,Mauritius,-0.14,N/A
+2015,MKD,68,North Macedonia,-0.19,N/A
+2015,SAU,69,Saudi Arabia,-0.19,N/A
+2015,RUS,70,Russian Federation,-0.28,N/A
+2015,KGZ,71,Kyrgyzstan,-0.28,N/A
+2015,URY,72,Uruguay,-0.32,N/A
+2015,BEN,73,Benin,-0.34,N/A
+2015,MLI,74,Mali,-0.36,N/A
+2015,ARM,75,Armenia,-0.37,N/A
+2015,ECU,76,Ecuador,-0.40,N/A
+2015,MAR,77,Morocco,-0.41,N/A
+2015,TGO,78,Togo,-0.43,N/A
+2015,LKA,79,Sri Lanka,-0.44,N/A
+2015,JAM,80,Jamaica,-0.45,N/A
+2015,AZE,81,Azerbaijan,-0.48,N/A
+2015,NPL,82,Nepal,-0.50,N/A
+2015,AGO,83,Angola,-0.51,N/A
+2015,GEO,84,Georgia,-0.52,N/A
+2015,KWT,85,Kuwait,-0.53,N/A
+2015,HTI,86,Haiti,-0.53,N/A
+2015,YEM,87,Yemen,-0.54,N/A
+2015,KEN,88,Kenya,-0.54,N/A
+2015,PRY,89,Paraguay,-0.54,N/A
+2015,TCD,90,Chad,-0.55,N/A
+2015,AFG,91,Afghanistan,-0.56,N/A
+2015,GNQ,92,Equatorial Guinea,-0.56,N/A
+2015,IRQ,93,Iraq,-0.57,N/A
+2015,BGD,94,Bangladesh,-0.57,N/A
+2015,DZA,95,Algeria,-0.59,N/A
+2015,TKM,96,Turkmenistan,-0.60,N/A
+2015,CMR,97,Cameroon,-0.61,N/A
+2015,MWI,98,Malawi,-0.63,N/A
+2015,BFA,99,Burkina Faso,-0.65,N/A
+2015,HND,100,Honduras,-0.65,N/A
+2015,BWA,101,Botswana,-0.67,N/A
+2015,NIC,102,Nicaragua,-0.68,N/A
+2015,ALB,103,Albania,-0.69,N/A
+2015,GIN,104,Guinea,-0.70,N/A
+2015,KHM,105,Cambodia,-0.70,N/A
+2015,TTO,106,Trinidad and Tobago,-0.70,N/A
+2015,ETH,107,Ethiopia,-0.71,N/A
+2015,GTM,108,Guatemala,-0.72,N/A
+2015,QAT,109,Qatar,-0.73,N/A
+2015,CIV,110,Côte d'Ivoire,-0.75,N/A
+2015,NAM,111,Namibia,-0.76,N/A
+2015,UGA,112,Uganda,-0.76,N/A
+2015,NER,113,Niger,-0.78,N/A
+2015,LBY,114,Libya,-0.79,N/A
+2015,IRN,115,Iran,-0.79,N/A
+2015,PAK,116,Pakistan,-0.79,N/A
+2015,CUB,117,Cuba,-0.79,N/A
+2015,PNG,118,Papua New Guinea,-0.81,N/A
+2015,SEN,119,Senegal,-0.82,N/A
+2015,UZB,120,Uzbekistan,-0.82,N/A
+2015,MRT,121,Mauritania,-0.84,N/A
+2015,LBR,122,Liberia,-0.84,N/A
+2015,GHA,123,Ghana,-0.87,N/A
+2015,SDN,124,Sudan,-0.88,N/A
+2015,VEN,125,Venezuela,-0.89,N/A
+2015,ZMB,126,Zambia,-0.89,N/A
+2015,RWA,127,Rwanda,-0.91,N/A
+2015,GAB,128,Gabon,-0.93,N/A
+2015,TJK,129,Tajikistan,-0.97,N/A
+2015,CHL,130,Chile,-0.98,N/A
+2015,OMN,131,Oman,-0.99,N/A
+2015,TZA,132,Tanzania,-1.04,N/A
+2015,NGA,133,Nigeria,-1.05,N/A
+2015,COG,134,Republic of the Congo,-1.10,N/A
+2015,PER,135,Peru,-1.12,N/A
+2015,MOZ,136,Mozambique,-1.16,N/A
+2015,BOL,137,Bolivia,-1.17,N/A
+2015,MNG,138,Mongolia,-1.19,N/A
+2015,MDG,139,Madagascar,-1.26,N/A
+2015,ZWE,140,Zimbabwe,-1.26,N/A
+2015,AUS,141,Australia,-1.28,N/A
+2015,LAO,142,Laos,-1.34,N/A
+2015,MMR,143,Myanmar,-1.40,N/A
+2015,COD,144,Democratic Republic of the Congo,-1.70,N/A
+2015,KAZ,145,Kazakhstan,-1.73,N/A

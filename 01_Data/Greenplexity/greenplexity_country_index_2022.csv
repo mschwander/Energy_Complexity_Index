@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2022,JPN,1,Japan,3.47,0
+2022,DEU,2,Germany,3.31,0
+2022,CZE,3,Czech Republic,2.89,3
+2022,CHN,4,China,2.68,1
+2022,FRA,5,France,2.55,-2
+2022,ITA,6,Italy,2.48,3
+2022,USA,7,United States of America,2.45,-3
+2022,AUT,8,Austria,2.43,-1
+2022,HUN,9,Hungary,2.37,1
+2022,ROU,10,Romania,2.34,3
+2022,GBR,11,United Kingdom of Great Britain and Northern Ireland,2.30,4
+2022,SVN,12,Slovenia,2.27,0
+2022,KOR,13,South Korea,2.18,-5
+2022,TWN,14,Taiwan,2.16,-3
+2022,POL,15,Poland,2.11,4
+2022,SWE,16,Sweden,2.04,-2
+2022,DNK,17,Denmark,2.01,-1
+2022,CHE,18,Switzerland,1.95,-1
+2022,SVK,19,Slovakia,1.83,3
+2022,SGP,20,Singapore,1.76,0
+2022,FIN,21,Finland,1.62,0
+2022,MEX,22,Mexico,1.62,8
+2022,NLD,23,Netherlands,1.50,0
+2022,ISR,24,Israel,1.49,3
+2022,BEL,25,Belgium,1.45,-7
+2022,THA,26,Thailand,1.42,-1
+2022,HRV,27,Croatia,1.36,4
+2022,ESP,28,Spain,1.35,1
+2022,EST,29,Estonia,1.34,-3
+2022,LTU,30,Lithuania,1.29,-2
+2022,MYS,31,Malaysia,1.27,-7
+2022,IND,32,India,1.17,5
+2022,LVA,33,Latvia,1.15,2
+2022,HKG,34,Hong Kong,1.12,0
+2022,SRB,35,Serbia,1.08,3
+2022,TUN,36,Tunisia,1.04,0
+2022,BGR,37,Bulgaria,1.01,2
+2022,PRT,38,Portugal,0.79,-6
+2022,PHL,39,Philippines,0.76,3
+2022,TUR,40,Turkiye,0.73,0
+2022,VNM,41,Vietnam,0.68,4
+2022,BIH,42,Bosnia and Herzegovina,0.66,9
+2022,BLR,43,Belarus,0.44,-10
+2022,CRI,44,Costa Rica,0.38,3
+2022,CAN,45,Canada,0.32,-4
+2022,ARE,46,United Arab Emirates,0.32,-3
+2022,MKD,47,North Macedonia,0.31,25
+2022,IRL,48,Ireland,0.31,-4
+2022,ARM,49,Armenia,0.27,21
+2022,LBN,50,Lebanon,0.24,-4
+2022,IDN,51,Indonesia,0.14,-2
+2022,SLV,52,El Salvador,0.13,6
+2022,NZL,53,New Zealand,0.11,2
+2022,MDA,54,Moldova,0.08,-2
+2022,CYP,55,Cyprus,0.05,-7
+2022,COL,56,Colombia,0.05,6
+2022,UKR,57,Ukraine,0.04,-7
+2022,DOM,58,Dominican Republic,0.03,5
+2022,GRC,59,Greece,0.02,-3
+2022,EGY,60,Egypt,-0.18,5
+2022,SWZ,61,Eswatini,-0.18,3
+2022,MUS,62,Mauritius,-0.20,4
+2022,ARG,63,Argentina,-0.21,8
+2022,KHM,64,Cambodia,-0.22,12
+2022,PAN,65,Panama,-0.23,-12
+2022,URY,66,Uruguay,-0.23,7
+2022,JOR,67,Jordan,-0.25,0
+2022,BRA,68,Brazil,-0.25,-7
+2022,MAR,69,Morocco,-0.27,8
+2022,GEO,70,Georgia,-0.28,4
+2022,NOR,71,Norway,-0.29,-17
+2022,BHR,72,Bahrain,-0.31,-15
+2022,LKA,73,Sri Lanka,-0.32,6
+2022,SAU,74,Saudi Arabia,-0.33,-6
+2022,UZB,75,Uzbekistan,-0.35,30
+2022,ALB,76,Albania,-0.43,16
+2022,BEN,77,Benin,-0.43,1
+2022,ZAF,78,South Africa,-0.43,-18
+2022,HTI,79,Haiti,-0.48,5
+2022,PRY,80,Paraguay,-0.49,15
+2022,KGZ,81,Kyrgyzstan,-0.49,-12
+2022,NPL,82,Nepal,-0.51,-1
+2022,KWT,83,Kuwait,-0.51,10
+2022,AZE,84,Azerbaijan,-0.52,6
+2022,NER,85,Niger,-0.52,3
+2022,DZA,86,Algeria,-0.52,10
+2022,BGD,87,Bangladesh,-0.54,10
+2022,TCD,88,Chad,-0.55,10
+2022,TGO,89,Togo,-0.56,-7
+2022,GNQ,90,Equatorial Guinea,-0.56,9
+2022,QAT,91,Qatar,-0.57,15
+2022,GTM,92,Guatemala,-0.57,12
+2022,JAM,93,Jamaica,-0.57,-18
+2022,BFA,94,Burkina Faso,-0.60,22
+2022,NIC,95,Nicaragua,-0.60,8
+2022,YEM,96,Yemen,-0.62,15
+2022,IRQ,97,Iraq,-0.65,4
+2022,TKM,98,Turkmenistan,-0.66,4
+2022,BWA,99,Botswana,-0.67,-5
+2022,GAB,100,Gabon,-0.69,19
+2022,ECU,101,Ecuador,-0.70,-10
+2022,MWI,102,Malawi,-0.70,12
+2022,HND,103,Honduras,-0.70,-23
+2022,MLI,104,Mali,-0.70,-21
+2022,AGO,105,Angola,-0.72,-5
+2022,SDN,106,Sudan,-0.74,15
+2022,TTO,107,Trinidad and Tobago,-0.75,-18
+2022,LBY,108,Libya,-0.76,2
+2022,CMR,109,Cameroon,-0.76,0
+2022,IRN,110,Iran,-0.77,12
+2022,SEN,111,Senegal,-0.79,9
+2022,CIV,112,Côte d'Ivoire,-0.82,0
+2022,VEN,113,Venezuela,-0.85,2
+2022,UGA,114,Uganda,-0.86,13
+2022,OMN,115,Oman,-0.88,-2
+2022,LBR,116,Liberia,-0.88,-29
+2022,GIN,117,Guinea,-0.88,-9
+2022,PNG,118,Papua New Guinea,-0.88,10
+2022,RWA,119,Rwanda,-0.90,14
+2022,KAZ,120,Kazakhstan,-0.91,25
+2022,ETH,121,Ethiopia,-0.91,3
+2022,LAO,122,Laos,-0.92,14
+2022,KEN,123,Kenya,-0.92,-38
+2022,RUS,124,Russian Federation,-0.93,-65
+2022,GHA,125,Ghana,-0.97,7
+2022,NAM,126,Namibia,-0.97,-1
+2022,AFG,127,Afghanistan,-0.99,-41
+2022,CUB,128,Cuba,-1.00,-21
+2022,MRT,129,Mauritania,-1.06,-6
+2022,CHL,130,Chile,-1.11,-4
+2022,MMR,131,Myanmar,-1.16,0
+2022,PAK,132,Pakistan,-1.20,-14
+2022,PER,133,Peru,-1.23,4
+2022,BOL,134,Bolivia,-1.28,4
+2022,TJK,135,Tajikistan,-1.28,-6
+2022,COG,136,Republic of the Congo,-1.28,-19
+2022,ZWE,137,Zimbabwe,-1.35,4
+2022,ZMB,138,Zambia,-1.38,-3
+2022,MNG,139,Mongolia,-1.45,1
+2022,MDG,140,Madagascar,-1.52,-6
+2022,AUS,141,Australia,-1.57,-2
+2022,MOZ,142,Mozambique,-1.61,1
+2022,NGA,143,Nigeria,-1.64,-13
+2022,TZA,144,Tanzania,-1.78,-2
+2022,COD,145,Democratic Republic of the Congo,-1.83,-1

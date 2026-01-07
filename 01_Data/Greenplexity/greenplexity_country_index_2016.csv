@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2016,JPN,1,Japan,3.56,N/A
+2016,DEU,2,Germany,3.28,N/A
+2016,FRA,3,France,2.71,N/A
+2016,USA,4,United States of America,2.69,N/A
+2016,CZE,5,Czech Republic,2.63,N/A
+2016,CHN,6,China,2.62,N/A
+2016,AUT,7,Austria,2.61,N/A
+2016,KOR,8,South Korea,2.58,N/A
+2016,HUN,9,Hungary,2.58,N/A
+2016,ITA,10,Italy,2.50,N/A
+2016,TWN,11,Taiwan,2.33,N/A
+2016,SVN,12,Slovenia,2.31,N/A
+2016,SWE,13,Sweden,2.17,N/A
+2016,ROU,14,Romania,2.15,N/A
+2016,DNK,15,Denmark,2.07,N/A
+2016,GBR,16,United Kingdom of Great Britain and Northern Ireland,2.07,N/A
+2016,BEL,17,Belgium,1.99,N/A
+2016,CHE,18,Switzerland,1.98,N/A
+2016,FIN,19,Finland,1.96,N/A
+2016,POL,20,Poland,1.95,N/A
+2016,SGP,21,Singapore,1.93,N/A
+2016,NLD,22,Netherlands,1.75,N/A
+2016,SVK,23,Slovakia,1.69,N/A
+2016,MEX,24,Mexico,1.60,N/A
+2016,THA,25,Thailand,1.51,N/A
+2016,EST,26,Estonia,1.50,N/A
+2016,ESP,27,Spain,1.48,N/A
+2016,MYS,28,Malaysia,1.46,N/A
+2016,LTU,29,Lithuania,1.39,N/A
+2016,HRV,30,Croatia,1.37,N/A
+2016,ISR,31,Israel,1.35,N/A
+2016,HKG,32,Hong Kong,1.21,N/A
+2016,PRT,33,Portugal,1.14,N/A
+2016,TUN,34,Tunisia,1.08,N/A
+2016,BLR,35,Belarus,1.04,N/A
+2016,IND,36,India,0.98,N/A
+2016,TUR,37,Turkiye,0.96,N/A
+2016,BGR,38,Bulgaria,0.96,N/A
+2016,LVA,39,Latvia,0.91,N/A
+2016,SRB,40,Serbia,0.89,N/A
+2016,PHL,41,Philippines,0.68,N/A
+2016,CAN,42,Canada,0.65,N/A
+2016,NOR,43,Norway,0.42,N/A
+2016,CRI,44,Costa Rica,0.39,N/A
+2016,IRL,45,Ireland,0.35,N/A
+2016,PAN,46,Panama,0.35,N/A
+2016,IDN,47,Indonesia,0.35,N/A
+2016,UKR,48,Ukraine,0.31,N/A
+2016,GRC,49,Greece,0.29,N/A
+2016,VNM,50,Vietnam,0.29,N/A
+2016,BIH,51,Bosnia and Herzegovina,0.26,N/A
+2016,LBN,52,Lebanon,0.24,N/A
+2016,NZL,53,New Zealand,0.22,N/A
+2016,MDA,54,Moldova,0.22,N/A
+2016,CYP,55,Cyprus,0.20,N/A
+2016,ARE,56,United Arab Emirates,0.15,N/A
+2016,BHR,57,Bahrain,0.11,N/A
+2016,ZAF,58,South Africa,0.06,N/A
+2016,BRA,59,Brazil,0.03,N/A
+2016,COL,60,Colombia,-0.01,N/A
+2016,DOM,61,Dominican Republic,-0.02,N/A
+2016,SLV,62,El Salvador,-0.02,N/A
+2016,MUS,63,Mauritius,-0.06,N/A
+2016,RUS,64,Russian Federation,-0.10,N/A
+2016,EGY,65,Egypt,-0.11,N/A
+2016,KGZ,66,Kyrgyzstan,-0.13,N/A
+2016,SWZ,67,Eswatini,-0.17,N/A
+2016,JOR,68,Jordan,-0.17,N/A
+2016,MKD,69,North Macedonia,-0.18,N/A
+2016,SAU,70,Saudi Arabia,-0.27,N/A
+2016,LKA,71,Sri Lanka,-0.34,N/A
+2016,ARG,72,Argentina,-0.36,N/A
+2016,ARM,73,Armenia,-0.36,N/A
+2016,URY,74,Uruguay,-0.39,N/A
+2016,MAR,75,Morocco,-0.40,N/A
+2016,KEN,76,Kenya,-0.42,N/A
+2016,TGO,77,Togo,-0.43,N/A
+2016,GEO,78,Georgia,-0.44,N/A
+2016,ECU,79,Ecuador,-0.48,N/A
+2016,NPL,80,Nepal,-0.50,N/A
+2016,MLI,81,Mali,-0.50,N/A
+2016,JAM,82,Jamaica,-0.51,N/A
+2016,ALB,83,Albania,-0.52,N/A
+2016,BEN,84,Benin,-0.54,N/A
+2016,KWT,85,Kuwait,-0.54,N/A
+2016,HTI,86,Haiti,-0.54,N/A
+2016,HND,87,Honduras,-0.55,N/A
+2016,AGO,88,Angola,-0.55,N/A
+2016,SEN,89,Senegal,-0.58,N/A
+2016,ETH,90,Ethiopia,-0.58,N/A
+2016,PRY,91,Paraguay,-0.60,N/A
+2016,KHM,92,Cambodia,-0.61,N/A
+2016,CUB,93,Cuba,-0.62,N/A
+2016,TKM,94,Turkmenistan,-0.62,N/A
+2016,BGD,95,Bangladesh,-0.62,N/A
+2016,BWA,96,Botswana,-0.64,N/A
+2016,DZA,97,Algeria,-0.64,N/A
+2016,TCD,98,Chad,-0.64,N/A
+2016,IRQ,99,Iraq,-0.64,N/A
+2016,GNQ,100,Equatorial Guinea,-0.66,N/A
+2016,AZE,101,Azerbaijan,-0.68,N/A
+2016,TTO,102,Trinidad and Tobago,-0.69,N/A
+2016,NIC,103,Nicaragua,-0.69,N/A
+2016,PAK,104,Pakistan,-0.73,N/A
+2016,CIV,105,Côte d'Ivoire,-0.74,N/A
+2016,AFG,106,Afghanistan,-0.74,N/A
+2016,NER,107,Niger,-0.74,N/A
+2016,UZB,108,Uzbekistan,-0.76,N/A
+2016,UGA,109,Uganda,-0.76,N/A
+2016,BFA,110,Burkina Faso,-0.77,N/A
+2016,QAT,111,Qatar,-0.78,N/A
+2016,MWI,112,Malawi,-0.80,N/A
+2016,NAM,113,Namibia,-0.80,N/A
+2016,OMN,114,Oman,-0.81,N/A
+2016,SDN,115,Sudan,-0.82,N/A
+2016,LBY,116,Libya,-0.82,N/A
+2016,CMR,117,Cameroon,-0.83,N/A
+2016,LBR,118,Liberia,-0.85,N/A
+2016,VEN,119,Venezuela,-0.85,N/A
+2016,IRN,120,Iran,-0.86,N/A
+2016,YEM,121,Yemen,-0.87,N/A
+2016,MRT,122,Mauritania,-0.87,N/A
+2016,CHL,123,Chile,-0.88,N/A
+2016,GAB,124,Gabon,-0.88,N/A
+2016,PNG,125,Papua New Guinea,-0.90,N/A
+2016,GTM,126,Guatemala,-0.91,N/A
+2016,COG,127,Republic of the Congo,-0.95,N/A
+2016,GHA,128,Ghana,-0.97,N/A
+2016,GIN,129,Guinea,-0.99,N/A
+2016,LAO,130,Laos,-0.99,N/A
+2016,RWA,131,Rwanda,-0.99,N/A
+2016,TJK,132,Tajikistan,-1.03,N/A
+2016,ZMB,133,Zambia,-1.06,N/A
+2016,MMR,134,Myanmar,-1.09,N/A
+2016,BOL,135,Bolivia,-1.13,N/A
+2016,AUS,136,Australia,-1.19,N/A
+2016,MOZ,137,Mozambique,-1.20,N/A
+2016,PER,138,Peru,-1.20,N/A
+2016,NGA,139,Nigeria,-1.21,N/A
+2016,MDG,140,Madagascar,-1.29,N/A
+2016,TZA,141,Tanzania,-1.33,N/A
+2016,MNG,142,Mongolia,-1.33,N/A
+2016,ZWE,143,Zimbabwe,-1.34,N/A
+2016,COD,144,Democratic Republic of the Congo,-1.58,N/A
+2016,KAZ,145,Kazakhstan,-1.61,N/A

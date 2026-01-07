@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2023,JPN,1,Japan,3.43,0
+2023,DEU,2,Germany,3.32,0
+2023,CZE,3,Czech Republic,2.74,3
+2023,FRA,4,France,2.63,-1
+2023,CHN,5,China,2.62,0
+2023,ITA,6,Italy,2.49,-2
+2023,AUT,7,Austria,2.48,2
+2023,GBR,8,United Kingdom of Great Britain and Northern Ireland,2.44,5
+2023,USA,9,United States of America,2.40,-2
+2023,HUN,10,Hungary,2.39,0
+2023,ROU,11,Romania,2.33,1
+2023,KOR,12,South Korea,2.32,-4
+2023,SVN,13,Slovenia,2.17,2
+2023,POL,14,Poland,2.10,6
+2023,SWE,15,Sweden,2.10,3
+2023,DNK,16,Denmark,2.04,-2
+2023,TWN,17,Taiwan,1.99,-6
+2023,CHE,18,Switzerland,1.89,-2
+2023,SGP,19,Singapore,1.86,-2
+2023,SVK,20,Slovakia,1.83,2
+2023,FIN,21,Finland,1.75,-2
+2023,BEL,22,Belgium,1.69,-1
+2023,MEX,23,Mexico,1.63,3
+2023,NLD,24,Netherlands,1.55,-1
+2023,ISR,25,Israel,1.46,5
+2023,ESP,26,Spain,1.44,3
+2023,THA,27,Thailand,1.42,0
+2023,EST,28,Estonia,1.37,0
+2023,HRV,29,Croatia,1.33,2
+2023,LTU,30,Lithuania,1.31,-6
+2023,SRB,31,Serbia,1.24,6
+2023,HKG,32,Hong Kong,1.16,2
+2023,TUN,33,Tunisia,1.13,5
+2023,IND,34,India,1.12,-2
+2023,LVA,35,Latvia,1.07,5
+2023,BGR,36,Bulgaria,1.04,-3
+2023,PRT,37,Portugal,1.03,-1
+2023,TUR,38,Turkiye,1.01,1
+2023,MYS,39,Malaysia,0.98,-14
+2023,ARE,40,United Arab Emirates,0.63,3
+2023,BIH,41,Bosnia and Herzegovina,0.55,4
+2023,PHL,42,Philippines,0.51,0
+2023,CRI,43,Costa Rica,0.40,5
+2023,LBN,44,Lebanon,0.36,8
+2023,VNM,45,Vietnam,0.35,-1
+2023,MKD,46,North Macedonia,0.34,9
+2023,CAN,47,Canada,0.33,-6
+2023,BLR,48,Belarus,0.33,-13
+2023,IRL,49,Ireland,0.32,-3
+2023,ARM,50,Armenia,0.25,19
+2023,NZL,51,New Zealand,0.21,-1
+2023,IDN,52,Indonesia,0.20,-3
+2023,GRC,53,Greece,0.18,6
+2023,SLV,54,El Salvador,0.11,2
+2023,MDA,55,Moldova,0.09,-4
+2023,COL,56,Colombia,0.06,6
+2023,UKR,57,Ukraine,0.05,-4
+2023,MAR,58,Morocco,-0.06,13
+2023,DOM,59,Dominican Republic,-0.07,1
+2023,NOR,60,Norway,-0.09,-6
+2023,CYP,61,Cyprus,-0.13,-4
+2023,KGZ,62,Kyrgyzstan,-0.18,6
+2023,BHR,63,Bahrain,-0.19,0
+2023,EGY,64,Egypt,-0.20,6
+2023,URY,65,Uruguay,-0.21,13
+2023,ARG,66,Argentina,-0.22,6
+2023,MUS,67,Mauritius,-0.23,-9
+2023,PAN,68,Panama,-0.23,-21
+2023,ZAF,69,South Africa,-0.25,-5
+2023,UZB,70,Uzbekistan,-0.26,31
+2023,BRA,71,Brazil,-0.26,-10
+2023,GEO,72,Georgia,-0.28,-7
+2023,KHM,73,Cambodia,-0.32,3
+2023,SAU,74,Saudi Arabia,-0.37,-7
+2023,JOR,75,Jordan,-0.37,-2
+2023,SWZ,76,Eswatini,-0.39,-10
+2023,LKA,77,Sri Lanka,-0.43,-2
+2023,TGO,78,Togo,-0.44,20
+2023,BEN,79,Benin,-0.44,-2
+2023,ALB,80,Albania,-0.44,7
+2023,PRY,81,Paraguay,-0.48,8
+2023,NPL,82,Nepal,-0.50,12
+2023,AZE,83,Azerbaijan,-0.50,0
+2023,TTO,84,Trinidad and Tobago,-0.54,18
+2023,HTI,85,Haiti,-0.54,1
+2023,GTM,86,Guatemala,-0.54,-4
+2023,BFA,87,Burkina Faso,-0.56,17
+2023,BGD,88,Bangladesh,-0.57,2
+2023,TCD,89,Chad,-0.57,-1
+2023,NIC,90,Nicaragua,-0.58,1
+2023,NER,91,Niger,-0.59,-10
+2023,GNQ,92,Equatorial Guinea,-0.60,8
+2023,YEM,93,Yemen,-0.60,22
+2023,JAM,94,Jamaica,-0.61,-14
+2023,KWT,95,Kuwait,-0.62,11
+2023,HND,96,Honduras,-0.62,-11
+2023,MWI,97,Malawi,-0.62,22
+2023,TKM,98,Turkmenistan,-0.64,5
+2023,ECU,99,Ecuador,-0.64,-4
+2023,IRQ,100,Iraq,-0.67,-1
+2023,AGO,101,Angola,-0.68,4
+2023,MRT,102,Mauritania,-0.70,14
+2023,DZA,103,Algeria,-0.70,-10
+2023,KAZ,104,Kazakhstan,-0.71,39
+2023,BWA,105,Botswana,-0.71,-8
+2023,QAT,106,Qatar,-0.73,-14
+2023,MLI,107,Mali,-0.75,-11
+2023,UGA,108,Uganda,-0.75,1
+2023,LBR,109,Liberia,-0.76,1
+2023,GAB,110,Gabon,-0.79,16
+2023,CMR,111,Cameroon,-0.81,2
+2023,KEN,112,Kenya,-0.81,-33
+2023,ETH,113,Ethiopia,-0.82,-5
+2023,SDN,114,Sudan,-0.83,3
+2023,RUS,115,Russian Federation,-0.87,-41
+2023,VEN,116,Venezuela,-0.87,-2
+2023,PNG,117,Papua New Guinea,-0.89,11
+2023,CIV,118,Côte d'Ivoire,-0.91,5
+2023,GIN,119,Guinea,-0.92,-1
+2023,LBY,120,Libya,-0.93,-8
+2023,AFG,121,Afghanistan,-0.95,-14
+2023,CUB,122,Cuba,-0.95,0
+2023,GHA,123,Ghana,-0.96,6
+2023,SEN,124,Senegal,-0.98,3
+2023,RWA,125,Rwanda,-1.01,-5
+2023,OMN,126,Oman,-1.04,-15
+2023,COG,127,Republic of the Congo,-1.10,4
+2023,CHL,128,Chile,-1.11,-4
+2023,BOL,129,Bolivia,-1.16,9
+2023,ZWE,130,Zimbabwe,-1.16,11
+2023,PER,131,Peru,-1.18,5
+2023,PAK,132,Pakistan,-1.19,-11
+2023,LAO,133,Laos,-1.20,-8
+2023,MNG,134,Mongolia,-1.22,6
+2023,MOZ,135,Mozambique,-1.26,9
+2023,MMR,136,Myanmar,-1.29,-2
+2023,ZMB,137,Zambia,-1.29,-2
+2023,TJK,138,Tajikistan,-1.30,-1
+2023,MDG,139,Madagascar,-1.30,0
+2023,IRN,140,Iran,-1.32,-7
+2023,NAM,141,Namibia,-1.35,-11
+2023,AUS,142,Australia,-1.46,0
+2023,NGA,143,Nigeria,-1.49,-11
+2023,TZA,144,Tanzania,-1.53,-60
+2023,COD,145,Democratic Republic of the Congo,-1.58,0

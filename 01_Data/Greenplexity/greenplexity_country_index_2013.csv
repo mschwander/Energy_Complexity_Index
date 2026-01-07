@@ -1,0 +1,146 @@
+Year,ISO3 Code,Rank,Country,Greenplexity Index,Change in 5yrs
+2013,JPN,1,Japan,3.58,N/A
+2013,DEU,2,Germany,3.41,N/A
+2013,USA,3,United States of America,2.82,N/A
+2013,FRA,4,France,2.77,N/A
+2013,CZE,5,Czech Republic,2.75,N/A
+2013,ITA,6,Italy,2.64,N/A
+2013,AUT,7,Austria,2.63,N/A
+2013,SWE,8,Sweden,2.60,N/A
+2013,CHN,9,China,2.55,N/A
+2013,HUN,10,Hungary,2.51,N/A
+2013,KOR,11,South Korea,2.43,N/A
+2013,SVN,12,Slovenia,2.41,N/A
+2013,TWN,13,Taiwan,2.32,N/A
+2013,GBR,14,United Kingdom of Great Britain and Northern Ireland,2.31,N/A
+2013,CHE,15,Switzerland,2.14,N/A
+2013,POL,16,Poland,2.10,N/A
+2013,FIN,17,Finland,2.08,N/A
+2013,DNK,18,Denmark,2.06,N/A
+2013,BEL,19,Belgium,1.99,N/A
+2013,SGP,20,Singapore,1.84,N/A
+2013,ROU,21,Romania,1.84,N/A
+2013,SVK,22,Slovakia,1.70,N/A
+2013,NLD,23,Netherlands,1.57,N/A
+2013,HRV,24,Croatia,1.55,N/A
+2013,MEX,25,Mexico,1.55,N/A
+2013,ESP,26,Spain,1.53,N/A
+2013,EST,27,Estonia,1.52,N/A
+2013,THA,28,Thailand,1.46,N/A
+2013,HKG,29,Hong Kong,1.39,N/A
+2013,LTU,30,Lithuania,1.34,N/A
+2013,ISR,31,Israel,1.28,N/A
+2013,PRT,32,Portugal,1.24,N/A
+2013,MYS,33,Malaysia,1.13,N/A
+2013,LVA,34,Latvia,1.08,N/A
+2013,BLR,35,Belarus,1.03,N/A
+2013,TUN,36,Tunisia,1.00,N/A
+2013,BGR,37,Bulgaria,0.91,N/A
+2013,TUR,38,Turkiye,0.90,N/A
+2013,IND,39,India,0.83,N/A
+2013,SRB,40,Serbia,0.70,N/A
+2013,PHL,41,Philippines,0.65,N/A
+2013,CAN,42,Canada,0.64,N/A
+2013,UKR,43,Ukraine,0.52,N/A
+2013,IRL,44,Ireland,0.45,N/A
+2013,BIH,45,Bosnia and Herzegovina,0.40,N/A
+2013,CRI,46,Costa Rica,0.39,N/A
+2013,LBN,47,Lebanon,0.39,N/A
+2013,NZL,48,New Zealand,0.35,N/A
+2013,PAN,49,Panama,0.33,N/A
+2013,GRC,50,Greece,0.30,N/A
+2013,NOR,51,Norway,0.26,N/A
+2013,MDA,52,Moldova,0.22,N/A
+2013,IDN,53,Indonesia,0.20,N/A
+2013,ZAF,54,South Africa,0.19,N/A
+2013,JOR,55,Jordan,0.14,N/A
+2013,VNM,56,Vietnam,0.13,N/A
+2013,CYP,57,Cyprus,0.13,N/A
+2013,BRA,58,Brazil,0.12,N/A
+2013,ARG,59,Argentina,0.12,N/A
+2013,ARE,60,United Arab Emirates,0.10,N/A
+2013,SLV,61,El Salvador,0.04,N/A
+2013,COL,62,Colombia,-0.04,N/A
+2013,DOM,63,Dominican Republic,-0.04,N/A
+2013,MUS,64,Mauritius,-0.06,N/A
+2013,SWZ,65,Eswatini,-0.07,N/A
+2013,BHR,66,Bahrain,-0.11,N/A
+2013,MKD,67,North Macedonia,-0.14,N/A
+2013,RUS,68,Russian Federation,-0.22,N/A
+2013,AFG,69,Afghanistan,-0.23,N/A
+2013,EGY,70,Egypt,-0.26,N/A
+2013,SAU,71,Saudi Arabia,-0.30,N/A
+2013,URY,72,Uruguay,-0.34,N/A
+2013,TGO,73,Togo,-0.42,N/A
+2013,NPL,74,Nepal,-0.42,N/A
+2013,LKA,75,Sri Lanka,-0.44,N/A
+2013,MLI,76,Mali,-0.45,N/A
+2013,ECU,77,Ecuador,-0.46,N/A
+2013,BGD,78,Bangladesh,-0.47,N/A
+2013,HTI,79,Haiti,-0.49,N/A
+2013,ARM,80,Armenia,-0.49,N/A
+2013,KEN,81,Kenya,-0.50,N/A
+2013,KWT,82,Kuwait,-0.51,N/A
+2013,ETH,83,Ethiopia,-0.51,N/A
+2013,GEO,84,Georgia,-0.52,N/A
+2013,PRY,85,Paraguay,-0.53,N/A
+2013,MAR,86,Morocco,-0.53,N/A
+2013,ALB,87,Albania,-0.53,N/A
+2013,JAM,88,Jamaica,-0.53,N/A
+2013,BFA,89,Burkina Faso,-0.55,N/A
+2013,NER,90,Niger,-0.56,N/A
+2013,DZA,91,Algeria,-0.57,N/A
+2013,HND,92,Honduras,-0.57,N/A
+2013,IRQ,93,Iraq,-0.57,N/A
+2013,AZE,94,Azerbaijan,-0.58,N/A
+2013,NAM,95,Namibia,-0.60,N/A
+2013,GNQ,96,Equatorial Guinea,-0.60,N/A
+2013,TKM,97,Turkmenistan,-0.60,N/A
+2013,NIC,98,Nicaragua,-0.61,N/A
+2013,AGO,99,Angola,-0.61,N/A
+2013,CMR,100,Cameroon,-0.61,N/A
+2013,UZB,101,Uzbekistan,-0.62,N/A
+2013,QAT,102,Qatar,-0.63,N/A
+2013,SEN,103,Senegal,-0.63,N/A
+2013,YEM,104,Yemen,-0.64,N/A
+2013,BWA,105,Botswana,-0.64,N/A
+2013,GTM,106,Guatemala,-0.64,N/A
+2013,BEN,107,Benin,-0.67,N/A
+2013,KGZ,108,Kyrgyzstan,-0.68,N/A
+2013,LBY,109,Libya,-0.71,N/A
+2013,UGA,110,Uganda,-0.71,N/A
+2013,GHA,111,Ghana,-0.72,N/A
+2013,PAK,112,Pakistan,-0.73,N/A
+2013,TJK,113,Tajikistan,-0.75,N/A
+2013,SDN,114,Sudan,-0.76,N/A
+2013,CHL,115,Chile,-0.76,N/A
+2013,TTO,116,Trinidad and Tobago,-0.77,N/A
+2013,MWI,117,Malawi,-0.77,N/A
+2013,PNG,118,Papua New Guinea,-0.78,N/A
+2013,KHM,119,Cambodia,-0.79,N/A
+2013,GIN,120,Guinea,-0.83,N/A
+2013,MRT,121,Mauritania,-0.83,N/A
+2013,IRN,122,Iran,-0.84,N/A
+2013,PER,123,Peru,-0.85,N/A
+2013,LBR,124,Liberia,-0.86,N/A
+2013,VEN,125,Venezuela,-0.86,N/A
+2013,TCD,126,Chad,-0.87,N/A
+2013,GAB,127,Gabon,-0.87,N/A
+2013,CIV,128,Côte d'Ivoire,-0.91,N/A
+2013,CUB,129,Cuba,-0.91,N/A
+2013,ZMB,130,Zambia,-0.94,N/A
+2013,RWA,131,Rwanda,-1.01,N/A
+2013,TZA,132,Tanzania,-1.01,N/A
+2013,NGA,133,Nigeria,-1.05,N/A
+2013,MOZ,134,Mozambique,-1.09,N/A
+2013,MNG,135,Mongolia,-1.13,N/A
+2013,BOL,136,Bolivia,-1.16,N/A
+2013,COG,137,Republic of the Congo,-1.17,N/A
+2013,OMN,138,Oman,-1.19,N/A
+2013,ZWE,139,Zimbabwe,-1.20,N/A
+2013,MDG,140,Madagascar,-1.27,N/A
+2013,LAO,141,Laos,-1.31,N/A
+2013,AUS,142,Australia,-1.38,N/A
+2013,MMR,143,Myanmar,-1.47,N/A
+2013,COD,144,Democratic Republic of the Congo,-1.60,N/A
+2013,KAZ,145,Kazakhstan,-1.63,N/A
