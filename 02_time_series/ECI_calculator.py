@@ -2,15 +2,17 @@ import pandas as pd
 import os
 from ecomplexity import ecomplexity
 
-def ECI_ecomplexity(df, year, yellow, min_trade, min_val, ubiquity, ll_ubiquity, ul_ubiquity,
-                    population, pop_min, trade_value, min_trade_value, global_market_share,
+def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min_trade, min_val, ubiquity, absolute_ubiquity, relative_ll_ubiquity, ll_ubiquity, relative_ul_ubiquity, ul_ubiquity,
+                    population, pop_min, trade_value, total_trade_value, relative_trade_value, min_trade_value, global_market_share,
                     min_global_market_share, save_folder):
     # Filter data for year 2023
     data = df[df['year'] == year].copy()
     print("Amount of data before filtering:", len(data))
+    number_data_beginning = len(data)
 
     if population == 1:
         population_data = pd.read_csv("01_Data/WPP2024_Demographic_Indicators_Medium.csv")
+        momentary_data = len(data)
 
         population_year = population_data[population_data["Time"] == year]
 
@@ -33,42 +35,96 @@ def ECI_ecomplexity(df, year, yellow, min_trade, min_val, ubiquity, ll_ubiquity,
         unique_countries = data['location_code'].nunique()
         print(f"Number of unique countries after population filtering with min {pop_min}:", unique_countries)
         print(f"Amount of data after population filtering with minimum 1 Million people:", len(data))
+        filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+        print(f"Filtered out {filtered_out_value} % of data")
 
     if trade_value == 1:
         total_trade = data.groupby('location_code')['export_value'].sum()
         total_trade = total_trade.sort_values(ascending=False)
-        #save_path = os.path.join("04_Results", "total_trade_by_country_2023.csv")
-        #total_trade.to_csv(save_path, header=['total_export_value'])
-        #print(f"Saved total trade by country to {save_path}")
-        high_trade_countries = total_trade[total_trade >= min_trade_value[year]].index.tolist()
-        print("Amount of unique countries before trade value filtering:", data['location_code'].nunique())
-        #include only countries with high trade value
-        data = data[data['location_code'].isin(high_trade_countries)]
-        min_trade_dollar = min_trade_value[year]*1000  # Convert to actual dollar value
-        print("Amount of unique countries after trade value filtering:", data['location_code'].nunique())
-        print(f"Amount of data after trade value filtering with min {min_trade_dollar} $:", len(data))   
+        momentary_data = len(data)
+        if total_trade_value == 1:
+            high_trade_countries = total_trade[total_trade >= min_trade_value[year]].index.tolist()
+            print("Amount of unique countries before trade value filtering:", data['location_code'].nunique())
+            #include only countries with high trade value
+            data = data[data['location_code'].isin(high_trade_countries)]
+            min_trade_dollar = min_trade_value[year]*1000  # Convert to actual dollar value
+            print("Amount of unique countries after trade value filtering:", data['location_code'].nunique())
+            print(f"Amount of data after trade value filtering with min {min_trade_dollar} $:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")   
+        else:
+            #cut out bottom percentage of countries by relative trade value with
+            threshold_index = int(len(total_trade) * relative_trade_value)
+            high_trade_countries = total_trade.iloc[:threshold_index].index.tolist()
+            #include only countries with high trade value
+            data = data[data['location_code'].isin(high_trade_countries)]
+            print("Amount of unique countries after relative trade value filtering:", data['location_code'].nunique())
+            print(f"Amount of data after relative trade value filtering with top {relative_trade_value*100}%:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")
         
     if min_trade[year] == 1:
-        data = data[data['export_value'] >= min_val[year]]
-        dollar_value = min_val[year]*1000  # Convert to actual dollar value
-        print(f"Amount of data after filtering for higher than {dollar_value} $ value per trade:", len(data))
+        momentary_data = len(data)
+        if absolute_min_val == 1:
+            data = data[data['export_value'] >= min_val[year]]
+            print(f"Amount of data after filtering for higher than {min_val[year]*1000} $ value per trade:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")
+        else:
+            #Calculate trade value threshold based on percentage for example 95%
+            trade_value_threshold = data['export_value'].quantile((1 - percentage_threshold))
+            data = data[data['export_value'] >= trade_value_threshold]
+            print(f"Amount of data after filtering for higher than {trade_value_threshold*1000} $ value per trade:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")
 
     if ubiquity[year] == 1:
-        # Compute ubiquity: number of countries exporting each product
-        ubiq = data.groupby('hs_product_code')['location_code'].nunique()
-        print("Ubiquity calculated.")
-        print(ubiq.describe())
-        
-        keep_products = ubiq[(ubiq >= ll_ubiquity[year]) & (ubiq <= ul_ubiquity[year])].index    
-        data = data[data['hs_product_code'].isin(keep_products)]
-        print(f"Amount of data after ubiquity filtering with {ll_ubiquity[year]} and {ul_ubiquity[year]}:", len(data))
+        momentary_data = len(data)
+        if absolute_ubiquity == 1:
+            # Compute ubiquity: number of countries exporting each product
+            ubiq = data.groupby('hs_product_code')['location_code'].nunique()
+            print("Ubiquity calculated.")
+            print(ubiq.describe())
+            
+            keep_products = ubiq[(ubiq >= ll_ubiquity[year]) & (ubiq <= ul_ubiquity[year])].index    
+            data = data[data['hs_product_code'].isin(keep_products)]
+            print(f"Amount of data after ubiquity filtering with {ll_ubiquity[year]} and {ul_ubiquity[year]}:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")
+        else:
+            # Compute ubiquity: number of countries exporting each product
+            ubiq = data.groupby('hs_product_code')['location_code'].nunique()
+            print("Ubiquity calculated.")
+            print(ubiq.describe())
+
+            # Take for lower threshold the relative_ll_ubiquity* min ubiquity and for upper threshold the relative_ul_ubiquity* max ubiquity
+            if ubiq.min() <= 4:
+                lower_threshold = 4
+            else: 
+                lower_threshold = relative_ll_ubiquity * ubiq.min()
+            upper_threshold = relative_ul_ubiquity * ubiq.max()
+
+            keep_products = ubiq[(ubiq >= lower_threshold) & (ubiq <= upper_threshold)].index    
+            data = data[data['hs_product_code'].isin(keep_products)]
+            print(f"Amount of data after relative ubiquity filtering with {lower_threshold} and {upper_threshold}:", len(data))
+            filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+            print(f"Filtered out {filtered_out_value} % of data")
 
     if global_market_share[year] == 1:
+        momentary_data = len(data)
         total_world_trade = data['export_value'].sum()
         data['global_market_share'] = data['export_value'] / total_world_trade
         # Keep products with at least a percentage of global share
         data = data[data['global_market_share'] >= min_global_market_share[year]]
         print(f"Amount of data after global market share filtering with min {min_global_market_share[year]}:", len(data))
+        filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
+        print(f"Filtered out {filtered_out_value} % of data")
+    
+    
+    number_data_end = len(data)
+    share_data = (number_data_end/number_data_beginning)*100
+
+    print(f"Amount of starting data kept: {share_data} %")
 
     # Calculate complexity
     trade_cols = {'time':'year', 'loc':'location_code', 'prod':'hs_product_code', 'val':'export_value'}

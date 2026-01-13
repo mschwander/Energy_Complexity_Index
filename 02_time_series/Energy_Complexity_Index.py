@@ -27,35 +27,35 @@ class Tee(object):
 # Decides which dataset to use
 HS_22 = 0  # 1 for HS 2022, 0 for HS 1996
 
-#years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
-#         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-#         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
-
-
-#years = [2000, 2001, 2002, 2003, 2004, 2005]
-#years = [2007, 2008, 2009, 2010, 2011, 2012]
-years = [2002, 2003, 2004, 2005, 2007]
-#ears = [2023]
+years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
+         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
 
 yellow = 1
 first = 1  # 1 to use first year for top/bottom 20, 0 for last year
-save_folder = "04_Results_02_07_all_Filters" #Folder to save results
+save_folder = "04_Results_96_23_all_Filters_relative_3" #Folder to save results
 all_countries = 1  # 1 to plot all countries in time series, 0 for selected list
+no_filter = 0 #no min trade value, no ubiquity, no global market share filtering 
 
+####################################################################################
 population = 1
 pop_min = 1e6 #minimum population to include country in ECI calculation
 
+####################################################################################
+
 trade_value = 1
+total_trade_value = 0 #1 to filter by total trade value, 0 to filter by relative trade value
+relative_trade_value = 0.95 #include top 90% of trade value countries
 
 #BACI value is in thousand $
-min_trade_value = {1996: 1e5, #141 -> 91
-                1997: 1e5, #144 -> 102
-                1998: 1e5, #144 -> 104
-                1999: 1e5, #144 -> 106
-                2000: 1e5, #150 -> 118
-                2001: 1e5, #150 -> 119
-                2002: 1e5, #150 -> 118
-                2003: 1.5e5, #150 -> 119
+min_trade_value = {1996: 1e4, #141 -> 125
+                1997: 4e4, #144 -> 102
+                1998: 4e4, #144 -> 104
+                1999: 4e4, #144 -> 106
+                2000: 4e4, #150 -> 118
+                2001: 7e4, #150 -> 119
+                2002: 8e4, #150 -> 118
+                2003: 1.2e5, #150 -> 119
                 2004: 1.5e5, #151 -> 123
                 2005: 2e5, #151 -> 121
                 2006: 2e5, #152 -> 128
@@ -76,6 +76,8 @@ min_trade_value = {1996: 1e5, #141 -> 91
                 2021: 6.5e5, #158 -> 133
                 2022: 6.5e5, #158 -> 133
                 2023: 6e5} #158 -> 132
+
+###########################################################################################################
 
 #BACI value in thousand $
 min_trade = {1996: 1,
@@ -106,6 +108,9 @@ min_trade = {1996: 1,
                 2021: 1,
                 2022: 1,
                 2023: 1}
+
+absolute_min_val = 1 #1 to filter with absolute values, 0 to filter with relative percentage
+percentage_threshold = 0.95 #keep top 95% of trades by value by getting trade value of quantile 0.05 and then cutting everything below that
 
 min_val = {
     1996: 1, #1'000 $
@@ -138,6 +143,8 @@ min_val = {
     2023: 0.5
 }
 
+#################################################################################################
+
 ubiquity = {1996: 1,
             1997: 1,
             1998: 1,
@@ -166,6 +173,10 @@ ubiquity = {1996: 1,
             2021: 1,
             2022: 1,
             2023: 1}
+
+absolute_ubiquity = 0 #1 to use absolute ubiquity limits, 0 to use relative ubiquity limits
+
+relative_lower_limit = 1.25 #set so that all products below xx*min ubiquity are cut off; if min ubiquity below 3, just remove bottom 3 ubiquity
 
 lower_limit = { 1996: 12, #min 8/8
                 1997: 10, #min 8/8
@@ -196,6 +207,8 @@ lower_limit = { 1996: 12, #min 8/8
                 2022: 6, #min 2/2
                 2023: 6} #min 2/
 
+relative_upper_limit = 0.97 #set so that all products over xx*max ubiquity are cut off
+
 upper_limit = { 1996: 100, #set so that no upper limit is applied; max 86/87
                 1997: 104, #set so that no upper limit is applied; max 102/103
                 1998: 105, #set so that no upper limit is applied; max 103/108
@@ -225,35 +238,36 @@ upper_limit = { 1996: 100, #set so that no upper limit is applied; max 86/87
                 2022: 140, #max 133/133
                 2023: 140} #max 132
 
+###########################################################################################
 
-global_market_share = {1996: 1,
-                        1997: 1,
-                        1998: 1,
-                        1999: 1,
-                        2000: 1,
-                        2001: 1,
-                        2002: 1,
-                        2003: 1,
-                        2004: 1,
-                        2005: 1,
-                        2006: 1,
-                        2007: 1,
-                        2008: 1,
-                        2009: 1,
-                        2010: 1,
-                        2011: 1,
-                        2012: 1,
-                        2013: 1,
-                        2014: 1,
-                        2015: 1,
-                        2016: 1,
-                        2017: 1,
-                        2018: 1,
-                        2019: 1,
-                        2020: 1,
-                        2021: 1,
-                        2022: 1,
-                        2023: 1}
+global_market_share = {1996: 0,
+                        1997: 0,
+                        1998: 0,
+                        1999: 0,
+                        2000: 0,
+                        2001: 0,
+                        2002: 0,
+                        2003: 0,
+                        2004: 0,
+                        2005: 0,
+                        2006: 0,
+                        2007: 0,
+                        2008: 0,
+                        2009: 0,
+                        2010: 0,
+                        2011: 0,
+                        2012: 0,
+                        2013: 0,
+                        2014: 0,
+                        2015: 0,
+                        2016: 0,
+                        2017: 0,
+                        2018: 0,
+                        2019: 0,
+                        2020: 0,
+                        2021: 0,
+                        2022: 0,
+                        2023: 0}
 
 #Trying to filter around 40'000-50'000 products per year
 min_global_market_share = {1996: 3e-9,
@@ -285,6 +299,95 @@ min_global_market_share = {1996: 3e-9,
                            2022: 1e-10,
                            2023: 1.5e-10}
 
+if no_filter == 1:
+    #population = 0
+    #trade_value = 0
+    min_trade = {1996: 0,
+                1997: 0,
+                1998: 0,
+                1999: 0,
+                2000: 0,
+                2001: 0,
+                2002: 0,
+                2003: 0,
+                2004: 0,
+                2005: 0,
+                2006: 0,
+                2007: 0,
+                2008: 0,
+                2009: 0,
+                2010: 0,
+                2011: 0,
+                2012: 0,
+                2013: 0,
+                2014: 0,
+                2015: 0,
+                2016: 0,
+                2017: 0,
+                2018: 0,
+                2019: 0,
+                2020: 0,
+                2021: 0,
+                2022: 0,
+                2023: 0}
+
+    ubiquity = {1996: 0,
+                1997: 0,
+                1998: 0,
+                1999: 0,
+                2000: 0,
+                2001: 0,
+                2002: 0,
+                2003: 0,
+                2004: 0,
+                2005: 0,
+                2006: 0,
+                2007: 0,
+                2008: 0,
+                2009: 0,
+                2010: 0,
+                2011: 0,
+                2012: 0,
+                2013: 0,
+                2014: 0,
+                2015: 0,
+                2016: 0,
+                2017: 0,
+                2018: 0,
+                2019: 0,
+                2020: 0,
+                2021: 0,
+                2022: 0,
+                2023: 0}
+
+    global_market_share = {1996: 0,
+                1997: 0,
+                1998: 0,
+                1999: 0,
+                2000: 0,
+                2001: 0,
+                2002: 0,
+                2003: 0,
+                2004: 0,
+                2005: 0,
+                2006: 0,
+                2007: 0,
+                2008: 0,
+                2009: 0,
+                2010: 0,
+                2011: 0,
+                2012: 0,
+                2013: 0,
+                2014: 0,
+                2015: 0,
+                2016: 0,
+                2017: 0,
+                2018: 0,
+                2019: 0,
+                2020: 0,
+                2021: 0,
+                2022: 0,
+                2023: 0}
 
 ECI_comparison_greenplexity = 1
 
@@ -343,8 +446,8 @@ for year in years:
     df = df.rename(columns={'t': 'year', 'i': 'location_code', 'k': 'hs_product_code', 'v': 'export_value'})
     
 
-    Ecomplexity_df = ECI_ecomplexity(df, year, yellow, min_trade, min_val, ubiquity, lower_limit, upper_limit,
-                        population, pop_min, trade_value, min_trade_value, global_market_share,
+    Ecomplexity_df = ECI_ecomplexity(df, year, yellow, absolute_min_val, percentage_threshold, min_trade, min_val, ubiquity, absolute_ubiquity, relative_lower_limit, lower_limit, relative_upper_limit, upper_limit,
+                        population, pop_min, trade_value, total_trade_value, relative_trade_value, min_trade_value, global_market_share,
                         min_global_market_share, save_folder)
 
     print(f"Ecomplexity calculation for the year {year} done.")
@@ -411,7 +514,7 @@ if ECI_time_series_plot == 1 and len(years) > 1:
     time_series = ECI_time_series(years, yellow, population, save_folder)
     ECI_time_line_plot(time_series, years, save_folder, yellow, first)
     if all_countries == 1:
-        country_iso3_list = pd.read_csv("01_Data/BACI/country_codes_V202501.csv")['country_iso3'].tolist()
+        country_iso3_list = pd.read_csv("01_Data/country_codes_V202501.csv")['country_iso3'].tolist()
     else:
         country_iso3_list = ["NLD", "ESP", "CHN", "DNK", "GBR", "JPN", "ISR", "DEU", "ITA", "POL", "USA", "CHE", "FRA", "SGP", "AUT", "AUS", "FIN", "IND", "SWE", "IRL", "KOR", "LVA", "EST", "BEL", "CAN", "SVK", "SVN", "HUN", "PRT", "NZL", "NOR", "TUR", "RUS", "ROU", "ZAF", "BRA", "MEX", "CZE", "GRC", "BGR", "HRV", "LTU", "UKR", "ARG", "CHL", "COL", "PER", "VEN", "ECU", "CRI", "PAN", "URY"] 
 

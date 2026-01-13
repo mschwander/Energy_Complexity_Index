@@ -278,29 +278,29 @@ def ECI_time_line_singular_plot(df, country_iso3, years, save_folder, yellow):
     
 
 ''' Example usage '''
-'''
+#'''
 #years = [2018, 2019, 2020, 2021, 2022, 2023]
-#years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
-#         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-#         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
-years = [2003, 2004, 2005]
-yellow = 0  # 1 for yellow energy products, 0 for all energy products
-population = 0  # 1 to include population data, 0 otherwise
+years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
+         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+#years = [2003, 2004, 2005]
+yellow = 1  # 1 for yellow energy products, 0 for all energy products
+population = 1  # 1 to include population data, 0 otherwise
 first = 1  # 1 to use first year for top/bottom 20, 0 for last year
 #df = ECI_time_series(years, yellow, population)
 
-df = pd.read_csv("04_Results/Time_Series/2003-2005/ECI_time_series_Energy_2003-2005.csv")
+df = pd.read_csv("04_Results_96_23_all_Filters/Time_Series/1996-2023/ECI_time_series_Energy_Yellow_1996-2023.csv")
 
 #df = pd.read_csv("04_Results_All_Filters_251211/Time_Series/1996-2023/ECI_time_series_Energy_1996-2023.csv")
 #Netherlands, Spain, China, Denmark, United Kingdom, Japan, Israel, Germany, Italy, Poland, USA, Switzerland, France, Singapore, Austria, Australia, Finland, India, Sweden, Ireland, Rep. of Korea, Sweden, Latvia, Estonia, Belgium, Canada, Slovakia, Slovenia, Hungary, Portugal, New Zealand, Norway, Turkey, Russia, Romania, South Africa, Brazil, Mexico, Czechia, Greece, Bulgaria, Croatia, Lithuania, Ukraine, Argentina, Chile, Colombia, Peru, Venezuela, Ecuador, Costa Rica, Panama, Uruguay
 #country_iso3_list = ["NLD", "ESP", "CHN", "DNK", "GBR", "JPN", "ISR", "DEU", "ITA", "POL", "USA", "CHE", "FRA", "SGP", "AUT", "AUS", "FIN", "IND", "SWE", "IRL", "KOR", "LVA", "EST", "BEL", "CAN", "SVK", "SVN", "HUN", "PRT", "NZL", "NOR", "TUR", "RUS", "ROU", "ZAF", "BRA", "MEX", "CZE", "GRC", "BGR", "HRV", "LTU", "UKR", "ARG", "CHL", "COL", "PER", "VEN", "ECU", "CRI", "PAN", "URY"] 
 #save_folder = "07_Time_series/Selected_Countries"
 #Take all iso3 codes from the dataframe
-country_iso3_list = pd.read_csv("01_Data/BACI/country_codes_V202501.csv")['country_iso3'].tolist()
+country_iso3_list = pd.read_csv("01_Data/country_codes_V202501.csv")['country_iso3'].tolist()
 save_folder = "07_Time_series/All_Countries"
 
 ECI_time_line_plot(df, years, save_folder, yellow, first)
 
 ECI_time_line_singular_plot(df, country_iso3_list, years, save_folder, yellow)
 
-'''
+#'''
