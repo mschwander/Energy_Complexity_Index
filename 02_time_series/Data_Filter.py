@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def Data_filterHS22(product_codes, yellow, year):
+def Data_filterHS22(product_codes, supplementary, year):
 
     energy_code_list = product_codes["code"].astype(str).tolist()
     
@@ -11,10 +11,10 @@ def Data_filterHS22(product_codes, yellow, year):
 
     baci_energy = baci[baci["k"].isin(energy_code_list)]
 
-    if yellow:
+    if supplementary:
         output_dir = f"01_Data/BACI/{year}/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"baci_energy_subset_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"baci_energy_subset_supplementary_{year}.csv")
         baci_energy.to_csv(save_path, index=False)        
     else:
         output_dir = f"01_Data/BACI/{year}/"
@@ -26,7 +26,7 @@ def Data_filterHS22(product_codes, yellow, year):
 
     return baci_energy
 
-def Data_filterHS96(product_codes, yellow, year):
+def Data_filterHS96(product_codes, supplementary, year):
 
     energy_code_list = product_codes["code"].astype(str).tolist()
     
@@ -35,10 +35,10 @@ def Data_filterHS96(product_codes, yellow, year):
 
     baci_energy = baci[baci["k"].isin(energy_code_list)]
 
-    if yellow:
+    if supplementary:
         output_dir = f"01_Data/BACI/{year}/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"baci_energy_subset_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"baci_energy_subset_supplementary_{year}.csv")
         baci_energy.to_csv(save_path, index=False)
     else:
         output_dir = f"01_Data/BACI/{year}/"
@@ -50,7 +50,7 @@ def Data_filterHS96(product_codes, yellow, year):
 
     return baci_energy
 
-def Data_filterHS17(product_codes, yellow, year):
+def Data_filterHS17(product_codes, supplementary, year):
 
     energy_code_list = product_codes["code"].astype(str).tolist()
     
@@ -59,10 +59,10 @@ def Data_filterHS17(product_codes, yellow, year):
 
     baci_energy = baci[baci["k"].isin(energy_code_list)]
 
-    if yellow:
+    if supplementary:
         output_dir = f"01_Data/BACI/{year}/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"baci_energy_subset_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"baci_energy_subset_supplementary_{year}.csv")
         baci_energy.to_csv(save_path, index=False)
     else:
         output_dir = f"01_Data/BACI/{year}/"

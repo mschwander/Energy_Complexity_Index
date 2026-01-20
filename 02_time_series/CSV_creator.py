@@ -3,10 +3,10 @@ import os
 
 
 # Path to your Excel file
-def CSV_creatorHS22(yellow, year):
+def CSV_creatorHS22(supplementary, year):
     excel_path = r"C:\Users\marvi\OneDrive\Semester Thesis\Surefire_product_codes_HS22.xlsx"
 
-    if yellow == 1:
+    if supplementary == 1:
         # Get all sheet names
         sheet_names = pd.ExcelFile(excel_path).sheet_names
 
@@ -26,7 +26,7 @@ def CSV_creatorHS22(yellow, year):
         # Concatenate everything into one DataFrame
         product_codes = pd.concat([df_first] + dfs_rest, ignore_index=True)
     else:
-        sheets_to_read = ["25", "26", "27", "28", "38", "44", "71", "72", "73", "74", "75", "76", "78", "79", "80", "81", "84", "85", "87", "90"]
+        sheets_to_read = ["25", "26", "27", "28", "38", "39", "44", "71", "72", "73", "74", "75", "76", "78", "79", "80", "81", "84", "86", "85", "87", "90"]
         product_codes = pd.concat([pd.read_excel(excel_path, sheet_name=sh, skiprows=1, header=None) for sh in sheets_to_read], ignore_index=True)
 
     if product_codes.shape[1] == 1:
@@ -51,11 +51,11 @@ def CSV_creatorHS22(yellow, year):
     #print(product_codes.head())
 
     # Save into your Data folder
-    if yellow == 1:
+    if supplementary == 1:
         output_dir = f"01_Data/BACI/{year}"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
 
-        save_path = os.path.join(output_dir, f"Surefire_product_codes_HS22_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"Surefire_product_codes_HS22_supplementary_{year}.csv")
         product_codes.to_csv(save_path, index=False)
     else:
         output_dir = f"01_Data/BACI/{year}"
@@ -67,10 +67,10 @@ def CSV_creatorHS22(yellow, year):
     return product_codes
 
 
-def CSV_creatorHS96(yellow, year):
+def CSV_creatorHS96(supplementary, year):
     excel_pathHS96 = r"C:\Users\marvi\OneDrive\Semester Thesis\Surefire_product_codes_HS96.xlsx"
    
-    if yellow == 1:
+    if supplementary == 1:
         # Get all sheet names
         sheet_names = pd.ExcelFile(excel_pathHS96).sheet_names
 
@@ -116,10 +116,10 @@ def CSV_creatorHS96(yellow, year):
     #print(product_codesHS96.head())
 
     # Save into your Data folder
-    if yellow == 1:
+    if supplementary == 1:
         output_dir = f"01_Data/BACI/{year}"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"Surefire_product_codes_HS96_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"Surefire_product_codes_HS96_supplementary_{year}.csv")
         product_codesHS96.to_csv(save_path, index=False)
     else:
         output_dir = f"01_Data/BACI/{year}"
@@ -130,7 +130,7 @@ def CSV_creatorHS96(yellow, year):
     return product_codesHS96
 
 
-def CSV_creatorHS17(yellow, year):
+def CSV_creatorHS17(supplementary, year):
     excel_pathHS17 = r"C:\Users\marvi\OneDrive\Semester Thesis\Surefire_product_codes_HS17.xlsx"
    
     sheets_to_read = ["87"]

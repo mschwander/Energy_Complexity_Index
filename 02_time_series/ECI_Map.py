@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 
-def ECI_Map(cdata, yellow, year, save_folder):
+def ECI_Map(cdata, supplementary, year, save_folder):
     eci_country = cdata[['country_iso3', 'eci', 'year']].copy()
     eci_country = eci_country.dropna(subset=['eci']).reset_index(drop=True)
     
@@ -54,12 +54,12 @@ def ECI_Map(cdata, yellow, year, save_folder):
         lookup[['country_iso3','country_name','country_iso2','country_code']], 
         left_on="country_code", right_on="country_iso3", how="left"
     )
-    if yellow:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"eci_country_results_Energy_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"eci_country_results_Energy_supplementary_{year}.csv")
         eci_country.to_csv(save_path, index=False)
-        print(f"eci_country_results_Energy_yellow_{year} saved to {save_path}")
+        print(f"eci_country_results_Energy_supplementary_{year} saved to {save_path}")
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
@@ -94,18 +94,18 @@ def ECI_Map(cdata, yellow, year, save_folder):
     # Get the colorbar from the current figure
     #cbar = ax.get_figure().get_axes()[-1]  # the last axis is the colorbar
     #cbar.set_xticks(np.arange(-1.5, 3.0, 0.5))  # steps: -1.5, -1.0, -0.5, ..., 2.5
-    if yellow:
-        ax.set_title(f"Energy Complexity Index by Country, {year} (Yellow Dataset)")
+    if supplementary:
+        ax.set_title(f"Energy Complexity Index by Country, {year} (supplementary Dataset)")
     else:
         ax.set_title(f"Energy Complexity Index by Country, {year}")
 
     plt.tight_layout()
-    if yellow:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"ECI_Map_Energy_yellow_{year}.png")
+        save_path = os.path.join(output_dir, f"ECI_Map_Energy_supplementary_{year}.png")
         plt.savefig(save_path, dpi=300)
-        print(f"Saved ECI map to {save_folder}/{year}/Yellow/ECI_Map_Energy_yellow_{year}.png")
+        print(f"Saved ECI map to {save_folder}/{year}/supplementary/ECI_Map_Energy_supplementary_{year}.png")
         plt.close(fig)
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
@@ -117,10 +117,10 @@ def ECI_Map(cdata, yellow, year, save_folder):
 
 ''' Example usage '''
 '''
-yellow = 0
+supplementary = 0
 year = 2023
 
 df = pd.read_csv(f"04_Results/{year}/Energy/eci_results_Energy_{year}.csv")
 
-ECI_Map(df, yellow, year)
+ECI_Map(df, supplementary, year)
 '''

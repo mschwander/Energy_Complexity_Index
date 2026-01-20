@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-def ECI_Scatter_Population(cdata, yellow, year, save_folder):
+def ECI_Scatter_Population(cdata, supplementary, year, save_folder):
     
     population_data = pd.read_csv("01_Data/WPP2024_Demographic_Indicators_Medium.csv")
 
@@ -48,9 +48,9 @@ def ECI_Scatter_Population(cdata, yellow, year, save_folder):
                     fontsize=9, ha='right', va='bottom', color='red')
             
     plt.xlabel(f"Population in year {year} (log10 scale)")
-    if yellow == 1:
+    if supplementary == 1:
         plt.ylabel(f"Energy Complexity Index in year {year}")
-        plt.title("Energy Complexity Index vs Population (Yellow Dataset)")
+        plt.title("Energy Complexity Index vs Population (supplementary Dataset)")
     else:
         plt.ylabel(f"Energy Complexity Index in year {year}")
         plt.title("Energy Complexity Index vs Population")
@@ -59,10 +59,10 @@ def ECI_Scatter_Population(cdata, yellow, year, save_folder):
     ticks = np.arange(6, 10)  # log10(1 million) to log10(1 billion)
     plt.xticks(ticks, [f"$10^{int(t)}$" for t in ticks])  # format as 10^6, 10^7, ..
     
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"ECI_vs_Population_Energy_Yellow_{year}.png")
+        save_path = os.path.join(output_dir, f"ECI_vs_Population_Energy_supplementary_{year}.png")
         plt.savefig(save_path, dpi=300)
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
@@ -73,7 +73,7 @@ def ECI_Scatter_Population(cdata, yellow, year, save_folder):
 
     print(f"ECI vs Population Scatter Plot for year {year} saved.")
 
-def ECI_Scatter_GDP(cdata, yellow, year, save_folder):
+def ECI_Scatter_GDP(cdata, supplementary, year, save_folder):
     # Load GDP per capita data (replace with your actual file)
     gdp_data = pd.read_csv("01_Data/GDP_World_Bank.csv", skiprows=4)
     
@@ -115,8 +115,8 @@ def ECI_Scatter_GDP(cdata, yellow, year, save_folder):
 
     plt.xlabel(f"GDP per capita")
     plt.ylabel(f"Energy Complexity Index")
-    if yellow == 1:
-        plt.title(f"Energy Complexity Index vs GDP per Capita in {year} (Yellow Dataset)")
+    if supplementary == 1:
+        plt.title(f"Energy Complexity Index vs GDP per Capita in {year} (supplementary Dataset)")
     else:
         plt.title(f"Energy Complexity Index vs GDP per Capita in {year}")
 
@@ -125,10 +125,10 @@ def ECI_Scatter_GDP(cdata, yellow, year, save_folder):
     plt.xticks(ticks, [f"$10^{int(t)}$" for t in ticks])
 
     # Save figure
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"ECI_vs_GDPperCapita_Energy_Yellow_{year}.png")
+        save_path = os.path.join(output_dir, f"ECI_vs_GDPperCapita_Energy_supplementary_{year}.png")
         plt.savefig(save_path, dpi=300)
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
@@ -139,7 +139,7 @@ def ECI_Scatter_GDP(cdata, yellow, year, save_folder):
 
     print(f"ECI vs GDP per Capita Scatter Plot for year {year} saved.")
 
-def ECI_Scatter_Energy(cdata, yellow, year, save_folder):
+def ECI_Scatter_Energy(cdata, supplementary, year, save_folder):
     # Load GDP per capita data (replace with your actual file)
     Energy_data = pd.read_csv("01_Data/Energy_use_World_Bank.csv", skiprows=4)
     
@@ -181,8 +181,8 @@ def ECI_Scatter_Energy(cdata, yellow, year, save_folder):
 
     plt.xlabel(f"Energy use per capita")
     plt.ylabel(f"Energy Complexity Index")
-    if yellow == 1:
-        plt.title(f"Energy Complexity Index vs Energy use per Capita in {year} (Yellow Dataset)")
+    if supplementary == 1:
+        plt.title(f"Energy Complexity Index vs Energy use per Capita in {year} (supplementary Dataset)")
     else:
         plt.title(f"Energy Complexity Index vs Energy use per Capita in {year}")
 
@@ -191,10 +191,10 @@ def ECI_Scatter_Energy(cdata, yellow, year, save_folder):
     plt.xticks(ticks, [f"$10^{int(t)}$" for t in ticks])
 
     # Save figure
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"ECI_vs_EnergyperCapita_Energy_Yellow_{year}.png")
+        save_path = os.path.join(output_dir, f"ECI_vs_EnergyperCapita_Energy_supplementary_{year}.png")
         plt.savefig(save_path, dpi=300)
     else:
         output_dir = f"{save_folder}/{year}/Energy/"

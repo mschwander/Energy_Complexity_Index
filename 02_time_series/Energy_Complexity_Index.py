@@ -11,7 +11,7 @@ from ECI_Map import ECI_Map
 from ECI_Pillar import ECI_Pillar
 from ECI_Scatter import ECI_Scatter_Population, ECI_Scatter_GDP, ECI_Scatter_Energy
 from ECI_Distribution import ECI_Distribution
-from ECI_time_series import ECI_time_series, ECI_time_line_plot, ECI_time_line_singular_plot
+from ECI_time_series import ECI_time_series, ECI_time_line_plot, ECI_time_line_singular_plot, ECI_GDP_time_line_singular_plot, ECI_Energy_time_line_singular_plot
 
 class Tee(object):
     def __init__(self, *files):
@@ -27,15 +27,21 @@ class Tee(object):
 # Decides which dataset to use
 HS_22 = 0  # 1 for HS 2022, 0 for HS 1996
 
-years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
-         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+#years = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 
+#         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+#         2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
 
-yellow = 1
+#years = [1996, 1997,1998, 1999, 2000, 2001]
+#years = [2002, 2003, 2004, 2005, 2006]
+#years = [2007, 2008, 2009, 2010, 2011, 2012]
+#years = [2013, 2014, 2015, 2016, 2017, 2018]
+years = [2019, 2020, 2021, 2022, 2023]
+
+supplementary = 1
 first = 1  # 1 to use first year for top/bottom 20, 0 for last year
-save_folder = "04_Results_96_23_all_Filters_relative_3" #Folder to save results
+save_folder = "04_Results_260120" #Folder to save results
 all_countries = 1  # 1 to plot all countries in time series, 0 for selected list
-no_filter = 0 #no min trade value, no ubiquity, no global market share filtering 
+no_filter = 0 #no min trade value, no ubiquity, no global market share filtering
 
 ####################################################################################
 population = 1
@@ -45,7 +51,13 @@ pop_min = 1e6 #minimum population to include country in ECI calculation
 
 trade_value = 1
 total_trade_value = 0 #1 to filter by total trade value, 0 to filter by relative trade value
-relative_trade_value = 0.95 #include top 90% of trade value countries
+#include top xx% of trade value countries
+relative_trade_value = {(1996, 2001): 0.90,
+                        (2002, 2006): 0.90, #no big difference between 0.90 and 0.95
+                        (2007, 2012): 0.90,
+                        (2013, 2018): 0.90,
+                        (2019, 2023): 0.90}
+
 
 #BACI value is in thousand $
 min_trade_value = {1996: 1e4, #141 -> 125
@@ -109,8 +121,14 @@ min_trade = {1996: 1,
                 2022: 1,
                 2023: 1}
 
-absolute_min_val = 1 #1 to filter with absolute values, 0 to filter with relative percentage
-percentage_threshold = 0.95 #keep top 95% of trades by value by getting trade value of quantile 0.05 and then cutting everything below that
+absolute_min_val = 0 #1 to filter with absolute values, 0 to filter with relative percentage
+
+#keep top xx% of trades by value by getting trade value of quantile (1-xx) and then cutting everything below that
+percentage_threshold = {(1996, 2001): 0.95,
+                        (2002, 2006): 0.95, #0.97 to ~52$, 0.95 to ~103$
+                        (2007, 2012): 0.95, #0.95 to ~110$, 0.97 to ~50$
+                        (2013, 2018): 0.97, #0.95 to ~80$, 0.97 to ~30$
+                        (2019, 2023): 0.94} #0.95 to ~70$, 0.94 to ~100$
 
 min_val = {
     1996: 1, #1'000 $
@@ -176,7 +194,12 @@ ubiquity = {1996: 1,
 
 absolute_ubiquity = 0 #1 to use absolute ubiquity limits, 0 to use relative ubiquity limits
 
-relative_lower_limit = 1.25 #set so that all products below xx*min ubiquity are cut off; if min ubiquity below 3, just remove bottom 3 ubiquity
+#set so that all products below xx*min ubiquity are cut off; if min ubiquity below 3, just remove bottom 3 ubiquity
+relative_lower_limit = {(1996, 2001): 1.25,
+                        (2002, 2006): 1.25,
+                        (2007, 2012): 1.25,
+                        (2013, 2018): 1.25,
+                        (2019, 2023): 1.25}
 
 lower_limit = { 1996: 12, #min 8/8
                 1997: 10, #min 8/8
@@ -207,7 +230,12 @@ lower_limit = { 1996: 12, #min 8/8
                 2022: 6, #min 2/2
                 2023: 6} #min 2/
 
-relative_upper_limit = 0.97 #set so that all products over xx*max ubiquity are cut off
+#set so that all products over xx*max ubiquity are cut off
+relative_upper_limit = {(1996, 2001): 0.97,
+                        (2002, 2006): 0.97,
+                        (2007, 2012): 0.99, 
+                        (2013, 2018): 0.99,
+                        (2019, 2023): 0.99}
 
 upper_limit = { 1996: 100, #set so that no upper limit is applied; max 86/87
                 1997: 104, #set so that no upper limit is applied; max 102/103
@@ -408,10 +436,10 @@ ECI_Distribution_Plot = 1
 ECI_time_series_plot = 1
 
 for year in years:
-    # build the directory path depending on yellow flag
-    if yellow:
-        dir_path = f"{save_folder}/{year}/Yellow"
-        log_path = os.path.join(dir_path, f"Terminal_output_Yellow_{year}.log")
+    # build the directory path depending on supplementary flag
+    if supplementary:
+        dir_path = f"{save_folder}/{year}/supplementary"
+        log_path = os.path.join(dir_path, f"Terminal_output_supplementary_{year}.log")
     else:
         dir_path = f"{save_folder}/{year}/Energy"
         log_path = os.path.join(dir_path, f"Terminal_output_Energy_{year}.log")
@@ -429,24 +457,24 @@ for year in years:
 
     #I want the names for the columns to be year, exporter, product_code and export_value
     if HS_22 == 1:
-        product_codes = CSV_creatorHS22(yellow, year)
-        df = Data_filterHS22(product_codes, yellow, year)
+        product_codes = CSV_creatorHS22(supplementary, year)
+        df = Data_filterHS22(product_codes, supplementary, year)
     
     else:
-        product_codesHS96 = CSV_creatorHS96(yellow, year)
+        product_codesHS96 = CSV_creatorHS96(supplementary, year)
         if year >= 2017:
-            product_codesHS17 = CSV_creatorHS17(yellow, year)
-            df_1 = Data_filterHS96(product_codesHS96, yellow, year)
-            df_2 = Data_filterHS17(product_codesHS17, yellow, year)
+            product_codesHS17 = CSV_creatorHS17(supplementary, year)
+            df_1 = Data_filterHS96(product_codesHS96, supplementary, year)
+            df_2 = Data_filterHS17(product_codesHS17, supplementary, year)
             df = pd.concat([df_1, df_2], ignore_index=True)
             print("Combined dataset of HS 96 and HS 17 with", len(df), "rows.")
         else:
-            df = Data_filterHS96(product_codesHS96, yellow, year)
+            df = Data_filterHS96(product_codesHS96, supplementary, year)
     
     df = df.rename(columns={'t': 'year', 'i': 'location_code', 'k': 'hs_product_code', 'v': 'export_value'})
     
 
-    Ecomplexity_df = ECI_ecomplexity(df, year, yellow, absolute_min_val, percentage_threshold, min_trade, min_val, ubiquity, absolute_ubiquity, relative_lower_limit, lower_limit, relative_upper_limit, upper_limit,
+    Ecomplexity_df = ECI_ecomplexity(df, year, supplementary, absolute_min_val, percentage_threshold, min_trade, min_val, ubiquity, absolute_ubiquity, relative_lower_limit, lower_limit, relative_upper_limit, upper_limit,
                         population, pop_min, trade_value, total_trade_value, relative_trade_value, min_trade_value, global_market_share,
                         min_global_market_share, save_folder)
 
@@ -483,25 +511,25 @@ for year in years:
         #eci should have columns country and eci_greenplexity
         eci_greenplexity = eci_greenplexity.rename(columns={'ISO3 Code': 'country_iso3','Greenplexity Index': 'eci_greenplexity'})
 
-        ECI_comparison(Ecomplexity_df, year, yellow, eci_greenplexity, save_folder)
+        ECI_comparison(Ecomplexity_df, year, supplementary, eci_greenplexity, save_folder)
 
     if ECI_Map_Plot == 1:
-        ECI_Map(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Map(Ecomplexity_df, supplementary, year, save_folder)
 
     if ECI_Pillar_Plot == 1:
-        ECI_Pillar(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Pillar(Ecomplexity_df, supplementary, year, save_folder)
 
     if ECI_Scatter_Population_Plot == 1:
-        ECI_Scatter_Population(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Scatter_Population(Ecomplexity_df, supplementary, year, save_folder)
     
     if ECI_Scatter_GDP_Plot == 1:
-        ECI_Scatter_GDP(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Scatter_GDP(Ecomplexity_df, supplementary, year, save_folder)
 
     if ECI_Scatter_Energy_Plot == 1:
-        ECI_Scatter_Energy(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Scatter_Energy(Ecomplexity_df, supplementary, year, save_folder)
 
     if ECI_Distribution_Plot == 1:
-        ECI_Distribution(Ecomplexity_df, yellow, year, save_folder)
+        ECI_Distribution(Ecomplexity_df, supplementary, year, save_folder)
 
     # restore stdout/stderr and close file
     sys.stdout = sys.__stdout__
@@ -511,11 +539,16 @@ for year in years:
 #Do a time series plot of ECI for all years calculated
 if ECI_time_series_plot == 1 and len(years) > 1:
     
-    time_series = ECI_time_series(years, yellow, population, save_folder)
-    ECI_time_line_plot(time_series, years, save_folder, yellow, first)
+    time_series = ECI_time_series(years, supplementary, population, save_folder)
+    ECI_time_line_plot(time_series, years, save_folder, supplementary, first)
     if all_countries == 1:
         country_iso3_list = pd.read_csv("01_Data/country_codes_V202501.csv")['country_iso3'].tolist()
     else:
         country_iso3_list = ["NLD", "ESP", "CHN", "DNK", "GBR", "JPN", "ISR", "DEU", "ITA", "POL", "USA", "CHE", "FRA", "SGP", "AUT", "AUS", "FIN", "IND", "SWE", "IRL", "KOR", "LVA", "EST", "BEL", "CAN", "SVK", "SVN", "HUN", "PRT", "NZL", "NOR", "TUR", "RUS", "ROU", "ZAF", "BRA", "MEX", "CZE", "GRC", "BGR", "HRV", "LTU", "UKR", "ARG", "CHL", "COL", "PER", "VEN", "ECU", "CRI", "PAN", "URY"] 
 
-    ECI_time_line_singular_plot(time_series, country_iso3_list, years, save_folder, yellow)
+    ECI_time_line_singular_plot(time_series, country_iso3_list, years, save_folder, supplementary)
+
+    ECI_GDP_time_line_singular_plot(time_series, country_iso3_list, years, save_folder, supplementary)
+
+    ECI_Energy_time_line_singular_plot(time_series, country_iso3_list, years, save_folder, supplementary)
+

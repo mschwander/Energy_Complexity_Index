@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-def ECI_Pillar(cdata, yellow, year, save_folder):
+def ECI_Pillar(cdata, supplementary, year, save_folder):
     eci_df = cdata[['country_iso3', 'year', 'eci']].copy()
 
     eci_country = eci_df[["country_iso3", "year", "eci"]].drop_duplicates()
@@ -36,8 +36,8 @@ def ECI_Pillar(cdata, yellow, year, save_folder):
 
     colors = ["green" if val >= 0 else "red" for val in combined["eci"]]
     ax.bar(combined["country_name"], combined["eci"], color=colors)
-    if yellow:
-        ax.set_title(f"Top 15 and Bottom 15 Countries by Energy Complexity Index in {year} (Yellow Dataset)")
+    if supplementary:
+        ax.set_title(f"Top 15 and Bottom 15 Countries by Energy Complexity Index in {year} (supplementary Dataset)")
     else:
         ax.set_title(f"Top 15 and Bottom 15 Countries by Energy Complexity Index in {year}")    
     ax.set_ylabel("Energy Complexity Index (ECI)")
@@ -46,12 +46,12 @@ def ECI_Pillar(cdata, yellow, year, save_folder):
     plt.xticks(rotation=75, ha="right")
 
     plt.tight_layout()
-    if yellow:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"ECI_TopBottom15_Energy_yellow_{year}.png")
+        save_path = os.path.join(output_dir, f"ECI_TopBottom15_Energy_supplementary_{year}.png")
         plt.savefig(save_path, dpi=300)
-        print(f"ECI Pillar Plot for year {year} (Yellow Dataset) saved.")
+        print(f"ECI Pillar Plot for year {year} (supplementary Dataset) saved.")
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing

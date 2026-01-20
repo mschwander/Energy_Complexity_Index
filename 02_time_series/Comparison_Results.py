@@ -3,22 +3,22 @@ import os
 from ecomplexity import ecomplexity
 
 
-def PCI_comparison(cdata, year, yellow, pci_greenplexity, save_folder):
+def PCI_comparison(cdata, year, supplementary, pci_greenplexity, save_folder):
     pci_computed = cdata[['hs_product_code', 'pci']].copy()
     pci_computed.rename(columns={'pci': 'pci_computed'}, inplace=True).drop_duplicates()
     
     pci_compare = pd.merge(pci_computed, pci_greenplexity, on='hs_product_code', how='inner')
     
     #checking HS92 to HS22, might be a problem
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary"
         os.makedirs(output_dir, exist_ok=True)
 
-        save_path = os.path.join(output_dir, "PCI_comparison_Energy_yellow_greenplexity.csv")
+        save_path = os.path.join(output_dir, "PCI_comparison_Energy_supplementary_greenplexity.csv")
         pci_compare.to_csv(save_path, index=False)
         print(f"Saved PCI comparison to {save_path}")
         correlation = pci_compare[['pci_computed', 'pci_greenplexity']].corr().iloc[0, 1]
-        print(f"PCI correlation (Energy yellow vs Atlas): {correlation:.4f}")
+        print(f"PCI correlation (Energy supplementary vs Atlas): {correlation:.4f}")
     else:
         output_dir = f"{save_folder}/{year}/Energy"
         os.makedirs(output_dir, exist_ok=True)
@@ -37,7 +37,7 @@ def PCI_comparison(cdata, year, yellow, pci_greenplexity, save_folder):
     print("Top 10 PCI rank mismatches:")
     print(rank_mismatch[['hs_product_code','pci_computed','pci_greenplexity','rank_computed','rank_greenplexity','rank_diff']])
 
-def ECI_comparison(cdata, year, yellow, eci_greenplexity, save_folder):
+def ECI_comparison(cdata, year, supplementary, eci_greenplexity, save_folder):
     eci_computed = cdata[['country_iso3', 'eci']].copy()
     eci_computed.rename(columns={'eci': 'eci_computed'}, inplace=True)
     
@@ -53,14 +53,14 @@ def ECI_comparison(cdata, year, yellow, eci_greenplexity, save_folder):
     # Sort by biggest mismatch
     rank_mismatch = eci_compare.sort_values(by='rank_diff', key=abs, ascending=False).head(10)
     
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary"
         os.makedirs(output_dir, exist_ok=True)
-        save_path = os.path.join(output_dir, f"ECI_comparison_Energy_yellow_greenplexity_{year}.csv")
+        save_path = os.path.join(output_dir, f"ECI_comparison_Energy_supplementary_greenplexity_{year}.csv")
         eci_compare.to_csv(save_path, index=False)
         print(f"Saved ECI comparison to {save_path}")
         correlation = eci_compare[['eci_computed', 'eci_greenplexity']].corr().iloc[0, 1]
-        print(f"ECI correlation (Energy yellow vs Greenplexity) in {year}: {correlation:.4f}")
+        print(f"ECI correlation (Energy supplementary vs Greenplexity) in {year}: {correlation:.4f}")
     else:
         output_dir = f"{save_folder}/{year}/Energy"
         os.makedirs(output_dir, exist_ok=True)
@@ -70,8 +70,8 @@ def ECI_comparison(cdata, year, yellow, eci_greenplexity, save_folder):
         correlation = eci_compare[['eci_computed', 'eci_greenplexity']].corr().iloc[0, 1]
         print(f"ECI correlation (Energy vs Greenplexity) in {year}: {correlation:.4f}")
 
-    if yellow ==1:
-        print(f"Top 10 ECI rank mismatches  in {year} (Energy yellow vs Greenplexity):")
+    if supplementary ==1:
+        print(f"Top 10 ECI rank mismatches  in {year} (Energy supplementary vs Greenplexity):")
     else:
         print(f"Top 10 ECI rank mismatches  in {year} (Energy vs Greenplexity):")
 

@@ -13,9 +13,23 @@ class Tee(object):
         for f in self.files:
             f.flush()
 
-years = [1996, 1998, 2001, 2002, 2014, 2023]
+data_path = "04_Results_07_12_all_Filters_relative"
+supplementary = 1
 
-countries = {348: "Hungary"}
+
+years = [2007, 2008, 2009, 2010, 2011, 2012]
+
+countries = {757: "Switzerland",
+             276: "Germany",
+             842: "USA",
+             156: "China",
+             344: "China, Hong Kong SAR",
+             699: "India",
+             #191: "Croatia",
+             #826: "United Kingdom",
+             #616: "Poland",
+             #792: "Turkey",
+             }
 
 """
 
@@ -25,42 +39,34 @@ countries = {
             276: "Germany",
             162: "Christmas Islands",
             666: "Saint Pierre and Miquelon",
-            184: "Cocos (Keeling) Islands",}
-
-
-countries = {124: "Canada",
-             528: "Netherlands",
-             276: "Germany",}
-
-
-countries = {162: "Christmas Islands",
+            184: "Cocos (Keeling) Islands",
+            124: "Canada",
+            528: "Netherlands",
+            276: "Germany",
+            162: "Christmas Islands",
             490: "Other Asia, nes",
             398: "Kazakhstan",
             96: "Brunei Darussalam",
-            795: "Turkmenistan"}
-
-
-countries = {251: "France",
-             757: "Switzerland",
-             152: "Chile",
-             40: "Austria",
-             156: "China",
-             757: "Switzerland",
-             705: "Slovenia",
-             842: "USA",}
+            795: "Turkmenistan",
+            251: "France",
+            757: "Switzerland",
+            152: "Chile",
+            40: "Austria",
+            156: "China",
+            757: "Switzerland",
+            705: "Slovenia",
+            842: "USA",}
 """
 
-data_path = "04_Results_96_23_09_pop_trade_value_filtering"
-yellow = 1
 
 # -----------------------------------------------------------------------
 
-def analyze_country_complexity(years, countries, data_path, yellow):
+def analyze_country_complexity(years, countries, data_path, supplementary):
     #create save_folder in data_path with name ECI_country_additional_information
     save_folder = f"{data_path}/ECI_country_additional_information" 
     for country_code, country_name in countries.items():
-        if yellow: 
-            dir_path = f"{save_folder}/Yellow"
+        if supplementary: 
+            dir_path = f"{save_folder}/supplementary"
             log_path = os.path.join(dir_path, f"Additional_information_{country_name}.log")
         else: 
             dir_path = f"{save_folder}/Energy"
@@ -79,8 +85,8 @@ def analyze_country_complexity(years, countries, data_path, yellow):
         sys.stderr = tee
 
         for year in years:
-            if yellow:
-                df = pd.read_csv(f"{data_path}/{year}/Yellow/eci_results_Energy_yellow_{year}.csv")
+            if supplementary:
+                df = pd.read_csv(f"{data_path}/{year}/supplementary/eci_results_Energy_supplementary_{year}.csv")
             else:
                 df = pd.read_csv(f"{data_path}/{year}/Energy/eci_results_Energy_{year}.csv")
 
@@ -175,7 +181,7 @@ def analyze_country_complexity(years, countries, data_path, yellow):
 
 # Redirect stdout to log file
 # Example usage for Country 12
-analyze_country_complexity(years, countries, data_path, yellow)
+analyze_country_complexity(years, countries, data_path, supplementary)
 
 # If you had USA data in there:
 # analyze_country_complexity(df, 840)

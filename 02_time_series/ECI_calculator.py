@@ -2,8 +2,15 @@ import pandas as pd
 import os
 from ecomplexity import ecomplexity
 
-def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min_trade, min_val, ubiquity, absolute_ubiquity, relative_ll_ubiquity, ll_ubiquity, relative_ul_ubiquity, ul_ubiquity,
-                    population, pop_min, trade_value, total_trade_value, relative_trade_value, min_trade_value, global_market_share,
+# The Lookup Function (Works with the fixed dict)
+def get_threshold(year, rules_dict):
+    for (start, end), threshold in rules_dict.items():
+        if start <= year <= end:
+            return threshold
+    return 0.95  # Default fallback
+
+def ECI_ecomplexity(df, year, supplementary, absolute_min_val,percentage_threshold_dict, min_trade, min_val, ubiquity, absolute_ubiquity, relative_ll_ubiquity_dict, ll_ubiquity, relative_ul_ubiquity_dict, ul_ubiquity,
+                    population, pop_min, trade_value, total_trade_value, relative_trade_value_dict, min_trade_value, global_market_share,
                     min_global_market_share, save_folder):
     # Filter data for year 2023
     data = df[df['year'] == year].copy()
@@ -54,6 +61,7 @@ def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min
             print(f"Filtered out {filtered_out_value} % of data")   
         else:
             #cut out bottom percentage of countries by relative trade value with
+            relative_trade_value = get_threshold(year, relative_trade_value_dict)
             threshold_index = int(len(total_trade) * relative_trade_value)
             high_trade_countries = total_trade.iloc[:threshold_index].index.tolist()
             #include only countries with high trade value
@@ -72,9 +80,10 @@ def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min
             print(f"Filtered out {filtered_out_value} % of data")
         else:
             #Calculate trade value threshold based on percentage for example 95%
+            percentage_threshold = get_threshold(year, percentage_threshold_dict)
             trade_value_threshold = data['export_value'].quantile((1 - percentage_threshold))
             data = data[data['export_value'] >= trade_value_threshold]
-            print(f"Amount of data after filtering for higher than {trade_value_threshold*1000} $ value per trade:", len(data))
+            print(f"Amount of data after filtering for higher than {trade_value_threshold*1000} $ (({percentage_threshold*100} %)) value per trade:", len(data))
             filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
             print(f"Filtered out {filtered_out_value} % of data")
 
@@ -100,13 +109,16 @@ def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min
             # Take for lower threshold the relative_ll_ubiquity* min ubiquity and for upper threshold the relative_ul_ubiquity* max ubiquity
             if ubiq.min() <= 4:
                 lower_threshold = 4
+                relative_ll_ubiquity = get_threshold(year, relative_ll_ubiquity_dict)
             else: 
+                relative_ll_ubiquity = get_threshold(year, relative_ll_ubiquity_dict)
                 lower_threshold = relative_ll_ubiquity * ubiq.min()
+            relative_ul_ubiquity = get_threshold(year, relative_ul_ubiquity_dict)
             upper_threshold = relative_ul_ubiquity * ubiq.max()
 
             keep_products = ubiq[(ubiq >= lower_threshold) & (ubiq <= upper_threshold)].index    
             data = data[data['hs_product_code'].isin(keep_products)]
-            print(f"Amount of data after relative ubiquity filtering with {lower_threshold} and {upper_threshold}:", len(data))
+            print(f"Amount of data after relative ubiquity filtering with {lower_threshold} ({relative_ll_ubiquity}) and {upper_threshold} ({relative_ul_ubiquity}):", len(data))
             filtered_out_value = ((momentary_data-len(data))/number_data_beginning) * 100
             print(f"Filtered out {filtered_out_value} % of data")
 
@@ -131,12 +143,12 @@ def ECI_ecomplexity(df, year, yellow, absolute_min_val,percentage_threshold, min
     cdata = ecomplexity(data, trade_cols)
 
     # ['location_code', 'hs_product_code', 'export_value', 'year', 'diversity', 'ubiquity', 'mcp', 'eci', 'pci_x', 'density', 'coi', 'cog', 'rca', 'global_market_share', 'pci_y']
-    if yellow == 1:
-        output_dir = f"{save_folder}/{year}/Yellow/"
+    if supplementary == 1:
+        output_dir = f"{save_folder}/{year}/supplementary/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
-        save_path = os.path.join(output_dir, f"eci_results_Energy_yellow_{year}.csv")
+        save_path = os.path.join(output_dir, f"eci_results_Energy_supplementary_{year}.csv")
         cdata.to_csv(save_path, index=False)
-        print(f"Saved eci_results to {save_folder}/{year}/Yellow/eci_results_Energy_yellow_{year}.csv")
+        print(f"Saved eci_results to {save_folder}/{year}/supplementary/eci_results_Energy_supplementary_{year}.csv")
     else:
         output_dir = f"{save_folder}/{year}/Energy/"
         os.makedirs(output_dir, exist_ok=True)  # create folder if missing
