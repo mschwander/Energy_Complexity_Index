@@ -6,14 +6,11 @@ from ecomplexity import ecomplexity
 def PCI_comparison(cdata, year, supplementary, pci_greenplexity, save_folder):
     pci_computed = cdata[['hs_product_code', 'pci']].copy()
     pci_computed.rename(columns={'pci': 'pci_computed'}, inplace=True).drop_duplicates()
-    
     pci_compare = pd.merge(pci_computed, pci_greenplexity, on='hs_product_code', how='inner')
     
-    #checking HS92 to HS22, might be a problem
     if supplementary == 1:
         output_dir = f"{save_folder}/{year}/supplementary"
         os.makedirs(output_dir, exist_ok=True)
-
         save_path = os.path.join(output_dir, "PCI_comparison_Energy_supplementary_greenplexity.csv")
         pci_compare.to_csv(save_path, index=False)
         print(f"Saved PCI comparison to {save_path}")
@@ -42,15 +39,12 @@ def ECI_comparison(cdata, year, supplementary, eci_greenplexity, save_folder):
     eci_computed.rename(columns={'eci': 'eci_computed'}, inplace=True)
     
     eci_computed = eci_computed.drop_duplicates()
-    #print("Heading of eci_computed:" , eci_computed.head())
-    #print("Heading of eci_greenplexity:" , eci_greenplexity.head())
 
     eci_compare = pd.merge(eci_computed, eci_greenplexity, on='country_iso3', how='inner')
     
     eci_compare['rank_computed'] = eci_compare['eci_computed'].rank(ascending=False, method='dense')
     eci_compare['rank_greenplexity'] = eci_compare['eci_greenplexity'].rank(ascending=False, method='dense')
     eci_compare['rank_diff'] = eci_compare['rank_computed'] - eci_compare['rank_greenplexity']
-    # Sort by biggest mismatch
     rank_mismatch = eci_compare.sort_values(by='rank_diff', key=abs, ascending=False).head(10)
     
     if supplementary == 1:

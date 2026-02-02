@@ -1,12 +1,6 @@
 01_Data/BACI/
-
-# Ignore ANY folder that starts with "04_Results_"
-04_Results_*/
-
-#04_Results_00_05_all_Filters/
-#04_Results_02_07_all_Filters/
-#04_Results_96_23_all_Filters/
-#04_Results_260105/
-06_Results_Checkups/
-07_Time_series/
+# Ignore ANY folder that starts with "03_Results" and 05_Checkups/HS_code_level_*
+03_Results*/
+04_ecomplexity_certification/HS_code_level_*/
+05_Results_ecomplexity_certification/
 __pycache__/

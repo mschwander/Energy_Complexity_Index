@@ -13,73 +13,40 @@ class Tee(object):
         for f in self.files:
             f.flush()
 
-data_path = "04_Results_07_12_all_Filters_relative"
+data_path = "03_Results_test"
 supplementary = 1
+#years = [2002, 2003, 2004, 2005, 2006]
+#years = [2007, 2008, 2009, 2010, 2011, 2012]
+#years = [2013, 2014, 2015, 2016, 2017, 2018]
+years = [2019, 2020, 2021, 2022, 2023]
 
-
-years = [2007, 2008, 2009, 2010, 2011, 2012]
-
-countries = {757: "Switzerland",
+countries = {728: "South Sudan",
+             36: "Australia",
+             757: "Switzerland",
              276: "Germany",
              842: "USA",
              156: "China",
-             344: "China, Hong Kong SAR",
-             699: "India",
+             784: "United Arab Emirates",
+             643: "Russia",
              #191: "Croatia",
              #826: "United Kingdom",
              #616: "Poland",
              #792: "Turkey",
              }
 
-"""
-
-countries = {
-            260: "Fr. South Antarctic Lands",
-            296: "Kiribati",
-            276: "Germany",
-            162: "Christmas Islands",
-            666: "Saint Pierre and Miquelon",
-            184: "Cocos (Keeling) Islands",
-            124: "Canada",
-            528: "Netherlands",
-            276: "Germany",
-            162: "Christmas Islands",
-            490: "Other Asia, nes",
-            398: "Kazakhstan",
-            96: "Brunei Darussalam",
-            795: "Turkmenistan",
-            251: "France",
-            757: "Switzerland",
-            152: "Chile",
-            40: "Austria",
-            156: "China",
-            757: "Switzerland",
-            705: "Slovenia",
-            842: "USA",}
-"""
-
-
-# -----------------------------------------------------------------------
-
 def analyze_country_complexity(years, countries, data_path, supplementary):
-    #create save_folder in data_path with name ECI_country_additional_information
-    save_folder = f"{data_path}/ECI_country_additional_information" 
+    save_folder = f"{data_path}/ECI_country_additional_information/{years[0]}-{years[-1]}/" 
     for country_code, country_name in countries.items():
         if supplementary: 
             dir_path = f"{save_folder}/supplementary"
-            log_path = os.path.join(dir_path, f"Additional_information_{country_name}.log")
+            log_path = os.path.join(dir_path, f"Additional_information_{country_name}_supplementary_{years[0]}-{years[-1]}.log")
         else: 
             dir_path = f"{save_folder}/Energy"
-            log_path = os.path.join(dir_path, f"Additional_information_{country_name}.log")
+            log_path = os.path.join(dir_path, f"Additional_information_{country_name}_{years[0]}-{years[-1]}.log")
         
-
-            # make sure directory exists
         os.makedirs(dir_path, exist_ok=True)
 
-        # open logfile
         logfile = open(log_path, "w")
-
-        # tee stdout/stderr
         tee = Tee(sys.stdout, logfile)
         sys.stdout = tee
         sys.stderr = tee
@@ -90,35 +57,40 @@ def analyze_country_complexity(years, countries, data_path, supplementary):
             else:
                 df = pd.read_csv(f"{data_path}/{year}/Energy/eci_results_Energy_{year}.csv")
 
-            #sum together total export values of whole csv
             df['export_value'] = pd.to_numeric(df['export_value'], errors='coerce').fillna(0)
             total_export = df['export_value'].sum()
-            total_export = 1000 * total_export  # Convert to dollars
+            total_export = 1000 * total_export
 
-            # We group the full dataframe by product code to get the world total for each item
             global_product_stats = df.groupby('hs_product_code')['export_value'].sum().reset_index()
             global_product_stats['export_value'] = 1000 * global_product_stats['export_value']  # Convert to dollars
             global_product_stats.rename(columns={'export_value': 'global_product_total'}, inplace=True)
 
-
-            # 1. Filter for the specific country and the latest year (if multiple years exist)
             country_df = df[df['location_code'] == country_code].copy()
             
             if country_df.empty:
                 print("Country not found in this year, skipping to next country.")
             else:
-                # 2. Basic Stats
                 total_export_country = country_df['export_value'].sum()
-                total_export_country = 1000 * total_export_country  # Convert to dollars
-                # Get all valid ECI values
+                total_export_country = 1000 * total_export_country
                 valid_eci_values = country_df['eci'].dropna()
 
                 if valid_eci_values.empty:
-                    current_eci = None  # Or 0, or "N/A"
+                    current_eci = None 
                 else:
-                    current_eci = valid_eci_values.iloc[0] # Grab the very first valid one
-
+                    current_eci = valid_eci_values.iloc[0]
+              
                 diversity_count = country_df[country_df['mcp'] == 1].shape[0] # Count products they are good at
+                #from this, find out how many have positive pci and how many negative pci
+                positive_pci_count = country_df[(country_df['mcp'] == 1) & (country_df['pci'] > 0)].shape[0]
+                negative_pci_count = country_df[(country_df['mcp'] == 1) & (country_df['pci'] < 0)].shape[0]
+                #calculate average of positive pci and negative pci
+                avg_positive_pci = country_df[(country_df['mcp'] == 1) & (country_df['pci'] > 0)]['pci'].mean()
+                avg_negative_pci = country_df[(country_df['mcp'] == 1) & (country_df['pci'] < 0)]['pci'].mean()
+                
+                # Calculate sum of exports only where RCA >= 1 (mcp == 1)
+                export_value_rca1 = country_df[country_df['mcp'] == 1]['export_value'].sum()
+                export_value_rca1 = 1000 * export_value_rca1 # Convert to dollars
+                share_rca_1_total = export_value_rca1/total_export_country
 
                 print(f"--- Analysis for Country in year {year}: {country_name} ---")
                 print(f"Total Export Value of Energy products: ${total_export_country:,.0f}")
@@ -126,19 +98,32 @@ def analyze_country_complexity(years, countries, data_path, supplementary):
                 print(f"Market Share in Energy products: {total_export_country/total_export:.4%}")
                 print(f"Current ECI Score: {current_eci}")
                 print(f"Diversity (Products with RCA>1): {diversity_count}")
-                # Load product names with columns code and description
+                print(f"Number of Products with Positive PCI: {positive_pci_count}")
+                print(f"Average Positive PCI of Products with RCA>1: {avg_positive_pci:.4f}")
+                print(f"Number of Products with Negative PCI: {negative_pci_count}")
+                print(f"Average Negative PCI of Products with RCA>1: {avg_negative_pci:.4f}")
+                print(f"Total Export Value (Products with RCA > 1): ${export_value_rca1:,.0f}")
+                print(f"Share of products with RCA > 1 of total trade value of country: ${share_rca_1_total:.4%}")
+
+
                 product_codes = pd.read_csv("01_Data/product_codes_HS96_V202501.csv")
-                product_codes.rename(columns={'description': 'product_name'}, inplace=True)
-                product_codes.rename(columns={'code': 'hs_product_code'}, inplace=True)
+                product_codes.rename(columns={'description': 'product_name', 'code': 'hs_product_code'}, inplace=True)
                 product_codes['hs_product_code'] = pd.to_numeric(product_codes['hs_product_code'], errors='coerce').fillna(0).astype('int64')
 
+                if int(year) >= 2017:
+                    product_codes_17 = pd.read_csv("01_Data/product_codes_HS17_V202501.csv")
+                    product_codes_17.rename(columns={'description': 'product_name', 'code': 'hs_product_code'}, inplace=True)
+                    product_codes_17['hs_product_code'] = pd.to_numeric(product_codes_17['hs_product_code'], errors='coerce').fillna(0).astype('int64')
 
+                    mask_17 = product_codes_17['hs_product_code'].astype(str).str.startswith('87')
+                    mask_96 = product_codes['hs_product_code'].astype(str).str.startswith('87')
+                    hs17_vehicles = product_codes_17[mask_17].copy()
+                    product_codes = product_codes[~mask_96].copy()
+                    product_codes = pd.concat([product_codes, hs17_vehicles], ignore_index=True)
+                
                 # --- 1. Top Drivers (Pushing ECI UP) ---
-
-                top_drivers = country_df[country_df['mcp'] == 1].sort_values(by='pci', ascending=False).head(10)
+                top_drivers = country_df[country_df['mcp'] == 1].sort_values(by='pci', ascending=False).head(15)
                 top_drivers['export_value'] = 1000 * top_drivers['export_value']  # Convert to dollars
-                # FIX: You must merge the names here, from product codes on code, from top_drivers on hs_product_code
-                # Merge the global stats we calculated earlier
                 top_drivers = top_drivers.merge(global_product_stats, on='hs_product_code', how='left')
                 # Calculate the percentage (Country Export / Global Export)
                 top_drivers['market_share'] = top_drivers['export_value'] / top_drivers['global_product_total']
@@ -147,26 +132,24 @@ def analyze_country_complexity(years, countries, data_path, supplementary):
                 top_drivers['share_str'] = top_drivers['market_share'].apply(lambda x: f"{x:.2%}")
                 
                 top_drivers = top_drivers.merge(product_codes[['hs_product_code', 'product_name']], on='hs_product_code', how='left')
-                #For each single top product, summarise their total export value of df in dollars
+                # Truncate product_name to max 30 chars + ".."
+                top_drivers['product_name'] = top_drivers['product_name'].apply(lambda x: str(x)[:30] + '..' if len(str(x)) > 30 else x)
 
 
                 print(f"\nTop Products Boosting ECI in (High Complexity Products we export) year {year}:")
                 print(top_drivers[['product_name', 'pci', 'export_value', 'global_product_total', 'share_str']].to_string(index=False))
 
                 # --- 2. Bottom Drivers (Dragging ECI DOWN) ---
-                # YES: We keep mcp=1. We want to see the SIMPLE products we possess.
-                bottom_drivers = country_df[country_df['mcp'] == 1].sort_values(by='pci', ascending=True).head(10)
+                bottom_drivers = country_df[country_df['mcp'] == 1].sort_values(by='pci', ascending=True).head(15)
                 bottom_drivers['export_value'] = 1000 * bottom_drivers['export_value']  # Convert to dollars
-                # FIX: You must merge the global stats here too
                 bottom_drivers = bottom_drivers.merge(global_product_stats, on='hs_product_code', how='left')
                 # Calculate the percentage (Country Export / Global Export)
                 bottom_drivers['market_share'] = bottom_drivers['export_value'] / bottom_drivers['global_product_total']
-                # Format for display (optional: creates a string column 'share_str')
+                # Format for display
                 bottom_drivers['share_str'] = bottom_drivers['market_share'].apply(lambda x: f"{x:.4%}")
-
-
-                # FIX: You must merge the names here too!
                 bottom_drivers = bottom_drivers.merge(product_codes[['hs_product_code', 'product_name']], on='hs_product_code', how='left')
+                #Truncate product_name to max 30 chars + ".."
+                bottom_drivers['product_name'] = bottom_drivers['product_name'].apply(lambda x: str(x)[:30] + '..' if len(str(x)) > 30 else x)
 
                 print(f"\nLowest Complexity Products (Commodities causing the 'Drag') in year {year}:")
                 print(bottom_drivers[['product_name', 'pci', 'export_value', 'global_product_total', 'share_str']].to_string(index=False))
@@ -174,14 +157,14 @@ def analyze_country_complexity(years, countries, data_path, supplementary):
                 #Add some spacing after each year
                 print("\n" + "="*60 + "\n")
 
-        # restore stdout/stderr and close file
         sys.stdout = sys.__stdout__
         sys.stderr = sys.__stderr__
         logfile.close()
 
-# Redirect stdout to log file
-# Example usage for Country 12
-analyze_country_complexity(years, countries, data_path, supplementary)
+##############################################################################################################################
+##############################################################################################################################
 
-# If you had USA data in there:
-# analyze_country_complexity(df, 840)
+'''Example Usage'''
+'''
+analyze_country_complexity(years, countries, data_path, supplementary)
+'''
